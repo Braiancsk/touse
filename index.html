@@ -1,0 +1,842 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>touse</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-2 d-flex justify-content-between mobile">
+                    <div class="logo">
+                        <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                    </div>
+
+                    <div class="hamburger-wrapper">
+                        <button class="hamburger" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                          </button>
+                    </div><!--hamburger-wrapper-->
+                </div><!--col-3-->
+
+                <div class="col-8 links">
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Sobre nós</a></li>
+                        </ul>
+                </div><!--col-6-->
+
+                <div class="col-2 d-flex align-items-center">
+                    <div class="ajuda d-flex align-items-center">
+                        <a href="#">Ajuda</a>
+                    <div class="user">
+                        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                        <span id="btn-user">Usuário</span>
+                        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                    </div><!--user-->
+                    </div><!--ajuda-->
+                </div><!--col-3-->
+            </div><!--row-->
+        </div><!--container-->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="box-pesquisa d-flex flex-column align-items-center justify-content-center">
+                <h1><b>Conecte-se </b>ao seu <b>sonho</b> de morar</h1>
+                <p>Alugue ou compre seu imóvel sem complicação</p>
+
+                <form class="filtrar-pesquisa">
+
+                    <div class="box-alugar-comprar d-flex justify-content-center align-items-center">
+                        <div class="form-check d-flex justify-content-center align-items-center">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label autocomplete="off" class="form-check-label" for="flexRadioDefault1">
+                              Alugar
+                            </label>
+                          </div>
+                          <div class="form-check d-flex justify-content-center align-items-center">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label autocomplete="off" class="form-check-label" for="flexRadioDefault2">
+                                Comprar
+                            </label>
+                          </div>
+                    </div><!--box-alugar-comprar-->
+
+                    <div class="localidades">
+                        <div class="container">
+                            <div class="row">
+                                <div style="border-bottom: 1px solid #722ED1;" class="input-wrapper col-12">
+                                    <div class="icon-input d-flex align-items-center">
+                                        <img src="images/location-icon.svg" alt="icone de localização">
+                                        <span class="mx-1">Cidade</span>
+                                    </div><!--icon-input-->
+                                    <input type="text" name="cidade" id="cidade" placeholder="Busque por cidade">
+                                </div><!--input-wrapper-->
+
+                                <div style="border-right: 1px solid #722ED1;" class="input-wrapper col-md-6 py-2">
+                                    <div class="icon-input  d-flex align-items-center">
+                                        <img src="images/home-icon.svg" alt="icone de localização">
+                                        <span class="mx-1">Bairro</span>
+                                    </div><!--icon-input-->
+                                    <input type="text" name="bairro" id="bairro" placeholder="Busque por bairro">
+                                </div><!--input-wrapper-->
+
+                                <div style="border-right: 1px solid #722ED1;" class="input-wrapper col-md-3 py-2">
+                                    <div class="icon-input  d-flex align-items-center">
+                                        <img src="images/dolar-icon.svg" alt="icone de localização">
+                                        <span class="mx-1">Valor</span>
+                                    </div><!--icon-input-->
+
+                                        <select class="form-select" aria-label="Default select example" name="preco">
+                                            <option selected>Selecione um valor</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                                
+                                </div><!--input-wrapper-->
+
+                                <div class="input-wrapper col-md-3 py-2">
+                                    <div class="icon-input">
+                                        <img src="images/cama-icon.svg" alt="icone de localização">
+                                        <span>Quartos</span>
+                                    </div><!--icon-input-->
+                                 
+                                        <select class="form-select" aria-label="Default select example" name="quartos">
+                                            <option selected>Selecione</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                   
+                                </div><!--input-wrapper-->
+                            </div><!--row-->
+                            
+                            
+                        </div><!--container-->
+                    </div><!--localidades-->
+                    
+                    <div class="btn-wrapper d-flex flex-column align-items-center justify-content-center mt-4">
+                        <input type="submit" value="Encontrar imóveis">
+                        
+                        <a href="#">Proprietário, anuncie seu imóvel grátis</a>
+                    </div><!--btn-wrapper-->
+                    
+            
+                </form><!--box-alugar-comprar-->
+            </div><!--box-pesquisa-->
+        </div><!--container-->
+    </header>
+
+
+    <!--sessão de cards-->
+    <section class="pra-alugar">
+        <div class="container">
+            <h2>Para quem quer <b>alugar</b></h2>
+            <p>Alugue rápido, sem fiador ou depósito caução. Agende visitas online, feche negócio direto com o proprietário e assine um contrato digital: nada de fila no cartório.</p>
+       
+            <div class="title-cards d-flex align-items-center">
+                <span>Imoveis para aluguel</span>
+            <select class="form-select localidades" aria-label="Default select example" name="localidades">
+                    <option selected>Franca</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+            </select>
+                    <!--<img src="images/arrow-down-blue.svg" alt="icone de localização">-->
+            </div><!--title-cards-->
+
+            <div class="box-cards">
+                <section class="row desktop">
+
+                    <!--card individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Apartamento</p>
+                                <h6>Alameda Arminda Nogueira</h6>
+                                <p>Vila Santa Cruz - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00</p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+                    <!--card individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua Antônio Figueiredo</h6>
+                                <p>Centro - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>72 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>3 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00</p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+                    <!--card individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua dos anjos</h6>
+                                <p>Piratininga - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+                    <!--card individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua Edna Vasques</h6>
+                                <p>Parque dos Lima - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+                    <div class="btn-wrapper d-flex justify-content-center">
+                        <a href="#" class="btn-buscar">Buscar mais imóveis para alugar</a>
+                    </div><!--btn-wrapper-->
+                </section><!--row-->
+            </div><!--cards-->
+            
+
+
+            <!--slider dos cards para mobile-->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Apartamento</p>
+                            <h6>Alameda Arminda Nogueira</h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+ <!--slider-individual-->
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua Antônio Figueiredo</h6>
+                            <p>Centro - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>72 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>3 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+    <!--slider-individual-->
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua dos anjos </h6>
+                            <p>Piratininga - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+    <!--slider-individual-->
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua Edna Vasques</h6>
+                            <p>Parque dos Lima - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+                </div>
+               
+            </div><!--swipper-->
+        </div><!--container-->
+    </section><!--pra-alugar-->
+
+
+    <!--cards para comprar desktop-->
+    <section class="pra-alugar">
+        <div class="container">
+            <h2>Para quem quer <b>comprar</b></h2>
+            <p>Alugue rápido, sem fiador ou depósito caução. Agende visitas online, feche negócio direto com o proprietário e assine um contrato digital: nada de fila no cartório.</p>
+       
+            <div class="title-cards d-flex align-items-center">
+                <span>Imoveis para aluguel</span>
+                <select class="form-select localidades" aria-label="Default select example" name="localidades">
+                    <option selected>Franca</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+            </select>
+            </div><!--title-cards-->
+<!--card-individual-->
+            <div class="box-cards">
+                <section class="row desktop">
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Apartamento</p>
+                                <h6>Alameda Arminda Nogueira</h6>
+                                <p>Vila Santa Cruz - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+<!--card-individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua Antônio Figueiredo</h6>
+                                <p>Centro - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>72 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>3 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+
+<!--card-individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua dos anjos </h6>
+                                <p>Piratininga - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+
+<!--card-individual-->
+                    <article class="col-md-3">
+                        <div class="wrapper">
+                            <div class="img-produto">
+                                <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                            </div><!--img-produto-->
+    
+                            <div class="descricao">
+                                <p>Casa</p>
+                                <h6>Rua Edna Vasques</h6>
+                                <p>Parque dos Lima - Franca, SP</p>
+                            </div><!--descricao-->
+    
+                            <div class="especs d-flex justify-content-around">
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/regua-icon.svg" alt="icone de régua">
+                                    <p>50 m²</p>
+                                </div><!--icone-wrapper-->
+    
+                                <div class="icone-wrapper d-flex">
+                                    <img src="images/cama-icon.svg" alt="icone de cama">
+                                    <p>2 quartos</p>
+                                </div><!--icone-wrapper-->
+                            </div><!--especs-->
+    
+                            <div class="valores d-flex">
+                                <p>Condomínio: R$ 150,00 </p>
+                                <p>IPTU: R$ 250,00 </p>
+                            </div><!--valores-->
+    
+                            <h5>Aluguel: R$2000,00</h5>
+                        </div>
+                    </article><!--col-md-3-->
+
+                    <div class="btn-wrapper d-flex justify-content-center">
+                        <a href="#" class="btn-buscar">Buscar mais imóveis para comprar</a>
+                    </div><!--btn-wrapper-->
+                </section><!--row-->
+            </div><!--cards-->
+
+             <!--slider dos cards para mobile-->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+<!--slider individual-->                
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Apartamento</p>
+                            <h6>Alameda Arminda Nogueira</h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+<!--slider individual-->    
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua Antônio Figueiredo</h6>
+                            <p>Centro - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>72 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>3 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+<!--slider individual-->    
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua dos anjos </h6>
+                            <p>Piratininga - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+
+
+<!--slider individual-->   
+                <div class="swiper-slide">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua Edna Vasques</h6>
+                            <p>Parque dos Lima - Franca, SP</p>
+                        </div><!--descricao-->
+
+                        <div class="especs d-flex justify-content-around">
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/regua-icon.svg" alt="icone de régua">
+                                <p>50 m²</p>
+                            </div><!--icone-wrapper-->
+
+                            <div class="icone-wrapper d-flex">
+                                <img src="images/cama-icon.svg" alt="icone de cama">
+                                <p>2 quartos</p>
+                            </div><!--icone-wrapper-->
+                        </div><!--especs-->
+
+                        <div class="valores d-flex">
+                            <p>Condomínio: R$ 150,00 </p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--valores-->
+
+                        <h5>Aluguel: R$2000,00</h5>
+                    </div><!--card-mobile-->
+                </div><!--slider-single-->
+                </div>
+               
+            </div><!--swipper-->
+        </div><!--container-->
+    </section><!--pra-alugar-->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                    <img src="images/logo-footer.svg" alt="logo da empresa"/>
+                    <div class="social-icons d-flex">
+                        <img src="images/instagram-icon.svg" alt="icone do instagram"/>
+                        <img src="images/facebook-icon.svg" alt="icone do facebook"/>
+                        <img src="images/twitter-icon.svg" alt="icone do twiiter"/>
+                        <img src="images/yt-icon.svg" alt="icone do youtube"/>
+                    </div><!--social-icons-->
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Seja ToUse</h3>
+                        <li style="margin-top: 24px;"><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Seja um corretor</a></li>
+                        <li><a href="#">Seja um fotógrafo</a></li>
+                        <li><a href="#">Seja um vistoriador</a></li>
+                        <li><a href="#">Seja um Parceiro de Reparos</a></li>
+                        <li><a href="#">Você é um porteiro?</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="mt-4 col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Saiba mais</h3>
+                        <li style="margin-top: 24px;"><a href="#">Sobre a ToUse</a></li>
+                        <li><a href="#">Regiões atendidas</a></li>
+                        <li><a href="#">Indique um imóvel</a></li>
+                        <li><a href="#">Imobiliárias parceiras</a></li>
+                        <li><a href="#">Saiba sobre a Garantia ToUse</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Manual do Usuário</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 mt-4">
+                    <ul>
+                        <h3>Fale com a gente</h3>
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/email-icon-blue.svg" alt="icone de email"/>
+                            <span>ola@touse.com</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/phone-blue-icon.svg" alt="icone de email"/>
+                            <span>+91 98765 43210</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/endereco-blue-icon.svg" alt="icone de email"/>
+                            <span>Endereço</span>
+                        </div><!--icon-wrapper-->
+                    </ul>
+                </div><!--col-md-3-->
+            </div><!--row-->
+
+            <div class="direitos d-md-flex justify-content-around">
+                <a href="#">Termos e Privacidade | Política de Privacidade</a>
+                <a href="#">Termos e Condições de Uso | Política de Cookies</a>
+                <div class="order-md-1">
+                    <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+                </div>
+            </div><!--direitos-->
+            
+        </div><!--container-->
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

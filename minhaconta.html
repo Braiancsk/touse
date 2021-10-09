@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/minhaconta.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>touse</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-1 d-flex justify-content-between mobile">
+                    <div class="logo">
+                        <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                    </div>
+
+                    <div class="hamburger-wrapper">
+                        <button class="hamburger" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                          </button>
+                    </div><!--hamburger-wrapper-->
+                </div><!--col-3-->
+
+                <div class="col-9 links">
+                        <ul class="d-flex align-items-center">
+                           
+                            <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <li><a href="#">Sobre nós</a></li>
+                        </ul>
+                </div><!--col-6-->
+
+                <div class="col-2 d-flex align-items-center">
+                    <div class="ajuda d-flex align-items-center">
+                        <a href="#">Ajuda</a>
+                    <div class="user">
+                        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                        <span id="btn-user">Usuário</span>
+                        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                    </div><!--user-->
+                    </div><!--ajuda-->
+                </div><!--col-3-->
+            </div><!--row-->
+        </div><!--container-->
+    </nav>
+
+    
+    <section class="minha-conta">
+        <div class="container d-flex justify-content-center align-items-center">
+            <form class="w-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="wrapper">
+                    <label>Nome completo</label>
+                    <input type="text" name="nome_completo" placeholder="Nome do usuário" required>
+                </div><!--wrapper-->
+
+                <div class="wrapper">
+                    <label>Número de celular</label>
+                    <input type="text" name="numero" placeholder="(00) 00000-0000" required>
+                </div><!--wrapper-->
+
+                <div class="wrapper">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="usuário@email.com" required>
+                </div><!--wrapper-->
+
+                <section class="btn-filtrar d-flex py-4">
+                    <div class="container d-flex justify-content-between flex-column">
+                        <input type="submit" name="enviar_proposta" value="Salvar">
+                      <button id="cancelar">Sair da conta</button>
+      
+                    </div><!--container-->
+                  </section><!--btn filtrar-->
+            </form>
+        </div><!--container-->
+    </section><!--minha conta-->
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                    <img src="images/logo-footer.svg" alt="logo da empresa"/>
+                    <div class="social-icons d-flex">
+                        <img src="images/instagram-icon.svg" alt="icone do instagram"/>
+                        <img src="images/facebook-icon.svg" alt="icone do facebook"/>
+                        <img src="images/twitter-icon.svg" alt="icone do twiiter"/>
+                        <img src="images/yt-icon.svg" alt="icone do youtube"/>
+                    </div><!--social-icons-->
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Seja ToUse</h3>
+                        <li style="margin-top: 24px;"><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Seja um corretor</a></li>
+                        <li><a href="#">Seja um fotógrafo</a></li>
+                        <li><a href="#">Seja um vistoriador</a></li>
+                        <li><a href="#">Seja um Parceiro de Reparos</a></li>
+                        <li><a href="#">Você é um porteiro?</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="mt-4 col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Saiba mais</h3>
+                        <li style="margin-top: 24px;"><a href="#">Sobre a ToUse</a></li>
+                        <li><a href="#">Regiões atendidas</a></li>
+                        <li><a href="#">Indique um imóvel</a></li>
+                        <li><a href="#">Imobiliárias parceiras</a></li>
+                        <li><a href="#">Saiba sobre a Garantia ToUse</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Manual do Usuário</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 mt-4">
+                    <ul>
+                        <h3>Fale com a gente</h3>
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/email-icon-blue.svg" alt="icone de email"/>
+                            <span>ola@touse.com</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/phone-blue-icon.svg" alt="icone de email"/>
+                            <span>+91 98765 43210</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/endereco-blue-icon.svg" alt="icone de email"/>
+                            <span>Endereço</span>
+                        </div><!--icon-wrapper-->
+                    </ul>
+                </div><!--col-md-3-->
+            </div><!--row-->
+
+            <div class="direitos d-md-flex justify-content-around">
+                <a href="#">Termos e Privacidade | Política de Privacidade</a>
+                <a href="#">Termos e Condições de Uso | Política de Cookies</a>
+                <div class="order-md-1">
+                    <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+                </div>
+            </div><!--direitos-->
+            
+        </div><!--container-->
+    </footer>
+
+    <script>
+        let close = document.getElementById('close');
+        let closebtn = document.getElementById('cancelar');
+        let modal = document.getElementById('modal');
+
+        close.addEventListener('click', ()=>{
+            modal.classList.remove('show');
+        });
+
+        closebtn.addEventListener('click', ()=>{
+            modal.classList.remove('show');
+        });
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/detalhes.js"></script>
+</body>
+</html>
