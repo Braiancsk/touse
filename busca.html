@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/busca.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/busca.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +59,7 @@
         </div><!--container-->
     </nav>
 
-    <section class="bread-crumb">
+    <section class="bread-crumb py-4">
         <div class="container">
             <a href="index.html">Início</a>
             <span>/</span>
@@ -75,16 +76,24 @@
             <div class="btn-wrapper d-flex">
                 <div class="form-check d-flex justify-content-center align-items-center">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                    <label autocomplete="off" class="form-check-label d-flex" for="flexRadioDefault4">
-                        <img class="mx-1" src="images/filtro-icon.svg" alt="fotos icon"/> Filtros
+                    <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault4" id="open">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.5734 1.60931H1.427C0.989496 1.60931 0.716282 2.0861 0.935925 2.46646L5.0895 9.52717V13.8236C5.0895 14.1397 5.34307 14.395 5.65735 14.395H10.3431C10.6574 14.395 10.9109 14.1397 10.9109 13.8236V9.52717L15.0663 2.46646C15.2841 2.0861 15.0109 1.60931 14.5734 1.60931ZM9.63236 13.1093H6.36807V10.3236H9.63414V13.1093H9.63236ZM9.80378 8.88431L9.63414 9.18074H6.36628L6.19664 8.88431L2.65557 2.89503H13.3449L9.80378 8.88431Z" fill="#13BEBA"/>
+                            </svg>
+                            
+                        <span class="text-white mx-1">Filtros</span>  
                     </label>
                   </div>
 
 
                 <div class="form-check d-flex justify-content-center align-items-center">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                    <label autocomplete="off" class="form-check-label d-flex" for="flexRadioDefault5">
-                        <img class="mx-1" src="images/mapa-icon.svg" alt="fotos icon"/> Mapas
+                    <label autocomplete="off" class="form-check-label d-flex align-items-center mx-3" for="flexRadioDefault5">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33209 0.832887C5.23913 0.833112 5.15213 0.858706 5.07764 0.903113L0.418587 3.56543C0.2628 3.65445 0.166656 3.82012 0.166656 3.99955V14.6662C0.166656 14.8445 0.261536 15.0092 0.415693 15.0987C0.569851 15.1881 0.759975 15.1888 0.914726 15.1003L5.34906 12.5664L10.4341 15.109C10.499 15.1431 10.5723 15.1634 10.6501 15.1659C10.6556 15.1661 10.6611 15.1662 10.6666 15.1662C10.6688 15.1662 10.6709 15.1662 10.6731 15.1662C10.7641 15.165 10.8493 15.1396 10.9224 15.096L15.5814 12.4337C15.7372 12.3447 15.8333 12.179 15.8333 11.9996V1.33289C15.8333 1.15465 15.7384 0.989892 15.5843 0.900431C15.4301 0.81097 15.24 0.810335 15.0853 0.898764L10.6509 3.43267L5.56594 0.890175C5.49734 0.854061 5.41934 0.833421 5.33656 0.832896L5.33332 0.832886L5.33209 0.832887ZM11.1667 13.8046L14.8333 11.7094V2.19448L11.1667 4.28971V13.8046ZM10.1667 4.30857L5.83332 2.1419V11.6905L10.1667 13.8572V4.30857ZM1.16666 4.28971L4.83332 2.19448V11.7094L1.16666 13.8046V4.28971Z" fill="#13BEBA"/>
+                            </svg>
+                            
+                        <span class="text-white mx-1">Mapa</span> 
                     </label>
                   </div>
             </div><!--btn-wrapper-->
@@ -250,156 +259,10 @@
             </section><!--row-->
         </div><!--cards-->
 
-
-
-<!--slider dos cards para mobile-->
-
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="box-cards-mobile">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-
-                        <div class="descricao">
-                            <p>Apartamento</p>
-                            <h6>Alameda Arminda Nogueira</h6>
-                            <p>Vila Santa Cruz - Franca, SP</p>
-                        </div><!--descricao-->
-
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-
-                        <h5>Aluguel: R$2000,00</h5>
-                    </div><!--card-mobile-->
-                </div><!--slider-single-->
-
- <!--slider-individual-->
-                <div class="swiper-slide">
-                    <div class="box-cards-mobile">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua Antônio Figueiredo</h6>
-                            <p>Centro - Franca, SP</p>
-                        </div><!--descricao-->
-
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>72 m²</p>
-                            </div><!--icone-wrapper-->
-
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>3 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-
-                        <h5>Aluguel: R$2000,00</h5>
-                    </div><!--card-mobile-->
-                </div><!--slider-single-->
-
-    <!--slider-individual-->
-                <div class="swiper-slide">
-                    <div class="box-cards-mobile">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua dos anjos </h6>
-                            <p>Piratininga - Franca, SP</p>
-                        </div><!--descricao-->
-
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-
-                        <h5>Aluguel: R$2000,00</h5>
-                    </div><!--card-mobile-->
-                </div><!--slider-single-->
-
-    <!--slider-individual-->
-                <div class="swiper-slide">
-                    <div class="box-cards-mobile">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua Edna Vasques</h6>
-                            <p>Parque dos Lima - Franca, SP</p>
-                        </div><!--descricao-->
-
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-
-                        <h5>Aluguel: R$2000,00</h5>
-                    </div><!--card-mobile-->
-                </div><!--slider-single-->
-                </div>
-               
-            </div><!--swipper-->
     </div><!--container-->
 </section><!--pra-alugar-->
 
-
+<!--fim da sessão de cards-->
 
 
 
@@ -479,7 +342,727 @@
             
         </div><!--container-->
     </footer>
+
+
+
+<!--modal de filtro-->
+    <div id="modal">
+
+ 
+        <nav class="modal-filtros p-4">
+            <div class="container d-flex justify-content-between">
+                <h4>Filtros</h4>
+                <img id="close" src="images/fechar.svg" alt="icone"/>
+            </div>
+    
+            <div class="btn-wrapper d-flex justify-content-center">
+                <div class="form-check d-flex justify-content-center align-items-center">
+                    <input class="form-check-input" type="radio" name="alugar" id="alugar" checked>
+                    <label autocomplete="off" class="form-check-label d-flex" for="alugar">
+                       Alugar
+                    </label>
+                  </div>
+    
+                  <div class="form-check d-flex justify-content-center align-items-center">
+                    <input class="form-check-input" type="radio" name="alugar" id="comprar">
+                    <label autocomplete="off" class="form-check-label d-flex" for="comprar">
+                       Comprar
+                    </label>
+                  </div>
+            </div><!--btn-wrapper-->   
+        </nav>
+    
+    
+    <!--modal para alugar-->   
+        <div class="container alugar">
+    
+          <form>
+        <section class="opcoes mt-4">
+            <div class="container">
+              
+    
+                <div class="section valor-filtro">
+                  <h6>Valor</h6>
+                  <div class="btn-wrapper d-flex my-4">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                          <input class="form-check-input" type="radio" name="aluguel" id="aluguel" checked>
+                          <label autocomplete="off" class="form-check-label d-flex" for="aluguel">
+                             Aluguel
+                          </label>
+                        </div>
+          
+                        <div class="form-check d-flex justify-content-center align-items-center">
+                          <input class="form-check-input" type="radio" name="aluguel" id="valorTotal">
+                          <label autocomplete="off" class="form-check-label d-flex" for="valorTotal">
+                             Valor total
+                          </label>
+                        </div>
+                  </div><!--btn-wrapper-->
+                  
+           </section><!--opcoes-->
+    
+           <section class="valor-filtro">
+             <div class="container">
+              <div class="min-max">
+                <div class="row">
+                    <div class="col">
+                        <label>Mínimo R$ 500</label>
+                      <input type="text" class="form-control preco-min" placeholder="Mínimo R$ 500" aria-label="First name"  required>
+                    </div>
+                    <div class="col">
+                        <label>Máximo R$ 20.000</label>
+                      <input type="text" class="form-control preco-max" placeholder="Máximo R$ 20.000" aria-label="Last name"  required>
+                    </div>
+                  </div>
+                  <input type="range" class="form-range mt-4" min="500" max="20000" id="customRange2">
+            </div><!--min-max-->
+    
+             </div><!--container-->
+    
+           </section><!--valor-filtro-->
+                  
+               
+                <div class="line"></div>
+    
+                <section class="options d-flex justify-content-between align-items-center">
+                  <div class="container d-flex justify-content-between align-items-center">
+                    <h5>Dormitórios</h5>
+      
+                      <div class="options-single d-flex">
+                          <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm1" checked>
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm1">
+                                 1+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm2">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm2">
+                                 2+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm3">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm3">
+                                 3+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm4">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm4">
+                                 4+
+                              </label>
+                            </div>
+                      </div><!--options-single-->
+                  </div><!--container-->  
+                </section><!--options-->
+    
+                <div class="line"></div>
+    
+                <section class="options d-flex justify-content-between align-items-center">
+                    <div class="container d-flex justify-content-between align-items-center">
+                      <h5>Banheiros</h5>
+        
+                        <div class="options-single d-flex">
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="5" checked>
+                                <label autocomplete="off" class="form-check-label d-flex" for="5">
+                                   1+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="6">
+                                <label autocomplete="off" class="form-check-label d-flex" for="6">
+                                   2+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="7">
+                                <label autocomplete="off" class="form-check-label d-flex" for="7">
+                                   3+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="8">
+                                <label autocomplete="off" class="form-check-label d-flex" for="8">
+                                   4+
+                                </label>
+                              </div>
+                        </div><!--options-single-->
+                    </div><!--container-->  
+                </section><!--options-->
+    
+                <div class="line"></div>
+    
+                <section class="switch">
+                 <div class="container">
+                   <h5>Tipos de imóvel</h5>
+    
+                   <div class="switch-container d-flex align-items-center justify-content-between">
+                     
+                     <div class="switch-single">
+                       <div class="form-check form-switch d-flex align-items-center">
+                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                         <label class="form-check-label" for="flexSwitchCheckChecked">Apartamento</label>
+                       </div>
+     
+                       <div class="form-check form-switch d-flex align-items-center">
+                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                         <label class="form-check-label" for="flexSwitchCheckChecked">Casa</label>
+                       </div>
+                     </div><!--switch-single-->
+    
+                     <div class="switch-single">
+                     <div class="form-check form-switch d-flex align-items-center">
+                       <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                       <label class="form-check-label" for="flexSwitchCheckChecked">Kitnet</label>
+                     </div>
+    
+                     <div class="form-check form-switch d-flex align-items-center">
+                       <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                       <label class="form-check-label" for="flexSwitchCheckChecked">Casa de condomínio</label>
+                     </div>
+                   </div><!--switch-single-->
+                   </div><!--switch option-->
+                 </div><!--container-->
+                </section><!--switch-->
+    
+                <div class="line"></div>
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Disponibilidade</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="imediata">
+                        <label autocomplete="off" class="form-check-label d-flex" for="imediata">
+                           Imediata
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="breve">
+                        <label autocomplete="off" class="form-check-label d-flex" for="breve">
+                           Em breve
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="tantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="tantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+    
+                <section class="area">
+                  <div class="container">
+                    <h5>Área</h5>
+                    <div class="min-max">
+                      <div class="row">
+                          <div class="col">
+                              <label>Mínimo 20m²</label>
+                            <input type="text" class="form-control" placeholder="20m²" aria-label="mínimo"  required>
+                          </div>
+                          <div class="col">
+                              <label>Máximo 1.000m²</label>
+                            <input type="text" class="form-control" placeholder="1.000m²" aria-label="máximo"  required>
+                          </div>
+                        </div>
+                        <input type="range" class="form-range mt-4" min="20" max="1000" id="customRange2">
+                  </div><!--min-max-->
+                  </div><!--container-->
+                </section><!--area-->
+    
+                <div class="line"></div>
+    
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex justify-content-between align-items-center">
+                    <h5>Vagas</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="vagas">
+                           Sem vagas
+                        </label>
+                      </div>
+        
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="1vaga">
+                        <label autocomplete="off" class="form-check-label d-flex" for="1vaga">
+                           1+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="2vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="2vagas">
+                           2+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="3vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="3vagas">
+                           3+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="4vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="4vagas">
+                           4+
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+    
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+    
+                <div class="line"></div>
+    
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Aceita pets</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petsim">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petsim">
+                           Sim
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petnao">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petnao">
+                           Não
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petTantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petTantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Mobilado</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobsim">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobsim">
+                           Sim
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobnao">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobnao">
+                           Não
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobTantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobTantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+                    </div><!--btn-wrapper-->
+    
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+                <section class="btn-filtrar d-flex justify-content-between py-4">
+                  <div class="container d-flex justify-content-between ">
+                    <input type="reset" value="Limpar filtro">
+                    <input type="submit" name="filter" value="Aplicar filtro">
+    
+                  </div><!--container-->
+                </section><!--btn filtrar-->
+              </form>
+            </div><!--container-->
+    
+    
+    
+<!--modal para comprar-->   
+        <div class="container comprar">
+    
+          <form>
+        <section class="opcoes my-4">
+            <div class="container">
+                <div class="section valor-filtro">
+                  <h6>Valor</h6>     
+           </section><!--opcoes-->
+    
+           <section class="valor-filtro">
+             <div class="container">
+              <div class="min-max">
+                <div class="row">
+                    <div class="col">
+                        <label>Mínimo R$ 150.000,00</label>
+                      <input type="text" class="form-control preco-min" placeholder="Mínimo R$ 500" aria-label="First name"  required>
+                    </div>
+                    <div class="col">
+                        <label>Máximo R$ 20.000.000,00</label>
+                      <input type="text" class="form-control preco-max" placeholder="Máximo R$ 20.000" aria-label="Last name"  required>
+                    </div>
+                  </div>
+                  <input type="range" class="form-range mt-4" min="150000" max="20000000" id="customRange2">
+            </div><!--min-max-->
+    
+             </div><!--container-->
+    
+           </section><!--valor-filtro-->
+                  
+               
+                <div class="line"></div>
+    
+                <section class="options d-flex justify-content-between align-items-center">
+                  <div class="container d-flex justify-content-between align-items-center">
+                    <h5>Dormitórios</h5>
+      
+                      <div class="options-single d-flex">
+                          <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm1" checked>
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm1">
+                                 1+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm2">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm2">
+                                 2+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm3">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm3">
+                                 3+
+                              </label>
+                            </div>
+      
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                              <input class="form-check-input" type="radio" name="dorm" id="dorm4">
+                              <label autocomplete="off" class="form-check-label d-flex" for="dorm4">
+                                 4+
+                              </label>
+                            </div>
+                      </div><!--options-single-->
+                  </div><!--container-->  
+                </section><!--options-->
+    
+                <div class="line"></div>
+    
+                <section class="options d-flex justify-content-between align-items-center">
+                    <div class="container d-flex justify-content-between align-items-center">
+                      <h5>Banheiros</h5>
+        
+                        <div class="options-single d-flex">
+                            <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="5" checked>
+                                <label autocomplete="off" class="form-check-label d-flex" for="5">
+                                   1+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="6">
+                                <label autocomplete="off" class="form-check-label d-flex" for="6">
+                                   2+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="7">
+                                <label autocomplete="off" class="form-check-label d-flex" for="7">
+                                   3+
+                                </label>
+                              </div>
+        
+                              <div class="form-check d-flex justify-content-center align-items-center">
+                                <input class="form-check-input" type="radio" name="banheiros" id="8">
+                                <label autocomplete="off" class="form-check-label d-flex" for="8">
+                                   4+
+                                </label>
+                              </div>
+                        </div><!--options-single-->
+                    </div><!--container-->  
+                </section><!--options-->
+    
+                <div class="line"></div>
+    
+                <section class="switch">
+                 <div class="container">
+                   <h5>Tipos de imóvel</h5>
+    
+                   <div class="switch-container d-flex align-items-center justify-content-between">
+                     
+                     <div class="switch-single">
+                       <div class="form-check form-switch d-flex align-items-center">
+                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                         <label class="form-check-label" for="flexSwitchCheckChecked">Apartamento</label>
+                       </div>
+     
+                       <div class="form-check form-switch d-flex align-items-center">
+                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                         <label class="form-check-label" for="flexSwitchCheckChecked">Casa</label>
+                       </div>
+                     </div><!--switch-single-->
+    
+                     <div class="switch-single">
+                     <div class="form-check form-switch d-flex align-items-center">
+                       <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                       <label class="form-check-label" for="flexSwitchCheckChecked">Kitnet</label>
+                     </div>
+    
+                     <div class="form-check form-switch d-flex align-items-center">
+                       <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                       <label class="form-check-label" for="flexSwitchCheckChecked">Casa de condomínio</label>
+                     </div>
+                   </div><!--switch-single-->
+                   </div><!--switch option-->
+                 </div><!--container-->
+                </section><!--switch-->
+    
+                <div class="line"></div>
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Disponibilidade</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="imediata">
+                        <label autocomplete="off" class="form-check-label d-flex" for="imediata">
+                           Imediata
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="breve">
+                        <label autocomplete="off" class="form-check-label d-flex" for="breve">
+                           Em breve
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="disponibilidade" id="tantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="tantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+                <section class="area">
+                  <div class="container">
+                    <h5>Condomínio + IPTU</h5>
+                    <div class="min-max">
+                      <div class="row">
+                          <div class="col">
+                              <label>Mínimo R$ 50</label>
+                            <input type="text" class="form-control" placeholder="R$ 500,00" aria-label="mínimo"  required>
+                          </div>
+                          <div class="col">
+                              <label>Máximo R$ 10.000</label>
+                            <input type="text" class="form-control" placeholder="R$ 800,00" aria-label="máximo"  required>
+                          </div>
+                        </div>
+                        <input type="range" class="form-range mt-4" min="20" max="1000" id="customRange2">
+                  </div><!--min-max-->
+                  </div><!--container-->
+                </section><!--area-->
+    
+                <div class="line"></div>
+    
+    
+                <section class="area">
+                  <div class="container">
+                    <h5>Área</h5>
+                    <div class="min-max">
+                      <div class="row">
+                          <div class="col">
+                              <label>Mínimo 20m²</label>
+                            <input type="text" class="form-control" placeholder="20m²" aria-label="mínimo"  required>
+                          </div>
+                          <div class="col">
+                              <label>Máximo 1.000m²</label>
+                            <input type="text" class="form-control" placeholder="1.000m²" aria-label="máximo"  required>
+                          </div>
+                        </div>
+                        <input type="range" class="form-range mt-4" min="20" max="1000" id="customRange2">
+                  </div><!--min-max-->
+                  </div><!--container-->
+                </section><!--area-->
+    
+                <div class="line"></div>
+    
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex justify-content-between align-items-center">
+                    <h5>Vagas</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="vagas">
+                           Sem vagas
+                        </label>
+                      </div>
+        
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="1vaga">
+                        <label autocomplete="off" class="form-check-label d-flex" for="1vaga">
+                           1+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="2vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="2vagas">
+                           2+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="3vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="3vagas">
+                           3+
+                        </label>
+                      </div>
+      
+                      <div class="form-check numeros d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="vagas" id="4vagas">
+                        <label autocomplete="off" class="form-check-label d-flex" for="4vagas">
+                           4+
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+    
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+    
+                <div class="line"></div>
+    
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Aceita pets</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petsim">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petsim">
+                           Sim
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petnao">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petnao">
+                           Não
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="pets" id="petTantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="petTantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+      
+                    </div><!--btn-wrapper-->
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+                <section class="disponilidade d-md-flex align-items-center justify-content-between">
+                  <div class="container d-md-flex align-items-center justify-content-between">
+                    <h5>Mobilado</h5>
+      
+                    <div class="btn-wrapper d-flex">
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobsim">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobsim">
+                           Sim
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobnao">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobnao">
+                           Não
+                        </label>
+                      </div>
+        
+                      <div class="form-check d-flex justify-content-center align-items-center">
+                        <input class="form-check-input" type="radio" name="mobiliado" id="mobTantofaz">
+                        <label autocomplete="off" class="form-check-label d-flex" for="mobTantofaz">
+                           Tanto faz
+                        </label>
+                      </div>
+                    </div><!--btn-wrapper-->
+    
+                  </div><!--container-->
+                </section><!--disponilidade-->
+    
+                <div class="line"></div>
+    
+                <section class="btn-filtrar d-flex justify-content-between py-4">
+                  <div class="container d-flex justify-content-between ">
+                    <input type="reset" value="Limpar filtro">
+                    <input type="submit" name="filter" value="Aplicar filtro">
+    
+                  </div><!--container-->
+                </section><!--btn filtrar-->
+              </form>
+            </div><!--container-->
+          </div><!--modal-->
+          
+    <!--fim da modal de filtro-->
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/detalhes.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

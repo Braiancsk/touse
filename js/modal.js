@@ -4,7 +4,7 @@ let alugar = document.querySelector('.alugar');
 let comprar = document.querySelector('.comprar');
 let close = document.getElementById('close');
 let modal = document.getElementById('modal');
-
+let openModal = document.getElementById('open');
     if('alugarButton = checked'){
         alugar.classList.toggle('active');
     }
@@ -24,6 +24,11 @@ alugarButton.addEventListener('click',()=>{
     }
 });
 
+openModal.addEventListener('click',()=>{
+    modal.classList.add('active');
+});
+
 close.addEventListener('click',()=>{
    modal.classList.remove('active');
 });
+

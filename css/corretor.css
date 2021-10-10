@@ -168,6 +168,38 @@ section.filtros input[type="radio"]:checked+ label path{
     fill:#ffffff !important;
 }
 
+/*header*/
+header{
+    background: linear-gradient(259.35deg, #13BEBA 12.6%, #722ED1 77.79%);
+    border-radius: 20px;
+    color:white;
+    padding: 32px;
+    margin: 0 15px 18px 15px;
+}
+
+header .user-info{
+    padding-top: 100px;
+}
+
+header .user-info h5{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+header .number p{
+    font-size:12px;
+    margin:0 10px 0 10px;
+}
+
+
+
+
+
+
+/*fim do header*/
+
+
+
 /*Estilos para a sessão de cards*/
 section.pra-alugar h2{
 
@@ -490,8 +522,6 @@ footer .direitos a{
     }
     section.filtros .btn-wrapper label:nth-child(2){
         margin: 0 0 10px 0;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
     }
 
     section.filtros .btn-wrapper{
@@ -502,4 +532,20 @@ footer .direitos a{
         order: 1;
     }
 
+    header{
+        padding: 30px 10px;
+    }
+    header .user-info h5{
+        font-size: 22px;
+    }
+
+    header .number,.contact{
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    header .user-info{
+        justify-content: center;
+    }
+    
 }

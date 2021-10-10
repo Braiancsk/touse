@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/detalhes.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/detalhes.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +101,7 @@
         <div class="container">
            
             <div class="d-md-flex">
-                <section class="side-form order-md-2 mx-4">
+                <section class="side-form mx-4 d-none d-md-block order-2">
                     <div class="container">
                         <div class="aluguel d-flex justify-content-between">
                             <h6>Aluguel</h6>
@@ -158,8 +158,8 @@
                 </section><!--side-form-->
     
 
-                <article class="wrapper order-md-0">
-                    <section class="descricao-ap order-0">
+                <article class="wrapper">
+                    <section class="descricao-ap order-1">
                         <div class="container">
                             <nav class="share d-flex justify-content-between">
                                 <div class="bread-crumb d-flex">
@@ -170,26 +170,34 @@
                                 <img src="images/share-icon.svg" alt="share icon"/>
                             </nav><!--share-->
                 
-                            <div class="d-flex align-items-center justify-content-center">
+                            <div class="icones d-flex align-items-center justify-content-around justify-content-md-center">
                                 <div class="form-check d-flex justify-content-center align-items-center">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                    <label autocomplete="off" class="form-check-label d-flex" for="flexRadioDefault1">
-                                        <img id="foto-icon" class="mx-1" src="images/fotos-icon-active.svg" alt="fotos icon"/><img class="mx-1" src="images/fotos-icon.svg" alt="fotos icon"/> Fotos
-                                        
+                                    <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault1">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.4286 1.71106H0.571429C0.255357 1.71106 0 1.96642 0 2.28249V13.7111C0 14.0271 0.255357 14.2825 0.571429 14.2825H15.4286C15.7446 14.2825 16 14.0271 16 13.7111V2.28249C16 1.96642 15.7446 1.71106 15.4286 1.71106ZM14.7143 12.9968H1.28571V12.2843L3.75893 9.35034L6.43929 12.5289L10.6089 7.58606L14.7143 12.4539V12.9968ZM14.7143 10.6789L10.7179 5.93963C10.6607 5.87177 10.5571 5.87177 10.5 5.93963L6.43929 10.7539L3.86786 7.7057C3.81071 7.63785 3.70714 7.63785 3.65 7.7057L1.28571 10.5093V2.99677H14.7143V10.6789ZM4.28571 6.99677C4.49208 6.99677 4.69642 6.95613 4.88707 6.87716C5.07773 6.79818 5.25096 6.68243 5.39688 6.53651C5.5428 6.39059 5.65855 6.21736 5.73753 6.0267C5.8165 5.83605 5.85714 5.63171 5.85714 5.42535C5.85714 5.21898 5.8165 5.01464 5.73753 4.82399C5.65855 4.63333 5.5428 4.4601 5.39688 4.31418C5.25096 4.16826 5.07773 4.05251 4.88707 3.97353C4.69642 3.89456 4.49208 3.85392 4.28571 3.85392C3.86895 3.85392 3.46925 4.01948 3.17455 4.31418C2.87985 4.60888 2.71429 5.00858 2.71429 5.42535C2.71429 5.84211 2.87985 6.24181 3.17455 6.53651C3.46925 6.83121 3.86895 6.99677 4.28571 6.99677V6.99677ZM4.28571 4.92535C4.5625 4.92535 4.78571 5.14856 4.78571 5.42535C4.78571 5.70213 4.5625 5.92535 4.28571 5.92535C4.00893 5.92535 3.78571 5.70213 3.78571 5.42535C3.78571 5.14856 4.00893 4.92535 4.28571 4.92535Z" fill="#13BEBA"/>
+                                        </svg>
+                                             <span class="text-white mx-1">Fotos</span>  
                                     </label>
                                   </div>
                 
                                   <div class="form-check d-flex justify-content-center align-items-center">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                    <label autocomplete="off" class="form-check-label d-flex" for="flexRadioDefault2">
-                                        <img class="mx-1" src="images/video-icon.svg" alt="fotos icon"/> Videos
+                                    <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault2">
+                                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66666 4.66622C2.66666 4.48212 2.8159 4.33289 2.99999 4.33289H10.3333C10.5174 4.33289 10.6667 4.48212 10.6667 4.66622L10.6667 7.99955L10.6667 11.3329C10.6667 11.517 10.5174 11.6662 10.3333 11.6662H2.99999C2.8159 11.6662 2.66666 11.517 2.66666 11.3329V4.66622ZM12.6667 6.05636V4.66622C12.6667 3.37755 11.622 2.33289 10.3333 2.33289H2.99999C1.71133 2.33289 0.666656 3.37755 0.666656 4.66622V11.3329C0.666656 12.6216 1.71133 13.6662 2.99999 13.6662H10.3333C11.622 13.6662 12.6667 12.6216 12.6667 11.3329V9.94274L15.7521 12.1466C16.0569 12.3643 16.4578 12.3935 16.7909 12.2221C17.124 12.0506 17.3333 11.7075 17.3333 11.3329V4.66622C17.3333 4.29163 17.124 3.94846 16.7909 3.77705C16.4578 3.60565 16.0569 3.63476 15.7521 3.85249L12.6667 6.05636ZM15.3333 9.3897L13.3871 7.99955L15.3333 6.60941V9.3897Z" fill="#13BEBA"/>
+                                            </svg>
+                                        <span class="text-white mx-1">Videos</span>  
                                     </label>
                                   </div>
                 
                                   <div class="form-check d-flex justify-content-center align-items-center">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                    <label autocomplete="off" class="form-check-label d-flex" for="flexRadioDefault3">
-                                        <img class="mx-1" src="images/mapa-icon.svg" alt="fotos icon"/> Mapas
+                                    <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault3">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33209 0.832887C5.23913 0.833112 5.15213 0.858706 5.07764 0.903113L0.418587 3.56543C0.2628 3.65445 0.166656 3.82012 0.166656 3.99955V14.6662C0.166656 14.8445 0.261536 15.0092 0.415693 15.0987C0.569851 15.1881 0.759975 15.1888 0.914726 15.1003L5.34906 12.5664L10.4341 15.109C10.499 15.1431 10.5723 15.1634 10.6501 15.1659C10.6556 15.1661 10.6611 15.1662 10.6666 15.1662C10.6688 15.1662 10.6709 15.1662 10.6731 15.1662C10.7641 15.165 10.8493 15.1396 10.9224 15.096L15.5814 12.4337C15.7372 12.3447 15.8333 12.179 15.8333 11.9996V1.33289C15.8333 1.15465 15.7384 0.989892 15.5843 0.900431C15.4301 0.81097 15.24 0.810335 15.0853 0.898764L10.6509 3.43267L5.56594 0.890175C5.49734 0.854061 5.41934 0.833421 5.33656 0.832896L5.33332 0.832886L5.33209 0.832887ZM11.1667 13.8046L14.8333 11.7094V2.19448L11.1667 4.28971V13.8046ZM10.1667 4.30857L5.83332 2.1419V11.6905L10.1667 13.8572V4.30857ZM1.16666 4.28971L4.83332 2.19448V11.7094L1.16666 13.8046V4.28971Z" fill="#13BEBA"/>
+                                            </svg>      
+                                        <span class="text-white mx-1">Mapas</span>  
                                     </label>
                                   </div>
                             </div><!--flex-->
@@ -199,6 +207,62 @@
                         </div><!--container--> 
                     </section><!--descricao-ap-->
 
+
+                    <section class="side-form order-md-2 mx-4 d-md-none">
+                        <div class="container">
+                            <div class="aluguel d-flex justify-content-between">
+                                <h6>Aluguel</h6>
+                                <h6>R$ 5.700</h6>
+                            </div><!--aluguel-->
+                
+                            <div class="wrapper d-flex justify-content-between">
+                                <div class="text-icon d-flex align-items-center">
+                                    <span>Condomínio</span>
+                                    <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                                </div><!--text-icon-->     
+                                <h5>R$ 1.755</h5>
+                            </div><!--wrapper-->
+                
+                            <div class="wrapper d-flex justify-content-between">
+                                <div class="text-icon d-flex align-items-center">
+                                    <span>IPTU</span>
+                                    <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                                </div><!--text-icon-->     
+                                <h5>R$ 230</h5>
+                            </div><!--wrapper-->
+                
+                            <div class="wrapper d-flex justify-content-between">
+                                <div class="text-icon d-flex align-items-center">
+                                    <span>Seguro incêndio</span>
+                                    <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                                </div><!--text-icon-->     
+                                <h5>R$ 73</h5>
+                            </div><!--wrapper-->
+                
+                            <div class="wrapper d-flex justify-content-between">
+                                <div class="text-icon  d-flex align-items-center">
+                                    <span>Taxa de serviço</span>
+                                    <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                                </div><!--text-icon-->     
+                                <h5>R$ 114</h5>
+                            </div><!--wrapper-->
+                
+                            <div class="aluguel d-flex justify-content-between">
+                                <h6>Total</h6>
+                                <h6>R$ 7.872</h6>
+                            </div><!--aluguel-->
+                
+                            <div class="btn-wrapper">
+                                <a class="agendar" href="#">Agendar visita</a>
+                                <a class="agendar" href="#">Fazer proposta</a>
+                            </div><!--btn-wrapper-->
+                
+                            <div class="favoritar-wrapper d-flex justify-content-between align-items-center">
+                                <button class="d-flex align-items-center"><img class="img-fluid" src="images/heart-icon.svg" alt="favoritar"/>Favoritar</button>
+                                <button class="d-flex align-items-center"><img class="img-fluid" src="images/trashcan-icon.svg" alt="favoritar"/>Descartar</button>
+                            </div><!--btn-wrapper-->
+                        </div><!--container-->
+                    </section><!--side-form-->
 
                     <section class="icones-descricao">
                         <div class="container d-flex justify-content-around align-items-center flex-wrap">

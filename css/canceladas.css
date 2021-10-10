@@ -93,6 +93,10 @@ nav .ajuda span{
 
 
 /*sessão de estilos de favoritos vazio*/
+
+section.favoritos nav.nav-favoritos{
+    background-color:transparent;
+}
 section.favoritos nav.nav-favoritos h6{
     font-size: 18px;
     font-style: normal;
@@ -390,6 +394,7 @@ section.pra-alugar .box-cards .btn-wrapper a{
 footer{
     margin-top: 108px;
     background: #FFFFFF;
+    padding: 30px 0;
 }
 
 footer .social-icons img{

@@ -93,7 +93,7 @@ nav .ajuda span{
 /*estilos para a sessão de minha conta*/
 
 section.minha-conta{
-    margin-top: 50px;
+    margin: 50px 0 200px 0;
 }
 
 section.minha-conta form label{
@@ -102,8 +102,7 @@ section.minha-conta form label{
 }
 
 section.minha-conta form input[type="text"],input[type="email"]{
-    display:block;
-    max-width:380px;
+    max-width:370px;
     height:40px;
     width: 100%;
     background: #FFFFFF;
@@ -112,6 +111,19 @@ section.minha-conta form input[type="text"],input[type="email"]{
     border-radius: 10px;
     color:#8C8C8C;
     padding: 8px 12px;
+}
+
+section.minha-conta form.conta{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+}
+
+section.minha-conta form.conta > .wrapper{
+    width: 100%;
 }
 
 section.minha-conta form input[type="text"],input[type="email"]:focus{
@@ -153,6 +165,7 @@ section.btn-filtrar input[type="submit"]{
 footer{
     margin-top: 108px;
     background: #FFFFFF;
+    padding:30px 0;
 }
 
 footer .social-icons img{

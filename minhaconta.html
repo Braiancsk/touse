@@ -3,9 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/minhaconta.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/minhaconta.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,10 @@
 
                 <div class="col-9 links">
                         <ul class="d-flex align-items-center">
-                           
+                            <div class="wrapper-input">
+                                <input type="search" name="pesquisar" id="pesquisar" placeholder="Rua, bairro ou código">
+                                <img src="images/lupa.svg" alt="icone"/>
+                            </div>
                             <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
                             <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
                             <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
@@ -56,31 +59,36 @@
     </nav>
 
     
-    <section class="minha-conta">
-        <div class="container d-flex justify-content-center align-items-center">
-            <form class="w-100 d-flex flex-column justify-content-center align-items-center">
-                <div class="wrapper">
-                    <label>Nome completo</label>
-                    <input type="text" name="nome_completo" placeholder="Nome do usuário" required>
-                </div><!--wrapper-->
-
-                <div class="wrapper">
-                    <label>Número de celular</label>
-                    <input type="text" name="numero" placeholder="(00) 00000-0000" required>
-                </div><!--wrapper-->
-
-                <div class="wrapper">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="usuário@email.com" required>
-                </div><!--wrapper-->
-
-                <section class="btn-filtrar d-flex py-4">
-                    <div class="container d-flex justify-content-between flex-column">
-                        <input type="submit" name="enviar_proposta" value="Salvar">
-                      <button id="cancelar">Sair da conta</button>
-      
-                    </div><!--container-->
-                  </section><!--btn filtrar-->
+    <section class="minha-conta  d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center">
+            <form class="conta">
+                    <div class="wrapper d-flex flex-column">
+                       
+                            <label>Nome completo</label>
+                            <input type="text" name="nome_completo" placeholder="Nome do usuário" required>
+                       
+                    </div><!--wrapper-->
+    
+                    <div class="wrapper d-flex flex-column">
+                        
+                        <label>Número de celular</label>
+                        <input type="text" name="numero" id="telefone" placeholder="(00) 00000-0000" required>
+             
+                    </div><!--wrapper-->
+    
+                    <div class="wrapper d-flex flex-column">
+                     
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="usuário@email.com" required>
+              
+                    </div><!--wrapper-->
+    
+                    <section class="btn-filtrar d-flex py-4 w-100">
+                        <div class="container d-flex justify-content-between flex-column">
+                            <input type="submit" name="enviar_proposta" value="Salvar">
+                          <button id="sair">Sair da conta</button>
+                        </div><!--container-->
+                    </section><!--btn filtrar-->
             </form>
         </div><!--container-->
     </section><!--minha conta-->
@@ -158,22 +166,6 @@
             
         </div><!--container-->
     </footer>
-
-    <script>
-        let close = document.getElementById('close');
-        let closebtn = document.getElementById('cancelar');
-        let modal = document.getElementById('modal');
-
-        close.addEventListener('click', ()=>{
-            modal.classList.remove('show');
-        });
-
-        closebtn.addEventListener('click', ()=>{
-            modal.classList.remove('show');
-        });
-    </script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/favoritos.js"></script>
-    <script src="js/detalhes.js"></script>
+    <script src="js/mask.js"></script>
 </body>
 </html>

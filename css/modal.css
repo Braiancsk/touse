@@ -7,12 +7,24 @@
 }
 
 .active{
-    display: block;
+    display: block!important;
 }
 
 #close{
     cursor: pointer;
 }
+
+#modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    display: none;
+    background-color:white;
+}
+
+
 
 nav.modal-filtros{
     background: #722ED1;

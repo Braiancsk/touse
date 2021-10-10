@@ -24,7 +24,7 @@ nav .logo{
 }
 
 nav ul{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 nav ul li{
     list-style-type: none;
@@ -318,6 +318,7 @@ section.pra-alugar .box-cards .btn-wrapper a{
 
 footer{
     margin-top: 108px;
+    padding: 30px 0;
 }
 
 footer .social-icons img{
