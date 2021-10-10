@@ -193,4 +193,15 @@ section.valor-filtro input[type="text"].preco-min:after{
     nav.modal-filtros label{
         font-size: 18px;
     }
+
+    section.options h5{
+        font-size: 16px;
+    }
+    .options-single label{
+        font-size: 14px;
+    }
+
+    section.valor-filtro label{
+        font-size: 12px;
+    }
 }
