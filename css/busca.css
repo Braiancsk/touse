@@ -10,6 +10,98 @@ body{
     background: #E5E5E5;
 }
 
+#col2{
+    display: none;
+}
+
+.map-active{
+    display: block !important;
+}
+
+.active-cards{
+    display: block !important;
+}
+
+#cards{
+    display: none;
+}
+
+#banner-map {
+	padding:0;
+}
+#banner-map .well {
+  background-color: #f5f5f5;
+  border:none;
+  border-radius:0;
+  box-shadow:none;
+  margin:0;
+  min-height:0;
+  padding:0 !important;
+}
+#parallax, #parallax_two, #parallax_three, #parallax_four, #testinomial,
+.page-banner-bg{
+	background-position:center center !important;
+}
+#banner-map{
+	height:100%;
+}
+
+.property-listing-map-info-window .featured-properties-detail {
+    background-color: #fff;
+    float: left;
+    padding: 28px 25px 0;
+    width: 100%;
+  }
+  .property-listing-map-info-window .image-with-label {
+    clear: both;
+    position: relative;
+  }
+  .property-listing-map-info-window {
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+  .property-listing-map-info-window img {
+    max-height: 350px;
+    max-width: 360px;
+  }
+  .property-listing-map-info-window .image-with-label label {
+    background-color: #fff;
+    border-radius: 0;
+    bottom: -12px;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 8px 15px;
+    position: absolute;
+    right: 6%;
+    text-transform: uppercase;
+  }
+  .property-listing-map-info-window .featured-properties-detail h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 0;
+  }
+  .property-listing-map-info-window .featured-properties-detail .featured-properties-address {
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 0 15px;
+    width: 100%;
+  }
+  .property-listing-map-info-window .featured-properties-detail {
+    background-color: #fff;
+    float: left;
+    padding: 28px 25px 25px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .property-list-map .multiple-location-map {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height:400px !important; 
+  }
+
 #foto-icon{
     display: none;
 }
