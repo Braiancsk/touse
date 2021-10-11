@@ -240,7 +240,7 @@
         </div><!--container-->
     </nav>
 
-    <header class="slides-produto">
+    <header class="slides-produto active" id="fotos">
         <!-- Slider main container -->
         <div class="swiper-container">
     <!-- Additional required wrapper -->
@@ -267,8 +267,6 @@
         <img class="img-fluid" src="images/img2.jpg" alt="imagem do produto"/>
     </div><!--swiper-slide-->
         
-    
-        
     </div>
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
@@ -276,9 +274,31 @@
   </div><!--swiper-->
 </header>
 
+<!--sessão de vídeos-->
 
+<header class="videos" id="videos">
+    <div class="container-fluid  d-flex justify-content-center align-items-center">
+        <p>O proprietário do imóvel ainda não registrou nenhum vídeo.</p>
+    </div><!--container-fluid-->
+</header><!--vídeos-->
 
+<!--sessão de mapas-->
 
+<header class="mapas" id="mapas">
+    <div class="container-fluid text-center d-flex justify-content-center align-items-center">
+        <!--Maps-->
+<section id="banner-map">
+	<div class="container">
+        <div class="row property-list-area property-list-map-area">
+            <div class="property-list-map">
+                <div id="property-listing-map" class="multiple-location-map" style="width:100%;height:545px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Maps Ends-->
+    </div><!--container-fluid-->
+</header><!--mapas-->
 
         <div class="container">
            
@@ -353,7 +373,7 @@
                             </nav><!--share-->
                 
                             <div class="icones d-flex align-items-center justify-content-around justify-content-md-center">
-                                <div class="form-check d-flex justify-content-center align-items-center">
+                                <div class="form-check d-flex justify-content-center align-items-center" id="fotosBtn">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                                     <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault1">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +383,7 @@
                                     </label>
                                   </div>
                 
-                                  <div class="form-check d-flex justify-content-center align-items-center">
+                                  <div class="form-check d-flex justify-content-center align-items-center" id="videosBtn">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                     <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault2">
                                         <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -373,13 +393,13 @@
                                     </label>
                                   </div>
                 
-                                  <div class="form-check d-flex justify-content-center align-items-center">
+                                  <div class="form-check d-flex justify-content-center align-items-center" id="mapasBtn">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                                     <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault3">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33209 0.832887C5.23913 0.833112 5.15213 0.858706 5.07764 0.903113L0.418587 3.56543C0.2628 3.65445 0.166656 3.82012 0.166656 3.99955V14.6662C0.166656 14.8445 0.261536 15.0092 0.415693 15.0987C0.569851 15.1881 0.759975 15.1888 0.914726 15.1003L5.34906 12.5664L10.4341 15.109C10.499 15.1431 10.5723 15.1634 10.6501 15.1659C10.6556 15.1661 10.6611 15.1662 10.6666 15.1662C10.6688 15.1662 10.6709 15.1662 10.6731 15.1662C10.7641 15.165 10.8493 15.1396 10.9224 15.096L15.5814 12.4337C15.7372 12.3447 15.8333 12.179 15.8333 11.9996V1.33289C15.8333 1.15465 15.7384 0.989892 15.5843 0.900431C15.4301 0.81097 15.24 0.810335 15.0853 0.898764L10.6509 3.43267L5.56594 0.890175C5.49734 0.854061 5.41934 0.833421 5.33656 0.832896L5.33332 0.832886L5.33209 0.832887ZM11.1667 13.8046L14.8333 11.7094V2.19448L11.1667 4.28971V13.8046ZM10.1667 4.30857L5.83332 2.1419V11.6905L10.1667 13.8572V4.30857ZM1.16666 4.28971L4.83332 2.19448V11.7094L1.16666 13.8046V4.28971Z" fill="#13BEBA"/>
                                             </svg>      
-                                        <span class="text-white mx-1">Mapas</span>  
+                                        <span class="text-white mx-1">Mapa</span>  
                                     </label>
                                   </div>
                             </div><!--flex-->
@@ -867,7 +887,7 @@
 
 
     <footer>
-        <div class="container" id="modal">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3 d-flex flex-column justify-content-center align-items-center img-logo-footer">
                     <img src="images/logo-footer.svg" alt="logo da empresa"/>
@@ -942,5 +962,30 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/detalhes.js"></script>
     <script src="js/proposta.js"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootsnav.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery-countTo.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/range-Slider.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script> 
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/selectbox-0.2.min.js"></script>
+    <script src="js/zelect.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution.extension.video.min.js"></script>
+    <script src="js/neary-by-place.js"></script> 
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U&libraries=places"></script> 
+    <script src="js/google-map-one.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 </html>
