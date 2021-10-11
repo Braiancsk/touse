@@ -29,9 +29,21 @@ alugarButton.addEventListener('click',()=>{
 
 openModal.addEventListener('click',()=>{
     modal.classList.add('active');
+    col2.classList.remove('map-active');
+    cards.classList.add('active-cards');
 });
 
 close.addEventListener('click',()=>{
    modal.classList.remove('active');
 });
 
+
+let mapaBtn = document.getElementById("mapa");
+let col2 = document.getElementById('col2');
+let cards = document.getElementById('cards');
+    
+
+    mapaBtn.addEventListener('click',()=>{
+        col2.classList.add('map-active');
+        cards.classList.remove('active-cards');
+});
