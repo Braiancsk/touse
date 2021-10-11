@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -68,11 +67,7 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
-  //scripts adicionais
-
-  const fotos = document.getElementById('foto-icon');
-  const videos = document.getElementById('foto-icon');
-  const mapa = document.getElementById('foto-icon');
+ 
 
   
 

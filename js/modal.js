@@ -24,6 +24,9 @@ alugarButton.addEventListener('click',()=>{
     }
 });
 
+
+//script para abrir modal
+
 openModal.addEventListener('click',()=>{
     modal.classList.add('active');
 });

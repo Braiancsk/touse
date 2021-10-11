@@ -1,26 +1,21 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    overflow-x: hidden;
-    background: #E5E5E5;
-    height:100%;
-}
-
 #close{
     cursor: pointer;
 }
 
 #modal{
-    /*display: none;*/
+    background: #FFFFFF;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    right: 0;
+    transition: 0.1s ease-in-out;
+    opacity: 0;
 }
 
-.show{
-    display: block !important;
+.modal-active{
+    opacity: 1 !important;
+    z-index: 9999999 !important;
 }
 
 .swiper-container{
@@ -114,7 +109,7 @@ section.modal-proposta .card-proposta{
 section.modal-proposta > .container{
     box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
     border-radius: 0px 0px 10px 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 section.modal-proposta .card-proposta img{

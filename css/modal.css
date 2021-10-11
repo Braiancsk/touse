@@ -7,7 +7,9 @@
 }
 
 .active{
-    display: block!important;
+    opacity: 1 !important;
+    z-index: 9999999 !important;
+    display: block;
 }
 
 #close{
@@ -19,9 +21,10 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999999;
-    display: none;
+    z-index: -1;
     background-color:white;
+    transition: 0.1s ease-in-out;
+    opacity: 0;
 }
 
 
