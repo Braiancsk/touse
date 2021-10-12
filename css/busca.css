@@ -46,6 +46,10 @@ body{
 	height:100%;
 }
 
+.gm-style-iw .gm-style-iw-c{
+    max-width: 100% !important;
+}
+
 .property-listing-map-info-window .featured-properties-detail {
     background-color: #fff;
     float: left;
@@ -99,7 +103,7 @@ body{
     left: 0;
     position: absolute;
     width: 100%;
-    height:400px !important; 
+    height:100% !important; 
   }
 
 #foto-icon{

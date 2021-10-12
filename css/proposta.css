@@ -350,12 +350,6 @@ footer .direitos a{
         display: block;
     }
 
-    section.pra-alugar .swiper-slide{
-        display: block;
-        height: 650px;
-        max-width:100%;
-    }
-
     .swiper-button-next, .swiper-rtl .swiper-button-prev{
         width: 30px !important;
         height: 30px !important;   

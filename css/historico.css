@@ -456,7 +456,6 @@ footer .direitos a{
     section.pra-alugar .swiper-slide{
         display: block;
         height: 550px;
-        max-width:100%;
     }
 
     .swiper-button-next, .swiper-rtl .swiper-button-prev{
