@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	// Location detail area load map
 	function initialize() {
-		var myCenter = new google.maps.LatLng(-23.540160927828317, -46.632740161487774);
+		var myCenter = new google.maps.LatLng(-20.538937206933237, -47.379875323189346);
 		var mapProp = {
 			center : myCenter,
-			zoom : 100,
+			zoom : 30,
 			mapTypeId : google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
 			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
@@ -28,8 +28,8 @@ $(document).ready(function(){
 	    var directionsDisplay = new google.maps.DirectionsRenderer;
 	    
 	    var map = new google.maps.Map(document.getElementById('GoogleMapGetDirections'), {
-	        center: {lat: -23.540160927828317, lng: -46.632740161487774},
-	        zoom: 100,
+	        center: {lat: -20.538937206933237, lng: -47.379875323189346},
+	        zoom: 8,
 	        mapTypeId : google.maps.MapTypeId.ROADMAP,
 	        scrollwheel: false,
 	        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
@@ -78,6 +78,7 @@ $(document).ready(function(){
 	    var mapOptions = {
 	        mapTypeId: 'roadmap',
 	        scrollwheel: false,
+			zoom:30,
 			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 	    };
 	                    
@@ -97,7 +98,7 @@ $(document).ready(function(){
 	    var infoWindowContent = [
 	        ['<div class="property-listing-map-info-window">' +
 	            '<div class="image-with-label">' +
-	                '<img src="../images/apartamento.jpg" alt="featured-properties-1" class="img-responsive">' +
+	                '<img src="../images/apartamento1.jpg" alt="featured-properties-1" class="img-responsive">' +
 	            '</div>' + 
 	            '<div class="featured-properties-detail"> ' +
 	                '<a style="text-decoration:none;" href="#"><h4>Alameda Arminda Nogueira</h4></a> ' +
