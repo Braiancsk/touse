@@ -816,7 +816,7 @@ footer .direitos a{
     padding:7px 12px;
     }
     section.descricao-ap label{
-        padding:5px;
+       padding:8px; 
     }
     section.side-form{
         position:static;
@@ -839,6 +839,14 @@ footer .direitos a{
     }
     section.pra-alugar h2{
         font-size: 24px;
+    }
+
+    section.side-form .favoritar-wrapper img{
+        max-width:18px;
+    }
+    
+    section.conteudo .button-condominio{
+        padding: 8px 12px;
     }
     
 }

@@ -380,11 +380,9 @@ footer .direitos a{
         box-shadow: none;
     }
     section.side-form .favoritar-wrapper button {
-    padding:5px;
+        padding:13px;
     }
-    section.descricao-ap label{
-        padding:5px;
-    }
+   
     section.side-form{
         position:static;
         right: 0;
@@ -425,10 +423,12 @@ footer .direitos a{
 
     section.btn-filtrar button{ 
         padding: 14px 33px;
+        margin-right: 5px;
     }
     
     
     section.btn-filtrar input[type="submit"]{
         padding: 14px 7px;
+        margin-left: 5px;
     }
 }
