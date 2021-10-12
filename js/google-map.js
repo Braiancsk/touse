@@ -4,7 +4,7 @@ $(document).ready(function(){
 		var myCenter = new google.maps.LatLng(-20.538937206933237, -47.379875323189346);
 		var mapProp = {
 			center : myCenter,
-			zoom : 30,
+			zoom : 11,
 			mapTypeId : google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
 			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
@@ -29,7 +29,7 @@ $(document).ready(function(){
 	    
 	    var map = new google.maps.Map(document.getElementById('GoogleMapGetDirections'), {
 	        center: {lat: -20.538937206933237, lng: -47.379875323189346},
-	        zoom: 8,
+	        zoom: 10,
 	        mapTypeId : google.maps.MapTypeId.ROADMAP,
 	        scrollwheel: false,
 	        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	
 	function calculateAndDisplayRoute(directionsService, directionsDisplay, marker) {
 	    directionsService.route({
-	        origin: "R. Florêncio de Abreu, 418 - Centro Histórico de São Paulo, São Paulo - SP, 01023-000",
+	        origin: "Centro Histórico de São Paulo",
 	        destination: document.getElementById('GetDirectionsAddress').value,
 	
 	        travelMode: google.maps.TravelMode.DRIVING
@@ -78,7 +78,6 @@ $(document).ready(function(){
 	    var mapOptions = {
 	        mapTypeId: 'roadmap',
 	        scrollwheel: false,
-			zoom:30,
 			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 	    };
 	                    
