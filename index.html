@@ -7,23 +7,97 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <meta name="google-site-verification" content="lJTbzYYEXeqsLOGjbXt4Wou6k2V9DjJxG5HgHAMkQYs" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>touse</title>
 </head>
 <body>
+    <!--menu mobile-->
+        <div class="menu-mobile">
+
+            <div class="wrapper">
+                <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa">
+            </div><!--wrapper-->
+
+            <div class="wrapper mt-3">
+                <a href="#" class="sub-nav">Imovéis para alugar</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper mt-3">
+                <a href="#" class="sub-nav">Imovéis para comprar</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper mt-1 d-flex reference">
+                <a href="#" class="sub-nav">Para proprietários</a>
+                <img src="images/arrow-down.svg" alt="icone">
+                <div class="sub-menu d-flex flex-column justify-content-around">
+                            <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
+                            <div class="line"></div>
+                            <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
+                            <div class="line"></div>
+                            <a href="#" class="sub-nav">Meus imovéis</a>
+                          
+                </div><!--submenu-->
+            </div><!--wrapper-->
+
+            <div class="wrapper mt-1">
+                <a href="#" class="sub-nav">Sobre nós</a>
+            </div><!--wrapper-->
+
+            <div class="line mt-3"></div>
+
+            <div class="wrapper d-flex align-items-center">
+                <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                <a href="favoritos.html">Favoritos e listas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center">
+                <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                <a href="historico.html">Visitas agendadas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center">
+                <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                <a href="canceladas.html">Propostas enviadas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center">
+                <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                <a href="canceladas.html">Contratos e boletos</a>
+            </div><!--wrapper-->
+
+            <div class="line my-1"></div>
+
+            <div class="wrapper flex-column d-flex">
+                <a href="minhaconta.html">Minha conta</a>
+                <a href="#">Sair da conta</a>
+            </div><!--wrapper-->
+
+            <div class="line my-1"></div>
+
+            <div class="wrapper py-3">
+                <a href="#">Ajuda</a>
+            </div><!--wrapper-->
+
+            <div class="line"></div>
+
+            <div class="wrapper py-3">
+                <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+            </div><!--wrapper-->
+        </div><!--menu-mobile-->
+    <!--fim do menu mobile-->
+    <div class="bg"></div><!--background para menu mobile ativado-->
     <nav>
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-2 d-flex justify-content-between mobile">
+                <div class="col-1 d-flex justify-content-between mobile">
                     <div class="logo">
                         <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
                     </div>
 
                     <div class="hamburger-wrapper">
-                        <button class="hamburger" type="button">
+                        <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
                               <span class="hamburger-inner"></span>
                             </span>
@@ -31,12 +105,56 @@
                     </div><!--hamburger-wrapper-->
                 </div><!--col-3-->
 
-                <div class="col-8 links">
+                <div class="col-9 links">
                         <ul class="d-flex align-items-center">
-                            <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                            <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <div class="reference">
+                                <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                                <div class="sub-menu-nav d-flex flex-column">
+                                    <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                    <div class="line"></div>
+                                </div><!--sub-menu-nav-->
+                            </div><!--reference-->
+
+                            <div class="reference">
+                                <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                                <div class="sub-menu-nav d-flex flex-column">
+                                    <a href="#" class="sub-nav">Imovéis para comprar</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Imovéis para comprar</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Imovéis para comprar</a>
+                                    <div class="line"></div>
+                                </div><!--sub-menu-nav-->
+                            </div><!--reference-->
+                          
+                            <div class="reference">
                             <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                            <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <div class="sub-menu-nav d-flex flex-column">
+                                <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Meus imovéis</a>
+                                <div class="line"></div>
+                            </div><!--sub-menu-nav-->
+                            </div><!--reference-->
+
+                            <div class="reference">
+                                <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                                <div class="sub-menu-nav d-flex flex-column">
+                                    <a href="#" class="sub-nav">Indicar imovéis</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Indicar imovéis</a>
+                                    <div class="line"></div>
+                                    <a href="#" class="sub-nav">Indicar imovéis</a>
+                                    <div class="line"></div>
+                                </div><!--sub-menu-nav-->
+                            </div><!--reference-->
+                         
                             <li><a href="#">Sobre nós</a></li>
                         </ul>
                 </div><!--col-6-->
