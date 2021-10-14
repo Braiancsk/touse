@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	// Location detail area load map
 	function initialize() {
-		var myCenter = new google.maps.LatLng(-20.538937206933237, -47.379875323189346);
+		var myCenter = new google.maps.LatLng(-20.53273129816679, -47.39359849296807);
 		var mapProp = {
 			center : myCenter,
 			zoom : 11,
 			mapTypeId : google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
-			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+			styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 		};
 		var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 		var marker = new google.maps.Marker({
@@ -28,11 +28,11 @@ $(document).ready(function(){
 	    var directionsDisplay = new google.maps.DirectionsRenderer;
 	    
 	    var map = new google.maps.Map(document.getElementById('GoogleMapGetDirections'), {
-	        center: {lat: -20.538937206933237, lng: -47.379875323189346},
+	        center: {lat: -20.53273129816679, lng: -47.39359849296807},
 	        zoom: 10,
 	        mapTypeId : google.maps.MapTypeId.ROADMAP,
 	        scrollwheel: false,
-	        styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+	        styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 	    });
 	
 	    var marker = new google.maps.Marker({
@@ -77,7 +77,8 @@ $(document).ready(function(){
 	    var bounds = new google.maps.LatLngBounds();
 	    var mapOptions = {
 	        mapTypeId: 'roadmap',
-	        scrollwheel: false,
+	        scrollwheel: true,
+			zoom:100,
 			styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
 	    };
 	                    
@@ -87,9 +88,10 @@ $(document).ready(function(){
 	        
 	    // Multiple Markers
 	    var markers = [
-			['Alameda Arminda Nogueira, Franca - SP', -20.544876689497844, -47.39454667381908],
-			['Aquarela Esmalteria, Franca, SP', -20.536813741577674, -47.40142075129838],
-			['Nena Suíte Hotel', -20.533794396230075, -47.40453046493837],
+			['Alameda Arminda Nogueira, Franca - SP', -20.540665254775487, -47.379467627490556],
+			['Rua Antônio Figueiredo', -20.539442308157124, -47.40140282850369],
+			['Piratininga - Franca, SP', -20.535488429932208, -47.37763570841391],
+			['Parque dos Lima Franca - SP', -20.556001430370596, -47.404218880700505],
 
 	    ];
 	                        
@@ -118,6 +120,16 @@ $(document).ready(function(){
 	             ['<div class="property-listing-map-info-window">' +
 	            '<div class="image-with-label">' +
 	                '<img src="images/casa2.jpg" alt="featured-properties-1" class="img-responsive">' +
+	            '</div>' + 
+	            '<div class="featured-properties-detail"> ' +
+	                '<a style="text-decoration:none;" href="#"><h4>Rua dos anjos</h4></a> ' +
+	                '<p class="featured-properties-address">Piratininga - Franca, SP</p> ' +
+	                '<h6>Quartos:2 Tamanhos:72 m²</h6>' +
+					'<h6>Preço: R$ 250.000,00</h6>' +
+	            '</div>'],
+				['<div class="property-listing-map-info-window">' +
+	            '<div class="image-with-label">' +
+	                '<img src="images/casa3.jpg" alt="featured-properties-1" class="img-responsive">' +
 	            '</div>' + 
 	            '<div class="featured-properties-detail"> ' +
 	                '<a style="text-decoration:none;" href="#"><h4>Rua Edna Vasques</h4></a> ' +

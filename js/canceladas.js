@@ -2,10 +2,10 @@ const swiper2 = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    watchSlidesProgress: true,
-    slidesPerView: "1",
-    centeredSlides: false,
-    spaceBetween: 10,
+    slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        freeMode: true,
  
     // If we need pagination
     pagination: {

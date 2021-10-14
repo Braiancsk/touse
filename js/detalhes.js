@@ -92,7 +92,6 @@ const swiper = new Swiper('.swiper-container', {
     fotos.classList.remove('active');
   });
 
- 
 
   
 
