@@ -11,24 +11,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>touse</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
 </head>
 <body>
     <!--menu mobile-->
         <div class="menu-mobile">
-
-            <div class="wrapper">
-                <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa">
+            <div class="wrapper mb-4">
+                <p>Entre para ver seus favoritos, visitas, propostas e aluguéis</p>
             </div><!--wrapper-->
 
-            <div class="wrapper mt-3">
+            <div class="btn-wrapper">
+               <a href="buscar.html">Encontrar imóveis</a>
+            </div><!--wrapper-->
+
+            <div class="line"></div>
+
+            <div class="wrapper d-flex align-items-center my-3">
+                <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                <a href="favoritos.html">Favoritos e listas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center my-3">
+                <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                <a href="historico.html">Visitas agendadas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center my-3">
+                <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                <a href="canceladas.html">Propostas enviadas</a>
+            </div><!--wrapper-->
+
+            <div class="wrapper d-flex align-items-center my-3">
+                <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                <a href="canceladas.html">Contratos e boletos</a>
+            </div><!--wrapper-->
+
+            <div class="line"></div>
+
+
+            <div class="wrapper my-4">
                 <a href="#" class="sub-nav">Imovéis para alugar</a>
             </div><!--wrapper-->
 
-            <div class="wrapper mt-3">
+            <div class="wrapper my-3">
                 <a href="#" class="sub-nav">Imovéis para comprar</a>
             </div><!--wrapper-->
 
-            <div class="wrapper mt-1 d-flex reference">
+            <div class="wrapper d-flex reference my-1">
                 <a href="#" class="sub-nav">Para proprietários</a>
                 <img src="images/arrow-down.svg" alt="icone">
                 <div class="sub-menu d-flex flex-column justify-content-around">
@@ -41,42 +70,20 @@
                 </div><!--submenu-->
             </div><!--wrapper-->
 
-            <div class="wrapper mt-1">
+            <div class="wrapper my-3">
                 <a href="#" class="sub-nav">Sobre nós</a>
             </div><!--wrapper-->
 
-            <div class="line mt-3"></div>
+            <div class="line"></div>
 
-            <div class="wrapper d-flex align-items-center">
-                <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
-                <a href="favoritos.html">Favoritos e listas</a>
+            <div class="wrapper flex-column d-flex my-3">
+                <a class="my-3" href="minhaconta.html">Minha conta</a>
+                <a class="my-3" href="#">Sair da conta</a>
             </div><!--wrapper-->
 
-            <div class="wrapper d-flex align-items-center">
-                <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
-                <a href="historico.html">Visitas agendadas</a>
-            </div><!--wrapper-->
+            <div class="line"></div>
 
-            <div class="wrapper d-flex align-items-center">
-                <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
-                <a href="canceladas.html">Propostas enviadas</a>
-            </div><!--wrapper-->
-
-            <div class="wrapper d-flex align-items-center">
-                <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
-                <a href="canceladas.html">Contratos e boletos</a>
-            </div><!--wrapper-->
-
-            <div class="line my-1"></div>
-
-            <div class="wrapper flex-column d-flex">
-                <a href="minhaconta.html">Minha conta</a>
-                <a href="#">Sair da conta</a>
-            </div><!--wrapper-->
-
-            <div class="line my-1"></div>
-
-            <div class="wrapper py-3">
+            <div class="wrapper my-3">
                 <a href="#">Ajuda</a>
             </div><!--wrapper-->
 
@@ -316,6 +323,7 @@
 
                     <!--card individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
@@ -346,10 +354,12 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
                     <!--card individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
@@ -380,10 +390,12 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
                     <!--card individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
@@ -414,10 +426,12 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
                     <!--card individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
@@ -448,6 +462,7 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
                     <div class="btn-wrapper d-flex justify-content-center">
@@ -466,6 +481,7 @@
                 <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
@@ -496,10 +512,12 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
 
  <!--slider-individual-->
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
@@ -530,10 +548,12 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
 
     <!--slider-individual-->
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
@@ -564,10 +584,12 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
-
+           
     <!--slider-individual-->
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
@@ -598,6 +620,7 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
                 </div>
                
@@ -629,6 +652,7 @@
             <div class="box-cards">
                 <section class="row desktop">
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
@@ -659,10 +683,12 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
 <!--card-individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
@@ -693,11 +719,13 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
 
 <!--card-individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
@@ -728,11 +756,13 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
 
 <!--card-individual-->
                     <article class="col-md-3">
+                        <a class="text-decoration-none" href="detalhes.html">
                         <div class="wrapper">
                             <div class="img-produto">
                                 <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
@@ -763,6 +793,7 @@
     
                             <h5>Aluguel: R$2000,00</h5>
                         </div>
+                    </a>
                     </article><!--col-md-3-->
 
                     <div class="btn-wrapper d-flex justify-content-center">
@@ -780,6 +811,7 @@
                 <!-- Slides -->
 <!--slider individual-->                
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
@@ -810,10 +842,12 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
 
 <!--slider individual-->    
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
@@ -844,10 +878,12 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
 
 <!--slider individual-->    
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
@@ -878,11 +914,13 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
 
 
 <!--slider individual-->   
                 <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
                     <div class="box-cards-mobile">
                         <div class="img-produto">
                             <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
@@ -913,6 +951,7 @@
 
                         <h5>Aluguel: R$2000,00</h5>
                     </div><!--card-mobile-->
+                </a>
                 </div><!--slider-single-->
                 </div>
                
@@ -994,6 +1033,7 @@
         </div><!--container-->
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/hamburger.js"></script>
 </body>
 </html>
