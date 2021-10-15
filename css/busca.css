@@ -874,6 +874,7 @@ footer .direitos a{
     }  
     #banner-map{
         height:320px;
+	position:static !important:
     }
 
     section.filtros .btn-wrapper label{
