@@ -329,6 +329,10 @@ nav ul li a{
     color:black;
 }
 
+nav ul li a:hover{
+    color:black;
+}
+
 nav .ajuda a{
     text-decoration: none;
     color:#737373;
@@ -894,7 +898,9 @@ footer .direitos a{
     }
 
     header .user-info{
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding-top: 20px;
     }
   
@@ -921,11 +927,25 @@ footer .direitos a{
     header .number, .contact{
         margin:10px;
     }
-    nav .logo{
-        display: none;
+    nav .mobile{
+        justify-content: start !important;
+    }
+
+    .logo{
+        order:2;
     }
     header .swiper-slide{
         position: relative;
         height: 100%;
+    }
+    header > .container{
+        top:40%;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    header > .container{
+        top:30%;
     }
 }

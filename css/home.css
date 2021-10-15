@@ -188,6 +188,10 @@ nav ul li a{
     color:black;
 }
 
+nav ul li a:hover{
+    color:black;
+}
+
 nav .ajuda a{
     text-decoration: none;
     color:#737373;
@@ -622,7 +626,11 @@ footer .direitos a{
         height:600px;
     }
 
-    nav .logo{
-        display: none;
+    nav .mobile{
+        justify-content: start !important;
+    }
+
+    .logo{
+        order:2;
     }
 }
