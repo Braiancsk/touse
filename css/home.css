@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #E5E5E5 !important;
+    overflow-x: hidden;
+}
+
 .hamburger-wrapper{
     display: none;
     z-index: 999999999;
@@ -28,6 +33,19 @@
     transition: 0.1s ease-in-out;
     overflow-y: scroll;
     padding: 30px;
+}
+
+.menu-mobile .btn-wrapper a{
+    text-decoration:none;
+    color:white;
+    background: #13BEBA;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: 0.1 ease-in-out;
+}
+
+.menu-mobile .btn-wrapper a:hover{
+    filter: brightness(90%);
 }
 
 .bg{
@@ -141,11 +159,13 @@ div.sub-menu{
     width: 100%;
     height:1px;
     background-color:#D9D9D9;
+    margin-top: 20px;
 }
 
 /*Estilos para o nav do site*/
 nav{
     padding: 12px 0;
+    background:white;
 }
 
 nav .logo{
@@ -288,7 +308,14 @@ header form.filtrar-pesquisa .btn-wrapper input[type=submit]{
     color:white;
     border:0;
     padding: 5px 59px;
+    transition: 0.1s ease-in-out;
+    border-radius:5px;
 }
+
+header form.filtrar-pesquisa .btn-wrapper input[type=submit]:hover{
+    filter: brightness(90%);
+}
+
 
 header form.filtrar-pesquisa .btn-wrapper a{
     text-decoration: none;
@@ -329,6 +356,8 @@ section.pra-alugar .title-cards select.form-select{
     color:#722ED1;
     background-image: url('../images/arrow-down-blue.svg');
     cursor: pointer;
+    background-color: #e5e5e5;
+    background-size: auto;
 }
 
 section.pra-alugar .box-cards article{
@@ -387,6 +416,7 @@ section.pra-alugar .swiper .box-cards-mobile h6{
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .swiper .box-cards-mobile h5{ 
@@ -394,6 +424,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 700;
 text-align: center;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .swiper{
@@ -404,6 +435,11 @@ section.pra-alugar .swiper{
 /*Fim dos estilo para cards do mobile*/
 section.pra-alugar .box-cards .icone-wrapper > img{
     margin: 0 5px;
+    box-sizing: 12px 12px 0 0;
+}
+
+.img-produto > img{
+    border-radius:12px 12px 0 0;
 }
 
 section.pra-alugar .descricao{
@@ -425,6 +461,11 @@ section.pra-alugar .box-cards h6{
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
+color: rgba(0, 0, 0, 0.85);
+}
+
+section.pra-alugar .box-cards h5{
+    color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .box-cards h5{ 
@@ -445,6 +486,13 @@ section.pra-alugar .btn-wrapper a{
     border: 1px solid #D9D9D9;
     box-shadow: 0px 2px 0px 0px #00000004;
     padding: 5px 13.5px;
+    background:white;
+    border-radius: 5px;
+    transition:0.1s ease-in-out;
+}
+
+section.pra-alugar .btn-wrapper a:hover{
+    filter: brightness(95%);
 }
 
 section.pra-alugar .btn-wrapper a.mobile{
@@ -456,6 +504,7 @@ section.pra-alugar .btn-wrapper a.mobile{
 footer{
     margin-top: 108px;
     padding: 30px 0;
+    background:white;
 }
 
 footer .social-icons img{
@@ -571,5 +620,9 @@ footer .direitos a{
 
     .swiper{
         height:600px;
+    }
+
+    nav .logo{
+        display: none;
     }
 }

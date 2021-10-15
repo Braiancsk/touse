@@ -27,6 +27,19 @@ body{
     padding: 30px;
 }
 
+.menu-mobile .btn-wrapper a{
+    text-decoration:none;
+    color:white;
+    background: #13BEBA;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: 0.1 ease-in-out;
+}
+
+.menu-mobile .btn-wrapper a:hover{
+    filter: brightness(90%);
+}
+
 .bg{
     width: 100vw;
     height:100%;
@@ -65,13 +78,6 @@ body{
     transform: translateX(0) !important;
 }
 
-.line-mobile{
-    width: 100%;
-    height: 1px;
-    background: #D9D9D9;
-    margin:0 0 !important;
-}
-
 .menu-mobile .wrapper-input{
     position: relative;
     margin:20px 0;
@@ -91,7 +97,6 @@ body{
     top: 13px;
     left: 5px;  
 }
-
 /*fim dos estilos para o menu-mobile*/
 
 
@@ -178,7 +183,7 @@ div.sub-menu-nav a{
 
 /*Estilos para o nav do site*/
 nav{
-    padding: 12px 0;
+    padding: 23px 0;
     background:white;
 }
 
@@ -547,5 +552,9 @@ footer .direitos a{
     
     section.btn-filtrar input[type="submit"]{
         padding: 14px 7px;
+    }
+
+    nav .logo{
+        display: none;
     }
 }

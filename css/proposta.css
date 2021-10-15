@@ -46,7 +46,7 @@
 
 /*Estilos para o nav do site*/
 nav{
-    padding: 12px 0;
+    padding: 23px 0;
     background:white;
 }
 
@@ -163,7 +163,7 @@ section.taxas h5{
 .line{
     width: 100%;
     background:#13BEBA;
-    height:2px;
+    height:1px;
 }
 
 section.customizar h6{

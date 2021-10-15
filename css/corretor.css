@@ -121,6 +121,19 @@ body{
     padding: 30px;
 }
 
+.menu-mobile .btn-wrapper a{
+    text-decoration:none;
+    color:white;
+    background: #13BEBA;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: 0.1 ease-in-out;
+}
+
+.menu-mobile .btn-wrapper a:hover{
+    filter: brightness(90%);
+}
+
 .bg{
     width: 100vw;
     height:100%;
@@ -159,13 +172,6 @@ body{
     transform: translateX(0) !important;
 }
 
-.line-mobile{
-    width: 100%;
-    height: 1px;
-    background: #D9D9D9;
-    margin:0 0 !important;
-}
-
 .menu-mobile .wrapper-input{
     position: relative;
     margin:20px 0;
@@ -185,7 +191,6 @@ body{
     top: 13px;
     left: 5px;  
 }
-
 /*fim dos estilos para o menu-mobile*/
 
 
@@ -239,7 +244,7 @@ div.sub-menu-nav{
     top:30px;
     z-index:-1;
     padding: 30px;
-    width: 255%;
+    width: 250%;
     opacity: 0;
     transition: 0.2s ease-in-out;
 }
@@ -252,7 +257,7 @@ div.sub-menu-nav{
 div.sub-menu-nav a{
     text-decoration: none;
     color:#434343;
-    padding: 10px 0;
+    
 }
 
 /*fim dos estilos de submenu da nav principal*/
@@ -277,7 +282,7 @@ div.sub-menu-nav a{
 
 /*Estilos para o nav do site*/
 nav{
-    padding: 12px 0;
+    padding: 23px 0;
     background:#ffffff;
 }
 
@@ -406,7 +411,7 @@ section.bread-crumb h6{
 }
 
 section.filtros{
-    margin-bottom: 34px;
+    margin: 60px 0 34px 0; 
 }
 
 section.filtros .btn-wrapper{
@@ -427,6 +432,13 @@ margin: 0 10px;
 
 section.filtros .btn-wrapper img{
     margin-right: 10px;
+}
+
+section.filtros .relevantes .form-select{
+    max-width: 168px;
+    padding: 9px;
+    background-position: right center;
+    font-size:14px;
 }
 
 section.filtros input[type="radio"]{
@@ -454,17 +466,66 @@ section.filtros input[type="radio"]:checked+ label path{
     fill:#ffffff !important;
 }
 
+
 /*header*/
 header{
-    background: linear-gradient(259.35deg, #13BEBA 12.6%, #722ED1 77.79%);
     border-radius: 20px;
     color:white;
     padding: 32px;
-    margin: 0 15px 18px 15px;
+    max-width:1350px;
+    margin: 15px auto;
+    position: relative;
+    height:282px;
+}
+
+header > .container{
+    position:  absolute;
+    z-index: 9999;
+    top: 0;
+    left: 50px;
 }
 
 header .user-info{
     padding-top: 100px;
+}
+
+header .swiper{
+    height:282px;
+}
+
+header .swiper-slide img{
+    border-radius: 20px;
+    object-fit:cover;
+    width: 100%;
+    height: 269px;
+    position: relative;
+}
+
+header .swiper-slide{
+    position: relative;
+    height: 269px;
+}
+
+header .swiper-slide:after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.678) 30%, rgba(0, 0, 0, 0) 81.98%);
+    z-index: 9999;
+    border-radius:20px;
+}
+
+header .img-user{
+    max-width:100px;
+    width: 100%;
+}
+
+header .user-info img{
+    max-width:100px;
+    width: 100%;
 }
 
 header .user-info h5{
@@ -473,8 +534,8 @@ header .user-info h5{
 }
 
 header .number p{
-    font-size:12px;
-    margin:0 10px 0 10px;
+    font-size:14px;
+    margin:0 8px;
 }
 
 
@@ -488,7 +549,6 @@ header .number p{
 
 /*Estilos para a sessão de cards*/
 section.pra-alugar h2{
-
     margin-top: 108px;
     font-weight: 500;
     font-size: 30px;
@@ -551,6 +611,7 @@ section.pra-alugar .swiper-slide{
 .img-produto img{
     object-fit: cover;
     width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
 section.pra-alugar .swiper .icone-wrapper > img{
@@ -617,6 +678,7 @@ section.pra-alugar .box-cards h6{
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .box-cards h5{ 
@@ -625,6 +687,7 @@ font-style: normal;
 font-weight: 700;
 text-align: center;
 padding: 10px 0;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .box-cards .btn-wrapper{
@@ -811,7 +874,6 @@ footer .direitos a{
     }
 
     section.filtros .btn-wrapper{
-        order: 2;
         justify-content: space-between;
     }
     section.filtros .relevantes{
@@ -826,12 +888,44 @@ footer .direitos a{
     }
 
     header .number,.contact{
-        justify-content: space-around;
-        margin: 10px 0;
+        margin: 10px auto;
+        max-width: 350px;
+        width: 100%;
     }
 
     header .user-info{
         justify-content: center;
+        padding-top: 20px;
     }
+  
     
+    header > .container{
+    top: 60px;
+    left: 0;
+    }
+    header .swiper{
+        height:400px;
+    }
+
+    header .user-info img{
+        max-width:70px;
+    }
+    header .swiper-slide img{
+        height:100%;
+    }
+
+    section.filtros{
+        margin: 180px 0 34px 0; 
+    }
+
+    header .number, .contact{
+        margin:10px;
+    }
+    nav .logo{
+        display: none;
+    }
+    header .swiper-slide{
+        position: relative;
+        height: 100%;
+    }
 }

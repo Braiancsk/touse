@@ -26,6 +26,19 @@ body{
     padding: 30px;
 }
 
+.menu-mobile .btn-wrapper a{
+    text-decoration:none;
+    color:white;
+    background: #13BEBA;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: 0.1 ease-in-out;
+}
+
+.menu-mobile .btn-wrapper a:hover{
+    filter: brightness(90%);
+}
+
 .bg{
     width: 100vw;
     height:100%;
@@ -64,13 +77,6 @@ body{
     transform: translateX(0) !important;
 }
 
-.line-mobile{
-    width: 100%;
-    height: 1px;
-    background: #D9D9D9;
-    margin:0 0 !important;
-}
-
 .menu-mobile .wrapper-input{
     position: relative;
     margin:20px 0;
@@ -90,7 +96,6 @@ body{
     top: 13px;
     left: 5px;  
 }
-
 /*fim dos estilos para o menu-mobile*/
 
 
@@ -283,7 +288,7 @@ header.mapas{
 
 /*Estilos para o nav do site*/
 nav{
-    padding: 12px 0;
+    padding: 23px 0;
     background: #FFFFFF;
 }
 
@@ -628,6 +633,10 @@ section.side-form .btn-wrapper a{
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
     border-radius: 5px;
     margin-top: 20px;
+    transition:0.1s ease-in-out;
+}
+section.side-form .btn-wrapper a:hover{
+    filter: brightness(90%);
 }
 
 section.side-form .btn-wrapper button{
@@ -644,6 +653,11 @@ section.side-form .btn-wrapper button{
     margin-top: 20px;
     width: 100%;
     padding:18px;
+    transition:0.1s ease-in-out;
+}
+
+section.side-form .btn-wrapper button:hover{
+    filter: brightness(90%);
 }
 
 section.side-form .favoritar-wrapper button{
@@ -729,6 +743,7 @@ section.pra-alugar .swiper-slide{
 .img-produto img{
     object-fit: cover;
     width: 100%;
+    border-radius:12px 12px 0 0;
 }
 
 section.pra-alugar .swiper .icone-wrapper > img{
@@ -758,6 +773,7 @@ section.pra-alugar .swiper .box-cards-mobile h6{
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .swiper .box-cards-mobile h5{ 
@@ -765,6 +781,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 700;
 text-align: center;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .swiper{
@@ -795,6 +812,7 @@ section.pra-alugar .box-cards h6{
 font-size: 14px;
 font-style: normal;
 font-weight: 700;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .box-cards h5{ 
@@ -803,6 +821,7 @@ font-style: normal;
 font-weight: 700;
 text-align: center;
 padding: 10px 0;
+color: rgba(0, 0, 0, 0.85);
 }
 
 section.pra-alugar .box-cards .btn-wrapper{
@@ -1002,5 +1021,7 @@ footer .direitos a{
     section.conteudo .button-condominio{
         padding: 8px 12px;
     }
-    
+    nav .logo{
+        display: none;
+    }
 }
