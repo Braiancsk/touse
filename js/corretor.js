@@ -69,3 +69,37 @@ bgModal.addEventListener('click',()=>{
         cards.classList.remove('active-cards');
         footer.style.marginTop = '0px';
 });
+
+
+//scripts para slides de banner
+
+const swipe3 = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    spaceBetween: 10,
+    freeMode: false,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

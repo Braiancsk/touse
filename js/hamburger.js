@@ -6,10 +6,10 @@ let bg = document.querySelector('.bg');
 
 
 burgerBox.addEventListener('click', ()=>{
-  burger.classList.toggle('is-active');
+  burger.style.display = 'none';
   menu.classList.toggle('menu-active');
   
-  if(burger.classList.contains('is-active')){
+  if(burger.style.display == 'none'){
     document.body.style.overflow = 'hidden';
     bg.style.display = 'block';
   }else{
@@ -25,4 +25,5 @@ burgerBox.addEventListener('click', ()=>{
     burger.classList.remove('is-active');
     document.body.style.overflow = 'auto';
     bg.style.display = 'none';
+    burger.style.display = 'block';
   });
