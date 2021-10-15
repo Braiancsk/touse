@@ -10,6 +10,13 @@ body{
     overflow-x: hidden;
 }
 
+.whats_top_menu .buttons .button.avatar{
+    background: url('../images/avatar.jpg') !important;
+    background-size: contain !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+}
+
 .hamburger-wrapper{
     display: none;
     z-index: 999999999;
@@ -241,7 +248,11 @@ header .container .box-pesquisa{
     padding: 20px;
     border-radius: 15px;
     position: relative;
-    z-index: 9999;
+    z-index: 9;
+}
+
+.float-whatsapp:hover > .pulse{
+    color:white !important;
 }
 
 header h1{

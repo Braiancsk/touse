@@ -10,6 +10,16 @@ body{
     background: #E5E5E5;
 }
 
+.float-whatsapp:hover > .pulse{
+    color:white !important;
+}
+.whats_top_menu .buttons .button.avatar{
+    background: url('../images/avatar-exemplo.jpg') !important;
+    background-size: contain !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+}
+
 #colMapa{
     display: none;
 }
