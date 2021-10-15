@@ -440,9 +440,8 @@ section.filtros .btn-wrapper img{
 
 section.filtros .relevantes .form-select{
     max-width: 168px;
-    padding: 9px;
     background-position: right center;
-    font-size:14px;
+    font-size:16px;
 }
 
 section.filtros input[type="radio"]{
@@ -942,6 +941,16 @@ footer .direitos a{
         top:40%;
     }
 
+    .form-check-label{
+        padding: 7px !important;
+    }
+    .relevantes{
+        width: 100%;
+    }
+    section.filtros .relevantes .form-select{
+        padding: 9px 7px;
+        font-size:14px;
+    }
 }
 
 @media screen and (max-width: 320px){
