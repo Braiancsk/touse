@@ -932,236 +932,422 @@
 
    
    
-    <div class="container">
+    
+  
+
+<div class="divide d-md-flex" id="divide">
+
+<!--sessão de cards com filtro-->
+<div class="container ativado">
       
-        <section class="bread-crumb py-4">
-          <div class="container">
-              <a href="index.html">Início</a>
-              <span>/</span>
-              <span><b>Apartamento</b></span>
-  
-              <h4>Alugar em Franca, SP</h4>
-              <h6>80 imóveis encontrados</h6>
-          </div><!--container--> 
-      </section><!--bread-crumb-->
-  
-  
-        <section class="filtros">
-          <div class="container d-md-flex justify-content-between">
-              <div class="btn-wrapper d-flex">
-                  <div class="form-check d-flex justify-content-center align-items-center">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                      <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault4" id="open">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M14.5734 1.60931H1.427C0.989496 1.60931 0.716282 2.0861 0.935925 2.46646L5.0895 9.52717V13.8236C5.0895 14.1397 5.34307 14.395 5.65735 14.395H10.3431C10.6574 14.395 10.9109 14.1397 10.9109 13.8236V9.52717L15.0663 2.46646C15.2841 2.0861 15.0109 1.60931 14.5734 1.60931ZM9.63236 13.1093H6.36807V10.3236H9.63414V13.1093H9.63236ZM9.80378 8.88431L9.63414 9.18074H6.36628L6.19664 8.88431L2.65557 2.89503H13.3449L9.80378 8.88431Z" fill="#13BEBA"/>
-                              </svg>
-                              
-                          <span class="text-white mx-1">Filtros</span>  
-                      </label>
-                    </div>
-  
-  
-                  <div class="form-check d-flex justify-content-center align-items-center" id="mapa">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                      <label autocomplete="off" class="form-check-label d-flex align-items-center mx-3" for="flexRadioDefault5">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33209 0.832887C5.23913 0.833112 5.15213 0.858706 5.07764 0.903113L0.418587 3.56543C0.2628 3.65445 0.166656 3.82012 0.166656 3.99955V14.6662C0.166656 14.8445 0.261536 15.0092 0.415693 15.0987C0.569851 15.1881 0.759975 15.1888 0.914726 15.1003L5.34906 12.5664L10.4341 15.109C10.499 15.1431 10.5723 15.1634 10.6501 15.1659C10.6556 15.1661 10.6611 15.1662 10.6666 15.1662C10.6688 15.1662 10.6709 15.1662 10.6731 15.1662C10.7641 15.165 10.8493 15.1396 10.9224 15.096L15.5814 12.4337C15.7372 12.3447 15.8333 12.179 15.8333 11.9996V1.33289C15.8333 1.15465 15.7384 0.989892 15.5843 0.900431C15.4301 0.81097 15.24 0.810335 15.0853 0.898764L10.6509 3.43267L5.56594 0.890175C5.49734 0.854061 5.41934 0.833421 5.33656 0.832896L5.33332 0.832886L5.33209 0.832887ZM11.1667 13.8046L14.8333 11.7094V2.19448L11.1667 4.28971V13.8046ZM10.1667 4.30857L5.83332 2.1419V11.6905L10.1667 13.8572V4.30857ZM1.16666 4.28971L4.83332 2.19448V11.7094L1.16666 13.8046V4.28971Z" fill="#13BEBA"/>
-                              </svg>
-                              
-                          <span class="text-white mx-1">Mapa</span> 
-                      </label>
-                    </div>
-              </div><!--btn-wrapper-->
-  
-              <div class="relevantes">
-                  <select class="form-select" aria-label="Default select example">
-                      <option selected>Mais relevantes</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-              </div><!--relevantes-->
-          </div><!--container-->
-      </section><!--filtro-->
-  
-  
-  
-  
-          <!--sessão de cards de imovéis-->
-   
-    <section class="pra-alugar active-cards" id="cards">
-      <div class="container">
-       
-        <div class="box-cards">
-            <section class="row desktop flex-wrap justify-content-around">
-        
-                <!--card individual-->
-                <article class="col-md-3">
-                  <a class="text-decoration-none" href="detalhes.html">
-                    <div class="wrapper">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-        
-                        <div class="descricao">
-                            <p>Apartamento</p>
-                            <h6>Alameda Arminda Nogueira</h6>
-                            <p>Vila Santa Cruz - Franca, SP</p>
-                        </div><!--descricao-->
-        
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-        
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-        
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00</p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-        
-                        <h5>Comprar R$ 250.000,00</h5>
-                    </div>
-                  </a>
-                </article><!--col-md-3-->
-        
-                <!--card individual-->
-                <article class="col-md-3">
-                  <a class="text-decoration-none" href="detalhes.html">
-                    <div class="wrapper">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-        
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua Antônio Figueiredo</h6>
-                            <p>Centro - Franca, SP</p>
-                        </div><!--descricao-->
-        
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>72 m²</p>
-                            </div><!--icone-wrapper-->
-        
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>3 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-        
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00</p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-        
-                        <h5>Comprar R$ 250.000,00</h5>
-                    </div>
-                  </a>
-                </article><!--col-md-3-->
-        
-                <!--card individual-->
-                <article class="col-md-3">
-                  <a class="text-decoration-none" href="detalhes.html">
-                    <div class="wrapper">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-        
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua dos anjos</h6>
-                            <p>Piratininga - Franca, SP</p>
-                        </div><!--descricao-->
-        
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-        
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-        
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-        
-                        <h5>Comprar R$ 250.000,00</h5>
-                    </div>
-                  </a>
-                </article><!--col-md-3-->
-        
-                <!--card individual-->
-                <article class="col-md-3">
-                  <a class="text-decoration-none" href="detalhes.html">
-                    <div class="wrapper">
-                        <div class="img-produto">
-                            <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
-                        </div><!--img-produto-->
-        
-                        <div class="descricao">
-                            <p>Casa</p>
-                            <h6>Rua Edna Vasques</h6>
-                            <p>Parque dos Lima - Franca, SP</p>
-                        </div><!--descricao-->
-        
-                        <div class="especs d-flex justify-content-around">
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/regua-icon.svg" alt="icone de régua">
-                                <p>50 m²</p>
-                            </div><!--icone-wrapper-->
-        
-                            <div class="icone-wrapper d-flex">
-                                <img src="images/cama-icon.svg" alt="icone de cama">
-                                <p>2 quartos</p>
-                            </div><!--icone-wrapper-->
-                        </div><!--especs-->
-        
-                        <div class="valores d-flex">
-                            <p>Condomínio: R$ 150,00 </p>
-                            <p>IPTU: R$ 250,00 </p>
-                        </div><!--valores-->
-        
-                        <h5>Comprar R$ 250.000,00</h5>
-                    </div>
-                  </a>
-                </article><!--col-md-3-->
-        
-                  </section><!--row-->
-              </div><!--cards-->
-  
-              </div><!--container-->
-            </section><!--pra-alugar-->
-  <!--fim da sessão de cards-->
+  <section class="bread-crumb py-4">
+    <div class="container">
+        <a href="index.html">Início</a>
+        <span>/</span>
+        <span><b>Apartamento</b></span>
+
+        <h4>Alugar em Franca, SP</h4>
+        <h6>80 imóveis encontrados</h6>
+    </div><!--container--> 
+</section><!--bread-crumb-->
+<section class="cards-filtros">
+  <section class="filtros">
+    <div class="container d-flex justify-content-between">
+        <div class="btn-wrapper d-flex">
+            <div class="form-check d-flex justify-content-center align-items-center">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                <label autocomplete="off" class="form-check-label d-flex align-items-center" for="flexRadioDefault4" id="open">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5734 1.60931H1.427C0.989496 1.60931 0.716282 2.0861 0.935925 2.46646L5.0895 9.52717V13.8236C5.0895 14.1397 5.34307 14.395 5.65735 14.395H10.3431C10.6574 14.395 10.9109 14.1397 10.9109 13.8236V9.52717L15.0663 2.46646C15.2841 2.0861 15.0109 1.60931 14.5734 1.60931ZM9.63236 13.1093H6.36807V10.3236H9.63414V13.1093H9.63236ZM9.80378 8.88431L9.63414 9.18074H6.36628L6.19664 8.88431L2.65557 2.89503H13.3449L9.80378 8.88431Z" fill="#13BEBA"/>
+                        </svg>
+                        
+                    <span class="text-white mx-1">Filtros</span>  
+                </label>
+              </div>
+
+
+            <div class="form-check d-flex justify-content-center align-items-center" id="mapa">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label autocomplete="off" class="form-check-label d-flex align-items-center mx-3" for="flexRadioDefault5">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33209 0.832887C5.23913 0.833112 5.15213 0.858706 5.07764 0.903113L0.418587 3.56543C0.2628 3.65445 0.166656 3.82012 0.166656 3.99955V14.6662C0.166656 14.8445 0.261536 15.0092 0.415693 15.0987C0.569851 15.1881 0.759975 15.1888 0.914726 15.1003L5.34906 12.5664L10.4341 15.109C10.499 15.1431 10.5723 15.1634 10.6501 15.1659C10.6556 15.1661 10.6611 15.1662 10.6666 15.1662C10.6688 15.1662 10.6709 15.1662 10.6731 15.1662C10.7641 15.165 10.8493 15.1396 10.9224 15.096L15.5814 12.4337C15.7372 12.3447 15.8333 12.179 15.8333 11.9996V1.33289C15.8333 1.15465 15.7384 0.989892 15.5843 0.900431C15.4301 0.81097 15.24 0.810335 15.0853 0.898764L10.6509 3.43267L5.56594 0.890175C5.49734 0.854061 5.41934 0.833421 5.33656 0.832896L5.33332 0.832886L5.33209 0.832887ZM11.1667 13.8046L14.8333 11.7094V2.19448L11.1667 4.28971V13.8046ZM10.1667 4.30857L5.83332 2.1419V11.6905L10.1667 13.8572V4.30857ZM1.16666 4.28971L4.83332 2.19448V11.7094L1.16666 13.8046V4.28971Z" fill="#13BEBA"/>
+                        </svg>
+                        
+                    <span class="text-white mx-1">Mapa</span> 
+                </label>
+              </div>
+        </div><!--btn-wrapper-->
+
+<div class="relevantes">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Mais relevantes</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+        </div><!--relevantes-->
     </div><!--container-->
+</section><!--filtro-->
 
+<!--sessão de cards de imovéis-->
+    <section class="pra-alugar active-cards" id="cards">
+        <div class="container">
 
-    <div id="col2">
-      <section class="mapas">
-        <section id="banner-map">
-          <div class="container">
-                <div class="row property-list-area property-list-map-area">
-                    <div class="property-list-map">
-                        <div id="property-listing-map" class="multiple-location-map" style="width:100%;height:545px;"></div>
-                    </div>
-                </div>
+        <div class="box-cards">
+        <section class="row desktop flex-wrap justify-content-center">
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Apartamento</p>
+                    <h6>Alameda Arminda Nogueira</h6>
+                    <p>Vila Santa Cruz - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
             </div>
-        </section>
-      </section><!--mapas-->
-      </div><!--#col2-->
+          </a>
+        </article><!--col-md-3-->
 
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua dos anjos</h6>
+                    <p>Piratininga - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00 </p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Edna Vasques</h6>
+                    <p>Parque dos Lima - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00 </p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          <a class="text-decoration-none" href="detalhes.html">
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Comprar R$ 250.000,00</h5>
+            </div>
+          </a>
+        </article><!--col-md-3-->
+
+          </section><!--row-->
+      </div><!--cards-->
+
+      </div><!--container-->
+    </section><!--pra-alugar-->
+<!--fim da sessão de cards-->
+</div><!--container-->
+</section><!--cards-filtros-->
+  
+ 
+
+<!--coluna do mapa-->
+        <div id="col2" class="map-active">
+              <section class="mapas">
+                <section id="banner-map">
+                  <div class="container">
+                        <div class="row property-list-area property-list-map-area">
+                            <div class="property-list-map">
+                                <div id="property-listing-map" class="multiple-location-map" style="width:100%;height:545px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </section><!--mapas-->
+        </div><!--#col2-->
+
+
+</div><!--divide#-->
 
 
     <footer id="footer-map">
@@ -1237,11 +1423,11 @@
    
   
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/detalhes.js"></script>
-    <script src="js/modal.js"></script>
     <script src="js/jquery-2.1.4.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0ufkROKT174x66dPYaGZPIhAodUwpuc&libraries=places"></script> 
     <script src="js/google-map.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/detalhes.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
