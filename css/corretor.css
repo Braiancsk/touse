@@ -10,6 +10,13 @@ body{
     background: #E5E5E5;
 }
 
+.chat_window{
+    z-index: 9999999999 !important;
+}
+#btwhatsapp{
+    z-index: 99999!important;
+}
+
 .float-whatsapp:hover > .pulse{
     color:white !important;
 }
