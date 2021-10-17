@@ -200,7 +200,7 @@ section.cards-filtros{
 .ativado{
     margin-left: 0 !important;
     margin-right: 0 !important;
-    width: 50%;
+    width: 70%;
 }
 
 #cards{
@@ -232,8 +232,8 @@ section.cards-filtros{
 }
 
 .cardsDivide{
-    width: 40% !important;
-    margin: 20px 3% !important;
+    width: 33% !important;
+    margin: 20px 1% !important;
 }
 
 .gm-style .gm-style-iw-c{
@@ -874,7 +874,7 @@ footer .direitos a{
     }  
     #banner-map{
         height:320px;
-	position:static !important;
+        position: static !important;
     }
 
     section.filtros .btn-wrapper label{
@@ -893,4 +893,17 @@ footer .direitos a{
         max-height: 1045px !important;
     }
 }
+
+@media screen and (max-height: 823px){ 
+    .reset{
+        top:40% !important;
+    }
+}
+
+@media screen and (max-height: 640px){ 
+    .reset{
+        top:47% !important;
+    }
+}
+
 
