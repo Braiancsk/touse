@@ -878,7 +878,7 @@ footer .direitos a{
     }
 
     section.filtros .btn-wrapper label{
-        padding:8px;
+        padding:7px;
     }
 }
 
@@ -894,16 +894,13 @@ footer .direitos a{
     }
 }
 
-@media screen and (max-height: 823px){ 
+@media screen and (min-height: 800px){ 
     .reset{
-        top:40% !important;
+        top:38% !important;
     }
 }
 
-@media screen and (max-height: 640px){ 
-    .reset{
-        top:47% !important;
-    }
-}
+
+
 
 
