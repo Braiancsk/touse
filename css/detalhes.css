@@ -299,7 +299,7 @@ header.mapas{
 
 /*Estilos para o nav do site*/
 nav{
-    padding: 23px 0;
+    padding: 12px 0;
     background: #FFFFFF;
 }
 
@@ -326,7 +326,7 @@ nav .wrapper-input input[type="search"]:focus{
     outline: none;
 }
 
-nav .logo{
+nav .logo > img{
     max-width: 106px;
     height: 39px;
 }

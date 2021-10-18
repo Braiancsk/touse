@@ -188,7 +188,10 @@ nav{
 
 nav .logo{
     max-width: 106px;
-    height: 39px;
+}
+
+nav .logo > img{
+    max-width: 106px;
 }
 
 nav ul{
