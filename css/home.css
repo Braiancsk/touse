@@ -299,7 +299,7 @@ header h1 > b{
 header form.filtrar-pesquisa .box-alugar-comprar{
     border: 1px solid #722ED1;
     border-radius: 14px;
-    max-width: 300px;
+    max-width: 430px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -324,6 +324,20 @@ header .localidades{
     margin-top: 20px;
 }
 
+header .temporada{
+    display:none;
+    border: 1px solid #722ED1;
+    border-radius: 14px;
+    max-width: 581px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+header .temporada .wrapper-single{
+    max-width:90px;
+    margin:0 auto;
+}
+
 header .localidades .input-wrapper{
     padding:10px;
 } 
@@ -339,6 +353,10 @@ header .localidades .input-wrapper input[type=text]{
     border:0;
     color:rgba(0, 0, 0, 0.25);
     padding: 10px;
+}
+
+header .temporada input[type=text]{
+    max-width:130px;
 }
 
 header .localidades .input-wrapper input[type=text]:focus{
@@ -390,6 +408,8 @@ section.pra-alugar p{
     margin:33px auto;
     font-size: 16px;
 }
+
+
 
 section.pra-alugar .title-cards h6{ 
     margin-left: 10px;
@@ -589,6 +609,43 @@ footer .direitos a{
     text-decoration: none;
 }
 
+input[type=date]{
+    border:1px solid #15beba;
+    color:#15beba;
+    max-width:130px;
+}
+input[type=date]:focus{
+    outline-color: #15beba;
+}
+
+
+input[type=date] > i{
+    background-color: #ccc;
+}
+
+/*estilos para o calendario*/
+.qs-controls{
+    background-color: #15beba;
+    color:white;
+}
+.qs-datepicker-container{
+    top:40px !important;
+    color: #15beba !important;
+}
+.qs-day{
+    color: #000000 !important;
+}
+.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover{
+    background: #15beba !important;
+    color:white !important;
+}
+
+/*
+input[type=text]:focus + .qs-hidden{
+    display: block !important;
+}
+*/
+/*fim dos estilos para o calendário*/
 
 /*Fim dos estilos para a sessão de cards*/
 
@@ -675,5 +732,11 @@ footer .direitos a{
 
     .logo{
         order:2;
+    }
+    header form.filtrar-pesquisa .box-alugar-comprar label{
+        padding: 5px 6px;
+    }
+    header .temporada .wrapper-single{
+        margin:0;
     }
 }
