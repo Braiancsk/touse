@@ -398,6 +398,7 @@ section.sobre p{
 
 .text-mobile{
     padding: 30px 20px;
+    display: none;
 }
 
 .text-mobile p{
@@ -607,8 +608,13 @@ footer .direitos a{
     }
     
     section.sobre{
-        height:319px;
+        height:auto;
+        background: #e5e5e5;
+    }
+
+    section.sobre .celular{
         background: linear-gradient(85.72deg, #13BEBA 25.42%, #02DBB6 100%);
+        height:322px;
     }
     .text-mobile{
         display: block;
