@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/detalhes-reserva.css">
     <link rel="stylesheet" href="css/proposta.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -435,50 +435,69 @@
                 <section class="side-form mx-4 d-none d-md-block order-2">
                     <div class="container">
                         <div class="aluguel d-flex justify-content-between">
-                            <h6>Aluguel</h6>
-                            <h6>R$ 5.700</h6>
+                            <h6>R$ 333,00/ noite</h6>
+                            
                         </div><!--aluguel-->
             
                         <div class="wrapper d-flex justify-content-between">
-                            <div class="text-icon d-flex align-items-center">
-                                <span>Condomínio</span>
-                                <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                            <div class="text-icon">
+                                <label for="data-checkin">Check-in</label>
+                               <input type="date" name="data-checkin">
                             </div><!--text-icon-->     
-                            <h5>R$ 1.755</h5>
+                            <div class="text-icon">
+                                <label for="data-checkin">Check-out</label>
+                               <input type="date" name="data-checkin">
+                            </div><!--text-icon-->  
                         </div><!--wrapper-->
             
+                        <div class="wrapper d-flex flex-column align-items-center justify-content-between">
+                            <label for="hospedes">Hóspedes</label>
+                            <div class="wrapper__content d-flex align-items-center">
+                                <span id="subtract" class="custom-circle">-</span>
+                                <input type="text" name="hospedes" id="hospedes" min="1" max="10" placeholder="1" value="1">
+                                <span id="plus" class="custom-circle">+</span>
+                            </div><!--wrapper__content-->
+                        </div><!--wrapper-->
+                        
+                        <div class="aluguel d-flex justify-content-between">
+                            <h6>Resumo</h6>
+                            
+                        </div><!--aluguel-->
+
                         <div class="wrapper d-flex justify-content-between">
                             <div class="text-icon d-flex align-items-center">
-                                <span>IPTU</span>
+                                <span>R$333 x 7 noites</span>
                                 <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                             </div><!--text-icon-->     
-                            <h5>R$ 230</h5>
+                            <h5>R$ 2.330</h5>
                         </div><!--wrapper-->
-            
+                        
                         <div class="wrapper d-flex justify-content-between">
                             <div class="text-icon d-flex align-items-center">
-                                <span>Seguro incêndio</span>
+                                <span>Taxa de limpeza</span>
                                 <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                             </div><!--text-icon-->     
-                            <h5>R$ 73</h5>
+                            <h5>R$ 100</h5>
                         </div><!--wrapper-->
-            
+                       
                         <div class="wrapper d-flex justify-content-between">
-                            <div class="text-icon  d-flex align-items-center">
+                            <div class="text-icon d-flex align-items-center">
                                 <span>Taxa de serviço</span>
                                 <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                             </div><!--text-icon-->     
-                            <h5>R$ 114</h5>
+                            <h5>R$ 100</h5>
                         </div><!--wrapper-->
-            
+
+                        <div class="line my-2"></div>
+
                         <div class="aluguel d-flex justify-content-between">
                             <h6>Total</h6>
                             <h6>R$ 7.872</h6>
                         </div><!--aluguel-->
             
                         <div class="btn-wrapper">
-                            <a class="agendar" href="#">Agendar visita</a>
-                            <button id="propostaButton" class="agendar" href="#">Fazer proposta</button>
+                            <a class="agendar" href="#">Reservar agora</a>
+                            <p class="text-center mt-3">Você ainda não será cobrado</p>
                         </div><!--btn-wrapper-->
             
                         <div class="favoritar-wrapper d-flex justify-content-between align-items-center">
@@ -542,50 +561,69 @@
                     <section class="side-form order-md-2 mx-4 d-md-none">
                         <div class="container">
                             <div class="aluguel d-flex justify-content-between">
-                                <h6>Aluguel</h6>
-                                <h6>R$ 5.700</h6>
+                                <h6>R$ 333,00/ noite</h6>
+                                
                             </div><!--aluguel-->
                 
                             <div class="wrapper d-flex justify-content-between">
-                                <div class="text-icon d-flex align-items-center">
-                                    <span>Condomínio</span>
-                                    <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
+                                <div class="text-icon">
+                                    <label for="data-checkin">Check-in</label>
+                                   <input type="date" name="data-checkin">
                                 </div><!--text-icon-->     
-                                <h5>R$ 1.755</h5>
+                                <div class="text-icon">
+                                    <label for="data-checkin">Check-out</label>
+                                   <input type="date" name="data-checkin">
+                                </div><!--text-icon-->  
                             </div><!--wrapper-->
                 
+                            <div class="wrapper d-flex flex-column align-items-center justify-content-between">
+                                <label for="hospedes">Hóspedes</label>
+                                <div class="wrapper__content d-flex align-items-center">
+                                    <span id="subtract-mobile" class="custom-circle">-</span>
+                                    <input type="text" name="hospedes" id="hospedes-mobile" placeholder="1">
+                                    <span id="plus-mobile" class="custom-circle">+</span>
+                                </div><!--wrapper__content-->
+                            </div><!--wrapper-->
+                            
+                            <div class="aluguel d-flex justify-content-between">
+                                <h6>Resumo</h6>
+                                
+                            </div><!--aluguel-->
+    
                             <div class="wrapper d-flex justify-content-between">
                                 <div class="text-icon d-flex align-items-center">
-                                    <span>IPTU</span>
+                                    <span>R$333 x 7 noites</span>
                                     <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                                 </div><!--text-icon-->     
-                                <h5>R$ 230</h5>
+                                <h5>R$ 2.330</h5>
                             </div><!--wrapper-->
-                
+                            
                             <div class="wrapper d-flex justify-content-between">
                                 <div class="text-icon d-flex align-items-center">
-                                    <span>Seguro incêndio</span>
+                                    <span>Taxa de limpeza</span>
                                     <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                                 </div><!--text-icon-->     
-                                <h5>R$ 73</h5>
+                                <h5>R$ 100</h5>
                             </div><!--wrapper-->
-                
+                           
                             <div class="wrapper d-flex justify-content-between">
-                                <div class="text-icon  d-flex align-items-center">
+                                <div class="text-icon d-flex align-items-center">
                                     <span>Taxa de serviço</span>
                                     <div><img class="mx-1 img-fluid" src="images/icon-aviso.svg" alt="icone"/></div>
                                 </div><!--text-icon-->     
-                                <h5>R$ 114</h5>
+                                <h5>R$ 100</h5>
                             </div><!--wrapper-->
-                
+    
+                            <div class="line my-2"></div>
+    
                             <div class="aluguel d-flex justify-content-between">
                                 <h6>Total</h6>
                                 <h6>R$ 7.872</h6>
                             </div><!--aluguel-->
                 
                             <div class="btn-wrapper">
-                                <a class="agendar" href="#">Agendar visita</a>
-                                <button id="propostaButtonMobile" class="agendar" href="#">Fazer proposta</button>
+                                <a class="agendar" href="#">Reservar agora</a>
+                                <p class="text-center mt-3">Você ainda não será cobrado</p>
                             </div><!--btn-wrapper-->
                 
                             <div class="favoritar-wrapper d-flex justify-content-between align-items-center">
@@ -1093,7 +1131,70 @@
         </div><!--container-->
     </footer>
 
+    <script>
+        let plus = document.getElementById('plus');
+        let subtract = document.getElementById('subtract');
+        let hospedes = document.getElementById('hospedes');
+    
+        function handleHospedes(){
+            subtract.addEventListener('click', ()=>{
+                var newValue = hospedes.value--;  
+                var min = 0;
+                
+                if(hospedes.value == min){
+                    hospedes.innerHTML = min;
+                    console.log('limite');
+                }else{
+                    hospedes.innerHTML = newValue;
+                }
+                console.log(hospedes.value)
+            });
 
+            hospedes.addEventListener('keyup',()=>{
+                console.log(parseInt(hospedes.value));
+            });
+
+         
+
+            plus.addEventListener('click', ()=>{
+                var newPlus = hospedes.value++;
+                hospedes.innerHTML = newPlus;
+                console.log(hospedes.value);
+            });
+        }
+
+        //hospedes mobile
+
+        let plusMobile = document.getElementById('plus-mobile');
+        let subtractMobile = document.getElementById('subtract-mobile');
+        let hospedesMobile = document.getElementById('hospedes-mobile');
+    
+        function handleHospedesMobile(){
+            subtractMobile.addEventListener('click', ()=>{
+                const limit = 1;
+                var newValue = hospedesMobile.value--;
+                if(newValue-1 <= limit){
+                    hospedesMobile.innerHTML = limit;
+                }else{
+                    hospedesMobile.innerHTML = newValue;
+                }
+                console.log(newValue+1)
+            });
+
+            hospedesMobile.addEventListener('keyup',()=>{
+                console.log(parseInt(hospedesMobile.value));
+            });
+
+            plusMobile.addEventListener('click', ()=>{
+                var newPlus = hospedesMobile.value++;
+                hospedesMobile.innerHTML = newPlus;
+                console.log(newPlus+1);
+            });
+        }
+
+        handleHospedes();
+        handleHospedesMobile();
+    </script>
 
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
