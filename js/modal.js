@@ -1,7 +1,9 @@
 let alugarButton = document.getElementById('alugar');
 let comprarButton = document.getElementById('comprar');
+let temporadaButton = document.getElementById('temporada');
 let alugar = document.querySelector('.alugar');
 let comprar = document.querySelector('.comprar');
+let temporada = document.querySelector('.temporada');
 let close = document.getElementById('close');
 let modal = document.getElementById('modal');
 let openModal = document.getElementById('open');
@@ -29,6 +31,15 @@ alugarButton.addEventListener('click',()=>{
         comprar.classList.remove('active');
     }
 });
+
+temporadaButton.addEventListener('click',()=>{
+    if('temporadaButton = checked'){
+        temporada.classList.add('active');
+        alugar.classList.remove('active');
+        comprar.classList.remove('active');
+    }
+});
+
 
 
 //script para abrir modal
@@ -113,3 +124,137 @@ if(janela >= 900){
 }
 
 
+//scripts para os calendarios
+
+const picker = datepicker('#entrada', {
+    // Event callbacks.
+    onSelect: instance => {
+      // Show which date was selected.
+      console.log(instance.dateSelected)
+    },
+    onShow: instance => {
+      console.log('Calendar showing.')
+    },
+    onHide: instance => {
+      console.log('Calendar hidden.')
+    },
+    onMonthChange: instance => {
+      // Show the month of the selected date.
+      console.log(instance.currentMonthName)
+    },
+  
+    // Customizations.
+    formatter: (input, date, instance) => {
+      // This will display the date as `1/1/2019`.
+      input.value = date.toDateString()
+    },
+    position: 'tr', // Top right.
+    startDay: 1, // Calendar week starts on a Monday.
+    customDays: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    customMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    overlayButton: 'Go!',
+    overlayPlaceholder: 'Enter a 4-digit year',
+  
+    // Settings.
+    alwaysShow: true, // Never hide the calendar.
+    dateSelected: new Date(), // Today is selected.
+    maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
+    minDate: new Date(), // June 1st, 2016.
+    startDate: new Date(), // This month.
+    showAllDates: true, // Numbers for leading & trailing days outside the current month will show.
+  
+    // Disabling things.
+    noWeekends: false, // Saturday's and Sunday's will be unselectable.
+    disabler: date => (date.getDay() === 2 && date.getMonth() === 9), // Disabled every Tuesday in October
+    disabledDates: [new Date(2050, 0, 1), new Date(2050, 0, 3)], // Specific disabled dates.
+    disableMobile: false, // Conditionally disabled on mobile devices.
+    disableYearOverlay: true, // Clicking the year or month will *not* bring up the year overlay.
+
+  
+  // ID - be sure to provide a 2nd picker with the same id to create a daterange pair.
+  id: 1
+})
+
+
+  const picker2 = datepicker('#saida', {
+    // Event callbacks.
+    onSelect: instance => {
+      // Show which date was selected.
+      console.log(instance.dateSelected)
+    },
+    onShow: instance => {
+      console.log('Calendar showing.')
+    },
+    onHide: instance => {
+      console.log('Calendar hidden.')
+    },
+    onMonthChange: instance => {
+      // Show the month of the selected date.
+      console.log(instance.currentMonthName)
+    },
+  
+    // Customizations.
+    formatter: (input, date, instance) => {
+      // This will display the date as `1/1/2019`.
+      input.value = date.toDateString()
+    },
+    position: 'tr', // Top right.
+    startDay: 1, // Calendar week starts on a Monday.
+    customDays: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    customMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    overlayButton: 'Go!',
+    overlayPlaceholder: 'Enter a 4-digit year',
+  
+    // Settings.
+    alwaysShow: true, // Never hide the calendar.
+    dateSelected: new Date(), // Today is selected.
+    maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
+    minDate: new Date(2016, 5, 1), // June 1st, 2016.
+    startDate: new Date(), // This month.
+    showAllDates: true, // Numbers for leading & trailing days outside the current month will show.
+  
+    // Disabling things.
+    noWeekends: false, // Saturday's and Sunday's will be unselectable.
+    disabler: date => (date.getDay() === 2 && date.getMonth() === 9), // Disabled every Tuesday in October
+    disabledDates: [new Date(2050, 0, 1), new Date(2050, 0, 3)], // Specific disabled dates.
+    disableMobile: false, // Conditionally disabled on mobile devices.
+    disableYearOverlay: true, // Clicking the year or month will *not* bring up the year overlay.
+
+  // ID - be sure to provide a 2nd picker with the same id to create a daterange pair.
+  id: 1
+  })
+
+  picker.getRange() // { start: <JS date object>, end: <JS date object> }
+  picker2.getRange() // Gives you the same as above!
+
+
+
+  //aumentar numero de hospedes
+  let plus = document.getElementById('plus');
+  let subtract = document.getElementById('subtract');
+  let hospedes = document.getElementById('hospedes');
+
+  function handleHospedes(){
+      subtract.addEventListener('click', ()=>{
+          const limit = 1;
+          var newValue = hospedes.value--;
+          if(hospedes.value <= limit){
+              hospedes.innerHTML = limit;
+          }else{
+              hospedes.innerHTML = newValue;
+          }
+          console.log(newValue-1)
+      });
+
+      hospedes.addEventListener('keyup',()=>{
+          console.log(parseInt(hospedes.value));
+      });
+
+      plus.addEventListener('click', ()=>{
+          var newPlus = hospedes.value++;
+          hospedes.innerHTML = newPlus;
+          console.log(newPlus+1);
+      });
+  }
+
+  handleHospedes();
