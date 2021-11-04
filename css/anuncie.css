@@ -412,7 +412,7 @@ section.diferenciais{
 
 footer{
     margin-top: 108px;
-    background: #E5E5E5;
+    background: #fdfdfd;
     padding: 30px 0;
 }
 
@@ -598,16 +598,22 @@ footer .direitos a{
     }
     .side-form-up{
         position: relative;
-        top:-100px;
+        top:-200px;
     }
     section.diferenciais{
         margin-top: 0;
         padding: 30px 15px;
     }
-    
-}
-@media screen and (max-width: 400px){
-   
 
-   
+    .order-md-0{
+        position: relative;
+        top:-150px;
+    }
+
+}
+@media screen and (max-width: 414px){
+    header{
+        background: url(../images/bg-hero-mobile.webp);
+        background-repeat: no-repeat;
+    }
 }
