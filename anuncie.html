@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/anuncie.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>ToUse</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
+</head>
+<body>
+ <!--menu mobile-->
+ <div class="menu-mobile">
+    <div class="wrapper mb-4">
+      <div class="user d-flex align-items-center">
+        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+        <span class="mx-2" id="btn-user">Usuário</span>
+        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+        </div><!--user-->
+      </div><!--wrapper-->
+  
+  
+    <div class="line mt-4"></div>
+  
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+        <a href="favoritos.html">Favoritos e listas</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+        <a href="historico.html">Visitas agendadas</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+        <a href="canceladas.html">Propostas enviadas</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+        <a href="canceladas.html">Contratos e boletos</a>
+    </div><!--wrapper-->
+  
+    <div class="line"></div>
+  
+  
+    <div class="wrapper my-4">
+        <a href="#" class="sub-nav">Imovéis para alugar</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper my-3">
+        <a href="#" class="sub-nav">Imovéis para comprar</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper d-flex reference my-1">
+        <a href="#" class="sub-nav">Para proprietários</a>
+        <img src="images/arrow-down.svg" alt="icone">
+        <div class="sub-menu d-flex flex-column justify-content-around">
+                    <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
+                    <div class="line"></div>
+                    <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
+                    <div class="line"></div>
+                    <a href="#" class="sub-nav">Meus imovéis</a>
+                  
+        </div><!--submenu-->
+    </div><!--wrapper-->
+  
+    <div class="wrapper my-3">
+        <a href="#" class="sub-nav">Sobre nós</a>
+    </div><!--wrapper-->
+  
+    <div class="line"></div>
+  
+    <div class="wrapper flex-column d-flex my-3">
+        <a class="my-3" href="minhaconta.html">Minha conta</a>
+        <a class="my-3" href="#">Sair da conta</a>
+    </div><!--wrapper-->
+  
+    <div class="line"></div>
+  
+    <div class="wrapper my-3">
+        <a href="#">Ajuda</a>
+    </div><!--wrapper-->
+  
+    <div class="line"></div>
+  
+    <div class="wrapper py-3">
+        <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+    </div><!--wrapper-->
+  </div><!--menu-mobile-->
+  <!--fim do menu mobile-->
+  <div class="bg"></div><!--background para menu mobile ativado-->
+
+    <nav>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-1 d-flex justify-content-between mobile">
+                    <div class="logo">
+                        <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                    </div>
+
+                    <div class="hamburger-wrapper">
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                          </button>
+                    </div><!--hamburger-wrapper-->
+                </div><!--col-3-->
+
+                <div class="col-9 links">
+                    <ul class="d-flex align-items-center">
+                        <div class="wrapper-input mx-1">
+                          <input type="search" name="pesquisar" id="pesquisar" placeholder="Rua, bairro ou código">
+                          <img src="images/lupa.svg" alt="icone"/>
+                        </div>
+                        <div class="reference">
+                            <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <div class="sub-menu-nav d-flex flex-column">
+                                <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Imovéis para alugar</a>
+                                
+                            </div><!--sub-menu-nav-->
+                        </div><!--reference-->
+    
+                        <div class="reference">
+                            <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <div class="sub-menu-nav d-flex flex-column">
+                                <a href="#" class="sub-nav">Imovéis para comprar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Imovéis para comprar</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Imovéis para comprar</a>
+                             
+                            </div><!--sub-menu-nav-->
+                        </div><!--reference-->
+                      
+                        <div class="reference">
+                        <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                        <div class="sub-menu-nav d-flex flex-column">
+                            <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
+                            <div class="line"></div>
+                            <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
+                            <div class="line"></div>
+                            <a href="#" class="sub-nav">Meus imovéis</a>
+                          
+                        </div><!--sub-menu-nav-->
+                        </div><!--reference-->
+    
+                        <div class="reference">
+                            <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                            <div class="sub-menu-nav d-flex flex-column">
+                                <a href="#" class="sub-nav">Indicar imovéis</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Indicar imovéis</a>
+                                <div class="line"></div>
+                                <a href="#" class="sub-nav">Indicar imovéis</a>
+                                
+                            </div><!--sub-menu-nav-->
+                        </div><!--reference-->
+                     
+                        <li><a href="#">Sobre nós</a></li>
+                    </ul>
+                </div><!--col-9-->
+
+                <div class="col-2 d-flex align-items-center">
+                    <div class="ajuda d-flex align-items-center">
+                        <a href="#">Ajuda</a>
+                    <div class="user">
+                        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                        <span id="btn-user">Usuário</span>
+                        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                        <!--sub menu de usuário-->
+                        <div class="sub-menu">
+                            <div class="wrapper d-flex align-items-center">
+                                <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                                <a href="favoritos.html">Favoritos e listas</a>
+                            </div><!--wrapper-->
+
+                            <div class="wrapper d-flex align-items-center">
+                                <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                                <a href="historico.html">Visitas agendadas</a>
+                            </div><!--wrapper-->
+
+                            <div class="wrapper d-flex align-items-center">
+                                <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                                <a href="canceladas.html">Propostas enviadas</a>
+                            </div><!--wrapper-->
+
+                            <div class="wrapper d-flex align-items-center">
+                                <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                                <a href="canceladas.html">Contratos e boletos</a>
+                            </div><!--wrapper-->
+
+                            <div class="line my-1"></div>
+
+                            <div class="wrapper flex-column d-flex">
+                                <a href="minhaconta.html">Minha conta</a>
+                                <a href="#">Sair da conta</a>
+                            </div><!--wrapper-->
+                        </div><!--sub-menu-->
+
+                    </div><!--user-->
+                    </div><!--ajuda-->
+                </div><!--col-3-->
+            </div><!--row-->
+        </div><!--container-->
+    </nav>
+
+    <header>
+   
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 side-form-up d-flex flex-column align-items-end order-md-1">
+                <div class="side-form">
+                    <h1>Anuncie grátis!</h1>
+                    <p class="text-center">Para anunciar seu imóvel insira os dados</p>
+    
+                    <form action="">
+                        <label for="endereco">Endereço</label>
+                        <input class="mb-3" type="text" name="endereco" placeholder="Digite aqui">
+    
+                        <label for="endereco">Nome</label>
+                        <input class="mb-3" type="text" name="endereco" placeholder="Digite aqui">
+    
+                        <label for="endereco">Telefone</label>
+                        <input class="mb-3" type="text" name="endereco" placeholder="Digite aqui">
+                        
+                        <div class="wrapper">
+                            <div class="form-check form-switch mt-3">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label  class="form-check-label" for="flexSwitchCheckDefault">Apartamento</label>
+                              </div>
+                        </div><!--wrapper-->
+                          <div class="wrapper d-flex justify-content-center mt-3">
+                              <input type="submit" value="Anunciar meu imóvel"/>
+                          </div><!--wrapper-->
+                    </form>
+    
+                    <p>Prefere conversar com um atendente?</p>
+                    
+                    <div class="wrapper d-flex align-items-center mb-3">
+                        <img src="images/whatsapp-black.svg" alt="icone">
+                        <a target="_blank" href="https://wa.me/551149507005/?text=Eu%20Gostaria%20de%20agendar%20um%20horário%20">Anuncie pelo WhatsApp</a>
+                    </div><!--wrapper-->
+    
+                    <div class="wrapper d-flex align-items-center">
+                        <img src="images/phone-black.svg" alt="icone">
+                        <span>Fale por telefone (11) 4950 7005</span>
+                    </div><!--wrapper-->
+                </div><!--side-form-->
+            </div><!--col-md-6-->
+
+            <div class="col-md-6 order-md-0">
+                <section class="diferenciais">
+                    <div class="container">
+                        <artcile class="why">
+                            <h5 class="color-title">Por que anunciar no QuintoAndar?</h5>
+            
+                            <div class="wrapper d-flex align-items-center">
+                                <img src="images/check-circle.png" alt="icone">
+                                <div class="wrapper__text mx-2">
+                                    <h6 class="color-title mt-3">Alugue ou venda seu imóvel sem sair de casa</h6>
+                                    <p class="color-text">Do anúncio até a assinatura do contrato, todo o nosso processo é online.</p>
+                                </div><!--wrapper-text-->
+                            </div><!--wrapper-->
+            
+                            <div class="wrapper d-flex align-items-center">
+                                <img src="images/check-circle.png" alt="icone">
+                                <div class="wrapper__text mx-2">
+                                    <h6 class="color-title mt-3">Alugue ou venda até 10x mais rápido</h6>
+                                    <p class="color-text">Cumprimos os prazos combinados, garantindo a agilidade no processo de locação ou venda.</p>
+                                </div><!--wrapper-text-->
+                            </div><!--wrapper-->
+            
+                            <div class="wrapper d-flex align-items-center">
+                                <img src="images/check-circle.png" alt="icone">
+                                <div class="wrapper__text mx-2">
+                                    <h6 class="color-title mt-3">Totalmente livre de burocracia</h6>
+                                    <p class="color-text">Esqueça as filas em cartório! Fazemos tudo de forma 100% digital.</p>
+                                </div><!--wrapper-text-->
+                            </div><!--wrapper-->
+            
+                            <div class="wrapper d-flex align-items-center">
+                                <img src="images/check-circle.png" alt="icone">
+                                <div class="wrapper__text mx-2">
+                                    <h6 class="color-title mt-3">Fazemos fotos profissionais do seu imóvel</h6>
+                                    <p class="color-text">Seu anúncio fica ainda mais atrativo e você recebe apenas propostas de pessoas interessadas.</p>
+                                </div><!--wrapper-text-->
+                            </div><!--wrapper-->
+            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5 class="color-title">Perfeito para quem aluga</h5>
+            
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/receba.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-4">
+                                            <p class="color-text">Receba o dinheiro do aluguel mesmo se o inquilino atrasar.</p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/cobertura.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-4">
+                                            <p class="color-text">Cobertura de até R$ 50 mil contra danos ao final da locação.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/analise.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-4">
+                                            <p class="color-text">Análise de crédito rigorosa das pessoas interessadas.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/alugado.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-1">
+                                            <p class="color-text">Um imóvel alugado a cada 7 minutos.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                </div><!--col-md-6-->
+
+
+                                <div class="col-md-6">
+                                    <h5 class="color-title">Perfeito para quem vende</h5>
+            
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/anuncia.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-2">
+                                            <p class="color-text">Você anuncia seu imóvel e sabe de tudo o que acontece pelo aplicativo.</p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/acessoria.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-2">
+                                            <p class="color-text">Assessoria imobiliária completa, do início ao fim da compra.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/recebe.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-2">
+                                            <p class="color-text">Você recebe o valor da entrada assim que entregar as chaves.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+
+                                    <div class="wrapper d-flex align-items-center mt-5">
+                                        <img class="img-fluid" src="images/temos.svg" alt="icone">
+                                        <div class="wrapper__text mx-2 mt-2">
+                                            <p class="color-text">Temos o processo de venda mais rápido do mercado.
+                                            </p>
+                                        </div><!--wrapper-text-->
+                                    </div><!--wrapper-->
+                                </div><!--col-md-6-->
+                                </div><!--row-->
+                    
+                        </artcile><!--why-->
+                    </div><!--container-->
+                </section><!--diferenciais-->
+            </div><!--col-md-6-->
+
+            
+        </div><!--row-->
+    </div><!--container-->
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                    <img src="images/logo-footer.png" alt="logo da empresa"/>
+                    <div class="social-icons d-flex">
+                        <a href="#"><img src="images/tiktok.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/facebook-icon.svg" alt="icone do facebook"/></a>
+                        <a href="#"><img src="images/twitter-icon.svg" alt="icone do twiiter"/></a>
+                        <a href="#"><img src="images/yt-icon.svg" alt="icone do youtube"/></a>
+                    </div><!--social-icons-->
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Seja ToUse</h3>
+                        <li style="margin-top: 24px;"><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Seja um corretor</a></li>
+                        <li><a href="#">Seja um fotógrafo</a></li>
+                        <li><a href="#">Seja um vistoriador</a></li>
+                        <li><a href="#">Seja um Parceiro de Reparos</a></li>
+                        <li><a href="#">Você é um porteiro?</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="mt-4 col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Saiba mais</h3>
+                        <li style="margin-top: 24px;"><a href="#">Sobre a ToUse</a></li>
+                        <li><a href="#">Regiões atendidas</a></li>
+                        <li><a href="#">Indique um imóvel</a></li>
+                        <li><a href="#">Imobiliárias parceiras</a></li>
+                        <li><a href="#">Saiba sobre a Garantia ToUse</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Manual do Usuário</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 mt-4">
+                    <ul>
+                        <h3>Fale com a gente</h3>
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/email-icon-blue.svg" alt="icone de email"/>
+                            <span>ola@touse.com</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/phone-blue-icon.svg" alt="icone de email"/>
+                            <span>+91 98765 43210</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/endereco-blue-icon.svg" alt="icone de email"/>
+                            <span>Endereço</span>
+                        </div><!--icon-wrapper-->
+                    </ul>
+                </div><!--col-md-3-->
+            </div><!--row-->
+
+            <div class="direitos d-md-flex justify-content-around">
+                <a href="#">Termos e Privacidade | Política de Privacidade</a>
+                <a href="#">Termos e Condições de Uso | Política de Cookies</a>
+                <div class="order-md-1">
+                    <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+                </div>
+            </div><!--direitos-->
+            
+        </div><!--container-->
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+</html>
