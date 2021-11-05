@@ -610,14 +610,14 @@ footer .direitos a{
 }
 
 input[type=date]{
-    border:1px solid #15beba;
     color:#15beba;
-    max-width:130px;
+    max-width:160px;
+    border:0;
+    display:none
 }
 input[type=date]:focus{
     outline-color: #15beba;
 }
-
 
 input[type=date] > i{
     background-color: #ccc;
@@ -640,11 +640,14 @@ input[type=date] > i{
     color:white !important;
 }
 
-/*
 input[type=text]:focus + .qs-hidden{
     display: block !important;
 }
-*/
+.qs-range-middle{
+    background:#13BEBA !important;
+    color:white !important;
+}
+
 /*fim dos estilos para o calendário*/
 
 /*Fim dos estilos para a sessão de cards*/

@@ -28,7 +28,7 @@ const picker = datepicker('#checkin', {
     overlayPlaceholder: 'Enter a 4-digit year',
   
     // Settings.
-    alwaysShow: false, // Never hide the calendar.
+    alwaysShow: true, // Never hide the calendar.
     dateSelected: new Date(), // Today is selected.
     maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
     minDate: new Date(), // June 1st, 2016.
@@ -42,6 +42,8 @@ const picker = datepicker('#checkin', {
     disableMobile: true, // Conditionally disabled on mobile devices.
     disableYearOverlay: true, // Clicking the year or month will *not* bring up the year overlay.
   
+  // ID - be sure to provide a 2nd picker with the same id to create a daterange pair.
+  id: 1
 })
 
   const picker2 = datepicker('#checkout', {
@@ -74,7 +76,7 @@ const picker = datepicker('#checkin', {
     overlayPlaceholder: 'Enter a 4-digit year',
   
     // Settings.
-    alwaysShow: false, // Never hide the calendar.
+    alwaysShow: true, // Never hide the calendar.
     dateSelected: new Date(), // Today is selected.
     maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
     minDate: new Date(2016, 5, 1), // June 1st, 2016.
@@ -82,24 +84,27 @@ const picker = datepicker('#checkin', {
     showAllDates: true, // Numbers for leading & trailing days outside the current month will show.
   
     // Disabling things.
-    noWeekends: true, // Saturday's and Sunday's will be unselectable.
+    noWeekends: false, // Saturday's and Sunday's will be unselectable.
     disabler: date => (date.getDay() === 2 && date.getMonth() === 9), // Disabled every Tuesday in October
     disabledDates: [new Date(2050, 0, 1), new Date(2050, 0, 3)], // Specific disabled dates.
     disableMobile: true, // Conditionally disabled on mobile devices.
     disableYearOverlay: true, // Clicking the year or month will *not* bring up the year overlay.
     
+  // ID - be sure to provide a 2nd picker with the same id to create a daterange pair.
+  id: 1
   })
 
 
 
 const input = document.querySelector('.checkin');
 
-// Toggle the calendar when a button is clicked.
-input.addEventListener('click', e => {
-  // THIS!!! Prevent Datepicker's event handler from hiding the calendar.
-  e.stopPropagation()
 
-  // Toggle the calendar.
-  const isHidden = picker.calendarContainer.classList.contains('qs-hidden')
-  picker[isHidden ? 'show' : 'hide']()
-})
+// // Toggle the calendar when a button is clicked.
+// input.addEventListener('click', e => {
+//   // THIS!!! Prevent Datepicker's event handler from hiding the calendar.
+//   e.stopPropagation()
+
+//   // Toggle the calendar.
+//   const isHidden = picker.calendarContainer.classList.contains('qs-hidden')
+//   picker[isHidden ? 'show' : 'hide']()
+// })
