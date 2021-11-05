@@ -430,6 +430,7 @@ section.depoimentos{
     margin-right: 30px;
     object-fit: contain;
     cursor: pointer;
+    max-width: 64px;
 }
 
 .circle{
@@ -442,6 +443,23 @@ section.depoimentos{
 .quotes{
     margin-bottom: 15px;
 }
+
+.quotes-text{
+    max-width: 290px;
+}
+
+/*estilos para o slide*/
+.slide{
+    overflow: hidden;
+}
+
+.slide-single{
+    transform: translateX(200%);
+}
+
+.active-slide{
+    transform: translateX(0%) !important;
+}
 /*Fim dos estilos para a sessão de depoimentos*/
 
 /*Estilos para a sessão de opcoes*/
@@ -453,7 +471,7 @@ section.depoimentos{
 }
 
 .wrapper__icons{
-    width: 41%;
+    width:44%;
 }
 
 section.opcoes__single p{
@@ -685,11 +703,36 @@ footer .direitos a{
     .center-mobile{
         text-align: center;
     }
+    .logo-mobile{
+        max-width: 68px;
+        margin-top: 5px;
+    }
+    section.depoimentos{
+        position: relative;
+        top: -130px;
+    }
+    section.opcoes{
+        position: relative;
+        top: -110px;
+    }
+    footer{
+        margin-top: 0;
+    }
 
 }
 @media screen and (max-width: 414px){
     header{
         background: url(../images/bg-hero-mobile.webp);
         background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 360px){
+    header{
+        background: url(../images/bg-hero-mobile.webp);
+        background-repeat: no-repeat;
+    }
+    .side-form-up{
+        top:-170px;
     }
 }
