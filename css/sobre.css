@@ -303,13 +303,14 @@ nav .ajuda span{
 
 /*estios para o header do site*/
 header{
-    background:url('../images/hero-bg.png');
+    background:linear-gradient(180deg, rgba(114, 46, 209, 0) 20.21%, #722ED1 112.01%),url('../images/sobre-bg.jpg');
     background-size: cover;
     background-position:center;
     height:50vh;
     width: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 0 0px 71px 71px;
 }
 
 header h1{
@@ -572,7 +573,7 @@ footer .direitos a{
         box-shadow: none;
     }
     section.side-form .favoritar-wrapper button {
-    padding:5px;
+        padding:5px;
     }
     section.descricao-ap label{
         padding:5px;
@@ -622,13 +623,36 @@ footer .direitos a{
     .text{
         display: none;
     }
-}
-@media screen and (max-width: 400px){
-    header{
-        background:url('../images/hero-bg-mobile.png');
-        background-repeat: no-repeat;
-        height:30vh;
+    .celular > img{
+        top:-122px !important;
     }
+}
 
-   
+@media screen and (max-width: 411px){
+    .celular > img{
+        top:-64px !important;
+    }
+    header{
+        height:30vh;
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width: 414px){
+    .celular > img{
+        top:-64px !important;
+    }
+    header{
+        height:30vh;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .celular > img{
+        top:-64px !important;
+    }
+    header{
+        height:30vh;
+        border-radius: 0px;
+    }
 }
