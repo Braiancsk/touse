@@ -471,7 +471,7 @@ footer .direitos a{
 
 }
 
-@media screen and (max-width: 995px){
+@media screen and (max-width: 1199px){
     .hamburger-wrapper{
         display: block;
     }

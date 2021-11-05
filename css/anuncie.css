@@ -547,7 +547,7 @@ footer .direitos a{
 
 }
 
-@media screen and (max-width: 995px){
+@media screen and (max-width: 1199px){
     .hamburger-wrapper{
         display: block;
     }
@@ -566,7 +566,11 @@ footer .direitos a{
         justify-content: space-between;
         align-items: center;
     }
-    
+    .side-form-up{
+        position: relative;
+        top:-200px;
+        align-items: center !important;
+    }
 
 }
 
@@ -678,18 +682,10 @@ footer .direitos a{
     .text{
         display: none;
     }
-    .side-form-up{
-        position: relative;
-        top:-200px;
-    }
+   
     section.diferenciais{
         margin-top: 0;
         padding: 30px 15px;
-    }
-
-    .order-md-0{
-        position: relative;
-        top:-150px;
     }
 
     .mobile-mt{
@@ -736,8 +732,19 @@ footer .direitos a{
         left: 0;
         right: 0;
     }
-
+    .order-xl-0{
+        position: relative;
+        top:-150px;
+    }
+    .side-form-up{
+        position: relative;
+        top:-200px;
+        align-items: center !important;
+    }
+    
 }
+
+
 @media screen and (max-width: 414px){
     header{
         background: url(../images/bg-hero-mobile.webp);

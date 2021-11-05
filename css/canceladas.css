@@ -652,7 +652,7 @@ footer .direitos a{
 /*Fim dos estilos para a sessão de cards*/
 
 /*media queries*/
-@media screen and (max-width: 995px){
+@media screen and (max-width: 1199px){
     .hamburger-wrapper{
         display: block;
     }
