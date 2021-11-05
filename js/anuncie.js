@@ -1,30 +1,59 @@
 let user1 = document.getElementById('user1');
 let user2 = document.getElementById('user2');
 let user3 = document.getElementById('user3');
-let slide = document.querySelectorAll('.slide');
+let slide = document.querySelectorAll('.slide-single');
+
 user1.addEventListener('click', ()=>{
     user1.classList.add('circle');
     user2.classList.remove('circle');
     user3.classList.remove('circle');
+    handleSlide(); 
 });
+
+
 
 user2.addEventListener('click', ()=>{
     user2.classList.add('circle');
     user3.classList.remove('circle');
     user1.classList.remove('circle');
+    handleSlide();
 });
 
 user3.addEventListener('click', ()=>{
     user3.classList.add('circle');
     user2.classList.remove('circle');
     user1.classList.remove('circle');
+    handleSlide();
 });
 
-function handleSlide(){
-    let slides = [slide.length];
-    slideChange = slides.map((event)=>{
-        console.log(event.slideChange);
-    });
+function handleSlide(val){
+    let firstSlide = slide[0];
+    let secondSlide = slide[1];
+    let thirdSlide = slide[2];
+    for(var i = 0; i < slide.length; i++);
+
+    let user = [
+        user1,
+        user2,
+        user3
+    ]
+    
+    if(user[0].classList.contains('circle')){
+        firstSlide.classList.add('active-slide');
+        secondSlide.classList.remove('active-slide');
+        thirdSlide.classList.remove('active-slide');
+        console.log(firstSlide);
+    }else if(user[1].classList.contains('circle')){
+        secondSlide.classList.add('active-slide');
+        firstSlide.classList.remove('active-slide');
+        thirdSlide.classList.remove('active-slide');
+        console.log(secondSlide);
+    }else if(user[2].classList.contains('circle')){
+        thirdSlide.classList.add('active-slide');
+        firstSlide.classList.remove('active-slide');
+        secondSlide.classList.remove('active-slide');
+        console.log(thirdSlide);
+    }
 }
 
 handleSlide();
