@@ -630,6 +630,10 @@ section.side-form input[type=date]{
     max-width:186px;
 }
 
+section.side-form input[type=date]:focus{
+    outline: 1px solid #D9D9D9;
+}
+
 section.side-form input[type=date]:nth-child(2){
     margin-right: 10px;
 }
@@ -1111,6 +1115,9 @@ footer .direitos a{
     .wrapper-mobile{
         width: 100%;
         justify-content:center !important;
+    }
+    input[type=date]{
+        background: transparent;
     }
 
     .text-icon-mobile {
