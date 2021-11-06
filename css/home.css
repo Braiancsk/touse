@@ -613,7 +613,8 @@ input[type=date]{
     color:#15beba;
     max-width:160px;
     border:0;
-    display:none
+    display:none;
+    padding: 5px;
 }
 input[type=date]:focus{
     outline-color: #15beba;
@@ -626,25 +627,31 @@ input[type=date] > i{
 /*estilos para o calendario*/
 .qs-controls{
     background-color: #15beba;
-    color:white;
+    color:rgb(0, 0, 0) !important;
 }
+
 .qs-datepicker-container{
     top:40px !important;
     color: #15beba !important;
 }
 .qs-day{
     color: #000000 !important;
+    font-weight: 400 !important; 
 }
 .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover{
     background: #15beba !important;
     color:white !important;
 }
 
-input[type=text]:focus + .qs-hidden{
+/* input[type=text]:focus + .qs-hidden{
     display: block !important;
-}
+} */
 .qs-range-middle{
-    background:#13BEBA !important;
+    background-color: #13BEBA !important;
+    color:white !important;
+}
+.qs-active, .qs-range-end, .qs-range-start{
+    background-color: #13BEBA !important;
     color:white !important;
 }
 
@@ -741,5 +748,14 @@ input[type=text]:focus + .qs-hidden{
     }
     header .temporada .wrapper-single{
         margin:0;
+    }
+    input[type=date]{
+        display:block;
+    }
+    #checkin,#checkout{
+        display: none !important;
+    }
+    header .temporada input[type=text]{
+        max-width:100%;
     }
 }

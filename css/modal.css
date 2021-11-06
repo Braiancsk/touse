@@ -30,7 +30,7 @@
 /*estilos para o calendario*/
 .qs-controls{
     background-color: transparent;
-    color:white;
+    color:rgb(0, 0, 0) !important;
 }
 .qs-arrow{
     display: none;
@@ -46,7 +46,8 @@
     font-weight: 400;
 }
 .qs-active,.qs-range-end,.qs-range-start{
-    background:#13BEBA !important;
+    background-color: #13BEBA !important;
+    color:white !important;
 }
 
 .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover{
@@ -59,6 +60,7 @@
 
 .qs-range-middle{
     background:#13BEBA !important;
+    color: white !important;
 }
 
 /*fim dos estilos para o calendário*/

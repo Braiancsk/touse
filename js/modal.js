@@ -22,6 +22,7 @@ comprarButton.addEventListener('click',()=>{
     if('comprarButton = checked'){
         comprar.classList.add('active');
         alugar.classList.remove('active');
+        temporada.classList.remove('active');
     }
 });
 

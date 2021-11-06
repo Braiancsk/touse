@@ -1139,9 +1139,9 @@
         function handleHospedes(){
             subtract.addEventListener('click', ()=>{
                 var newValue = hospedes.value--;  
-                var min = 0;
+                var min = 1;
                 
-                if(hospedes.value == min){
+                if(hospedes.value === min){
                     hospedes.innerHTML = min;
                     console.log('limite');
                 }else{
