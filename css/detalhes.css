@@ -997,11 +997,16 @@ footer .direitos a{
         box-shadow: none;
         background:transparent;
     }
+    section.icones-descricao > .container{
+        padding:30px 39px;
+    }
     section.descricao-ap,nav.share{
         background:transparent !important;
     }
     section.side-form .favoritar-wrapper button {
     padding:7px 12px;
+    width: 100%;
+    justify-content:center;
     }
     section.descricao-ap label{
        padding:8px; 
@@ -1042,5 +1047,8 @@ footer .direitos a{
 
     .logo{
         order:2;
+    }
+    .bread-crumb{
+        margin-top: 18px;
     }
 }

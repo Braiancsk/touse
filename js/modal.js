@@ -230,32 +230,28 @@ const picker = datepicker('#entrada', {
 
 
 
-  //aumentar numero de hospedes
   let plus = document.getElementById('plus');
   let subtract = document.getElementById('subtract');
   let hospedes = document.getElementById('hospedes');
 
   function handleHospedes(){
       subtract.addEventListener('click', ()=>{
-          const limit = 1;
-          var newValue = hospedes.value--;
-          if(hospedes.value <= limit){
-              hospedes.innerHTML = limit;
-          }else{
-              hospedes.innerHTML = newValue;
+          var newValue = hospedes.value--;  
+          var min = 1;
+          
+          if(hospedes.value <= min){
+              hospedes.value = min;
+              console.log('limite');
           }
-          console.log(newValue-1)
       });
 
-      hospedes.addEventListener('keyup',()=>{
-          console.log(parseInt(hospedes.value));
-      });
 
       plus.addEventListener('click', ()=>{
-          var newPlus = hospedes.value++;
+          var newPlus = parseInt(hospedes.value++);
           hospedes.innerHTML = newPlus;
-          console.log(newPlus+1);
+       
       });
   }
 
   handleHospedes();
+

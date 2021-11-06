@@ -1037,11 +1037,18 @@ footer .direitos a{
         box-shadow: none;
         background:transparent;
     }
+
+    section.icones-descricao > .container{
+        padding:30px 39px;
+    }
+
     section.descricao-ap,nav.share{
         background:transparent !important;
     }
     section.side-form .favoritar-wrapper button {
     padding:7px 12px;
+    width: 100%;
+    justify-content:center;
     }
     section.descricao-ap label{
        padding:8px; 
@@ -1087,6 +1094,29 @@ footer .direitos a{
     }
     section.side-form input[type=date]{
         max-width:175px;
+    }
+
+    .text-icon-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+  
+    .bread-crumb{
+        margin-top: 18px;
+    }
+    .label-mobile{
+        margin: 20px 0;
+    }
+    .wrapper-mobile{
+        width: 100%;
+        justify-content:center !important;
+    }
+
+    .text-icon-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
     }
     
 }
