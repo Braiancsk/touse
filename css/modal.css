@@ -313,5 +313,9 @@ section.valor-filtro input[type="text"].preco-min:after{
         flex-direction: column;
         align-items: center;
     }
+    .qs-datepicker-container{
+        width: 100% !important;
+        
+    }
    
 }

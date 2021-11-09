@@ -177,6 +177,8 @@ const picker = datepicker('#entrada', {
 })
 
 
+
+
   const picker2 = datepicker('#saida', {
     // Event callbacks.
     onSelect: instance => {
