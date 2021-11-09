@@ -253,7 +253,7 @@
                     
                     <div class="wrapper d-flex align-items-center mb-3">
                         <img src="images/whatsapp-black.svg" alt="icone">
-                        <a target="_blank" href="https://wa.me/551149507005/?text=Eu%20Gostaria%20de%20agendar%20um%20horário%20">Anuncie pelo WhatsApp</a>
+                        <a target="_blank" href="https://wa.me/551149507005/?text=Eu%20Gostaria%20de%20anunciar%20um%20imóvel%20">Anuncie pelo WhatsApp</a>
                     </div><!--wrapper-->
     
                     <div class="wrapper d-flex align-items-center">
@@ -357,7 +357,7 @@
                                         </div><!--wrapper-text-->
                                     </div><!--wrapper-->
 
-                                    <div class="wrapper d-flex align-items-center mt-5">
+                                    <div class="wrapper d-flex align-items-center mt-5"    id="flux">
                                         <img class="img-fluid" src="images/recebe.svg" alt="icone">
                                         <div class="wrapper__text mx-2 mt-2">
                                             <p class="color-text">Você recebe o valor da entrada assim que entregar as chaves.
@@ -670,6 +670,27 @@
             
         </div><!--container-->
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver(visibleHandler, {threshold: 1.0});
+        observer.observe(document.getElementById('flux'));
+        function visibleHandler(entries) {
+        if (entries[0].intersectionRatio >= 1.0) {
+            let sideForm = document.querySelector('.side-form-up');            
+            // The whole element is visible!
+            sideForm.style.top = '0'; 
+            console.log('Working');  
+        } else {
+            // Part of it is scrolled offscreen!
+            let sideForm = document.querySelector('.side-form-up');  
+            sideForm.style.top = '-200px'; 
+        }
+        }
+
+       
+   
+    </script>
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/anuncie.js"></script>
