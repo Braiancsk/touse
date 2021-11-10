@@ -507,7 +507,7 @@ input[type="radio"]:checked + label{
     color:white;
     padding: 8px 35px;
     background: #7D7D7D;
-    border: 1px solid #1890FF;
+    border: 0;
     box-sizing: border-box;
     border-radius: 5px;
     font-size:16px;
@@ -517,7 +517,7 @@ input[type="radio"]:checked + label{
 .proximo{
     background: #13BEBA;
     padding: 8px 35px;
-    border: 1px solid #1890FF;
+    border: 0;
     box-sizing: border-box;
     border-radius: 5px;
     color:white;

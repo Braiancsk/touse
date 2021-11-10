@@ -511,7 +511,7 @@ input[type="radio"]:checked + label{
     color:white;
     padding: 8px 35px;
     background: #7D7D7D;
-    border: 1px solid #1890FF;
+    border: 0;
     box-sizing: border-box;
     border-radius: 5px;
     font-size:16px;
@@ -521,7 +521,7 @@ input[type="radio"]:checked + label{
 .proximo{
     background: #13BEBA;
     padding: 8px 35px;
-    border: 1px solid #1890FF;
+    border: 0;
     box-sizing: border-box;
     border-radius: 5px;
     color:white;
@@ -765,6 +765,24 @@ section.side-form .wrapper-input label{
     width: 100%;
 }
 
+/*Estilos para o calendário*/
+.fc-theme-standard td, .fc-theme-standard th{
+    cursor: pointer;
+}
+.fc .fc-col-header-cell-cushion,.fc .fc-daygrid-day-number{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+}
+.fc .fc-daygrid-day.fc-day-today{
+    background: #13BEBA;
+    color:white; 
+}
+
+.event{
+    background: #722ED1;
+}
+/*Fim dos estilos para o calendário*/
+
 /*media queries*/
 @media screen and (max-width: 1165px){
     header img:nth-child(1){
@@ -804,7 +822,7 @@ section.side-form .wrapper-input label{
 }
 
 @media screen and (max-width: 996px){
-    .SideCard{
+    .SideCard, section.side-form{
         display:none;
     }
 }

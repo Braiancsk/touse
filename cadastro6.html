@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link href='css/main.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/cadastro6.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,7 +264,7 @@
         </section><!--wrapper-->
            
 
-
+        <div id='calendar'></div>
 
 
         <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
@@ -355,32 +356,6 @@
 </section>
 </form>
 
-<script>
-    let box1 = document.getElementById("box1");
-    let box2 = document.getElementById('box2');
-    let box3 = document.getElementById('box3');
-    let boxInput = document.getElementById('box-input');
-    let boxInput2 = document.getElementById('box-input2');
-    let boxInput3 = document.getElementById('box-input3');
-    box1.addEventListener('click',()=>{
-        boxInput.classList.add('box-input-active');
-        boxInput2.classList.remove('box-input-active');
-        boxInput3.classList.remove('box-input-active');
-    });
-
-    box2.addEventListener('click',()=>{
-        boxInput2.classList.add('box-input-active');
-        boxInput.classList.remove('box-input-active');
-        boxInput3.classList.remove('box-input-active');
-    });
-
-    box3.addEventListener('click',()=>{
-        boxInput3.classList.add('box-input-active');
-        boxInput2.classList.remove('box-input-active');
-        boxInput.classList.remove('box-input-active');
-    });
-    
-</script>
 
 
     <footer>
@@ -454,7 +429,10 @@
         </div><!--container-->
     </footer>
 
+    <script src="js/main.min.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
+
 </body>
 </html>
