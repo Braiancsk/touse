@@ -242,7 +242,7 @@ section.cards-filtros{
 }
 
 .cardsDivide{
-    width: 33% !important;
+    width: 40% !important;
     margin: 20px 1% !important;
 }
 
@@ -550,8 +550,9 @@ section.pra-alugar .box-cards article{
     max-width:300px;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    width: 23%;
+    width: 40%;
     margin: 0 1%;
+    margin-top: 30px;
 }
 
 /*estilo para cards do mobile*/
