@@ -653,6 +653,11 @@ transition: 0.1s ease-in-out;
     -ms-text-combine-horizontal: 457px;
 }
 
+
+.icon-alert{
+    display: none;
+}
+
 /*media queries*/
 @media screen and (max-width: 1165px){
     header img:nth-child(1){
@@ -939,6 +944,10 @@ transition: 0.1s ease-in-out;
 
     .ml-5{
         margin-left: 10px;
+    }
+    
+    .icon-alert{
+        display: block;
     }
     
 }
