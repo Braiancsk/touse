@@ -211,8 +211,9 @@ nav .wrapper-input input[type="search"]:focus{
 }
 
 nav .logo > img{
-    max-width: 106px;
-    height: 39px;
+    max-width: 70px;
+    height: 50px;
+    object-fit: contain;
 }
 
 nav ul{
