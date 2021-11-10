@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/cadastro2.css">
+    <link rel="stylesheet" href="css/cadastro3.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -232,87 +232,25 @@
 
     <section class="container container-card d-flex">
     <div class="Card">
-        <h5>ETAPA 2 de 6</h5>
+        <h5>ETAPA 3 de 6</h5>
 
         <section class="wrapper-icon d-flex align-items-center">
             <img src="images/escolha.png" alt="icone"/>
-            <h6 class="fw-bold">Escolha o tipo do anúncio</h6>
+            <h6 class="fw-bold">Quais os custos do imóvel?</h6>
         </section>
 
-        <section class="wrapper d-flex justify-content-between align-items-center mt-3">
-            <div class="wrapper__content mt-3">
-                <h6 class="text-mobile">Quantos quartos?</h6>
-                <p>Incluindo suítes</p>
-            </div><!--wrapper__content-->
-
-            <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
-            </div><!--wrapper__content-->
-        </section><!--wrapper-->
-
-        <section class="wrapper d-flex justify-content-between align-items-center mt-3">
-            <div class="wrapper__content  mt-3">
-                <h6 class="text-mobile">Destes, quantos são suítes?
-                </h6>
-            </div><!--wrapper__content-->
-
-            <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
-            </div><!--wrapper__content-->
-        </section><!--wrapper-->
-
-        <section class="wrapper d-flex justify-content-between align-items-center mt-3">
-            <div class="wrapper__content  mt-3">
-                <h6 class="text-mobile">Quantos banheiros?
-                </h6>
-                <p>Não incluir lavabo e serviço.
-                </p>
-            </div><!--wrapper__content-->
-
-            <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
-            </div><!--wrapper__content-->
-        </section><!--wrapper-->
-
-        <section class="wrapper d-flex justify-content-between align-items-center mt-3">
-            <div class="wrapper__content  mt-3">
-                <h6 class="text-mobile">E garagens?
-                </h6>
-                <p>Vagas de carro.
-                </p>
-            </div><!--wrapper__content-->
-
-            <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
-            </div><!--wrapper__content-->
-        </section><!--wrapper-->
-
-        <div class="line"></div>
-
-        <section class="wrapper d-flex align-items-center">
-            <img src="images/ruler-line.svg" alt="icone">
-            <h6 class="fw-bold mt-2 mx-2">Quantos m²?
-            </h6>
-        </section><!--wrapper-->
+        <p class="text-xs mt-4">Se não souber o valor exato, você pode informar um aproximado e alterar depois.</p>
 
         <section class="wrapper mt-3">
-            <div class="wrapper__content">
-                <label for="metros">Você pode informar um tamanho aproximado e alterar depois.</label>
-                <input class="custom-input" type="text" name="metros" placeholder="m²" required/>
-            </div><!--wrapper__content-->
+            <div class="wrapper__content mt-3">
+                <label for="valor">Valor do condomínio</label>
+                <input class="custom-input" type="text" name="valor" placeholder="R$" />
+            </div><!--wrapper__content-->            
         </section><!--wrapper-->
 
         <section class="wrapper mt-5 mb-3">
             <div class="wrapper__input">
-                <h6 class="fw-bold mb-3">É uma cobertura?
+                <h6 class="fw-bold mb-3">Você paga IPTU?
                 </h6>
 
                 <div class="d-flex">
@@ -326,301 +264,114 @@
                     <div class="form-check">
                         <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
                         <label class="form-check-label" for="flexRadioDefault2">
-                            Não
+                            Imóvel insento
                         </label>
                     </div><!--form-check-->
                 </div><!--flex-->
             </div><!--wrapper__content-->
         </section><!--wrapper-->
 
+       
+        <section class="wrapper mt-5 mb-3">
+            <div class="wrapper__input">
+                <h6 class="fw-bold mb-3">Em quantas parcelas
+                </h6>
 
-        <div class="line"></div>
-
-
-        <section class="wrapper d-flex align-items-center mt-3">
-            <img src="images/fridge-line.svg" alt="icone">
-            <h6 class="fw-bold mt-2 mx-2">Você vai deixar no imóvel alguns desses itens?
-            </h6>
+                <div class="d-flex">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault2" id="flexRadioDefault3" checked/>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            À vista
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault2" id="flexRadioDefault4"/>
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            Parcelado
+                        </label>
+                    </div><!--form-check-->
+                </div><!--flex-->
+            </div><!--wrapper__content-->
         </section><!--wrapper-->
 
-        <section class="d-md-flex justify-content-between align-items-center options mb-3">
+        <section class="wrapper mt-3">
+            <div class="wrapper__content mt-3">
+                <label for="valor">Em quantas parcelas</label>
+                <select class="form-select custom-input-select" aria-label="Default select example">
+                    <option selected>2X</option>
+                    <option value="1">4X</option>
+                    <option value="2">6X</option>
+                    <option value="3">8X</option>
+                    <option value="3">10X</option>
+                    <option value="3">12X</option>
+                    <option value="3">14X</option>
+                  </select>
+            </div><!--wrapper__content-->            
+        </section><!--wrapper-->
 
-            <div class="">
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault">Sofá</label>
-                    </div>
-                </div>
+        <section class="wrapper mt-3">
+            <div class="wrapper__content mt-3">
+                <label for="valor">Qual foi o valor da parcela</label>
+                <input class="custom-input-select" type="text" name="valor" placeholder="R$" />
+            </div><!--wrapper__content-->            
+        </section><!--wrapper-->
 
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault2">Mesa
-                    </label>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault3"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault3">Armário na cozinha
-                    </label>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault4"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault4">Ar condicionado
-                    </label>
-                    </div>
-                </div>
-            </div><!--options-->
-
-            <div class="">
-                
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault5"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault5">Geladeira
-                    </label>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault6"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault6">Armário no quarto
-                    </label>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault7"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault7">Cama
-                    </label>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="form-check form-switch mt-3">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault8"/>
-                    <label class="custom-label" for="flexSwitchCheckDefault8">WI-FI
-                    </label>
-                    </div>
-                </div>
-            </div><!--options-->
-        </section>
-            <div class="line"></div>
-    
-    
-        <section class="mt-5">
-            <h6 class="color-title mb-3">Inquilinos podem ter animais de estimação?
-            </h6>
-            
-            <div class="d-flex">
-                <div class="form-check custom-pl">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault10" id="flexRadioDefault10" checked/>
-                    <label class="form-check-label" for="flexRadioDefault10">
-                        Sim
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault10" id="flexRadioDefault11"/>
-                    <label class="form-check-label" for="flexRadioDefault11">
-                        Não
-                    </label>
-                </div><!--form-check-->
-            </div><!--flex-->
-        </section><!---->
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Tem piscina no condomínio?
-            </h6>
-            
-            <div class="d-flex">
-                <div class="form-check custom-pl">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault12" id="flexRadioDefault12" checked/>
-                    <label class="form-check-label" for="flexRadioDefault12">
-                        Sim
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault12" id="flexRadioDefault13"/>
-                    <label class="form-check-label" for="flexRadioDefault13">
-                        Não
-                    </label>
-                </div><!--form-check-->
-            </div><!--flex-->
-        </section><!---->
-
-        <div class="line"></div>
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Qual o horário da portaria?
-            </h6>
-            
-            <div class="d-flex flex-wrap justify-content-md-start justify-content-between">
-                <div class="form-check custom-pl">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault14" id="hr" checked/>
-                    <label class="form-check-label" for="hr">
-                        24hrs
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault14" id="diurna"/>
-                    <label class="form-check-label" for="diurna">
-                        Diurna
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check pl-0 mt-20">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault14" id="noturna"/>
-                    <label class="form-check-label radio-custom" for="noturna">
-                        Norturna
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check  mt-20">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault14" id="portaria"/>
-                    <label class="form-check-label radio-custom" for="portaria">
-                        Sem portaria
-                    </label>
-                </div><!--form-check-->
-            </div><!--flex-->
-        </section><!---->
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Alguém mora no imóvel atualmente?
-            </h6>
-            
-            <div class="d-flex flex-wrap justify-content-start align-items-center">
-                <div class="form-check custom-pl">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault15" id="inquiloMora" checked/>
-                    <label class="form-check-label custom-input-mobile" for="inquiloMora">
-                        Inquilino mora
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check pl-0 custom-input-mobile">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault15" id="euMoro"/>
-                    <label class="form-check-label ml-5" for="euMoro">
-                        Eu moro
-                    </label>
-                </div><!--form-check-->
-
-                <div class="form-check pl-0 mt-20 mt-mobile">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault15" id="vago"/>
-                    <label class="form-check-label radio-custom" for="vago">
-                        Está vago
-                    </label>
-                </div><!--form-check-->
-            </div><!--flex-->
-        </section><!---->
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Quando estará vago?
-            </h6>
-            
-            <div class="d-flex flex-wrap justify-content-md-start justify-content-between">
-                <div class="">
-                  <input class="date" type="date" name="disponibilidade" required>
-                </div><!--form-check-->       
-            </div><!--flex-->
-        </section><!---->
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Qual o tipo de chave
-            </h6>
-            
-            <div class="d-flex flex-wrap justify-content-md-start justify-content-between">
-                <div class="form-check pl-0 mt-20 custom-pl">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault16" id="chave" checked/>
-                    <label class="form-check-label radio-custom" for="chave">
-                        Chave
-                    </label>
-                </div><!--form-check-->     
-
-                <div class="form-check pl-0 mt-20">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault16" id="senha"/>
-                    <label class="form-check-label radio-custom" for="senha">
-                        Senha
-                    </label>
-                </div><!--form-check-->     
-
-                <div class="form-check pl-0 mt-20">
-                    <input class="form-check-input d-none" type="radio" name="flexRadioDefault16" id="Biometria"/>
-                    <label class="form-check-label radio-custom" for="Biometria">
-                        Biometria
-                    </label>
-                </div><!--form-check-->     
-            </div><!--flex-->
-        </section><!---->
-
-        <section class="mt-5 mb-3">
-            <h6 class="color-title mb-3">Como você prefere que as visitas sejam feitas?
-            </h6>
-            
-            <div class="box-input box-input-active" id="box-input">
-                <div class="form-check">
-                    <input class="form-check-input form-custom" type="radio" name="flexRadioDefault17" id="box1" checked>
-                    <label class="form-check-label" for="box1">
-                        Vou deixar as chaves na portaria
-                    </label>
-                  </div>
-                  <p>As chaves vão ficar disponíveis para o corretor sempre que houver uma visita agendada.</p>
-            </div><!--box-input-->
-            
-            <div class="box-input mt-4" id="box-input2">
-                <div class="form-check">
-                    <input class="form-check-input form-custom" type="radio" name="flexRadioDefault17" id="box2">
-                    <label class="form-check-label" for="box2">
-                        Quero solicitar um porta-chaves
-                    </label>
-                  </div>
-                  <p>Se não há como deixara as chaves na portaria, você pode pedir um porta-chaves para colocar na entrada do seu apartamento.</p>
-            </div><!--box-input-->   
-
-            <div class="box-input mt-4" id="box-input3">
-                <div class="form-check">
-                    <input class="form-check-input form-custom" type="radio" name="flexRadioDefault17" id="box3">
-                    <label class="form-check-label" for="box3">
-                        Eu abrirei o imóvel para os corretores em todas as visitas
-                    </label>
-                  </div>
-                  <p>Você, ou uma outra pessoa autorizada, precisa acompanhar todas as visitas para garantir o acesso dos corretores ao imóvel.</p>
-            </div><!--box-input-->   
-
-            </section> 
-
-            <section class="mt-5 mb-3">
-                <h6 class="color-title mb-3">Qual é a sua relação com o imóvel?
+        <section class="wrapper mt-5 mb-3">
+            <div class="wrapper__input">
+                <h6 class="fw-bold mb-3">Paga algum IPTU adicional?
                 </h6>
-                
-                <div class="d-flex flex-wrap justify-content-md-start justify-content-between">
-                    <div class="form-check pl-0 mt-20 custom-pl">
-                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault18" id="proprietario" checked/>
-                        <label class="form-check-label radio-custom" for="proprietario">
-                            Proprietário
+
+                <p class="text-xs">Ex: garagem, depósito etc.
+                </p>
+
+                <div class="d-flex">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault3" id="flexRadioDefault5" checked/>
+                        <label class="form-check-label" for="flexRadioDefault5">
+                            Sim
                         </label>
-                    </div><!--form-check-->     
+                    </div><!--form-check-->
     
-                    <div class="form-check pl-0 mt-20">
-                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault18" id="terceiro"/>
-                        <label class="form-check-label radio-custom custom-input-mobile" for="terceiro">
-                            Administrador/terceiro
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault3" id="flexRadioDefault6"/>
+                        <label class="form-check-label" for="flexRadioDefault6">
+                            Imóvel insento
                         </label>
-                    </div><!--form-check-->     
-      
+                    </div><!--form-check-->
                 </div><!--flex-->
-            </section><!---->
-            
+            </div><!--wrapper__content-->
+        </section><!--wrapper-->
+
+        <section class="wrapper mt-5 mb-3">
+            <div class="wrapper__input">
+                <h6 class="fw-bold mb-3">Como você pagou da última vez?
+                </h6>
+
+                <div class="d-flex">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault4" id="flexRadioDefault7" checked/>
+                        <label class="form-check-label" for="flexRadioDefault7">
+                            À vista
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault4" id="flexRadioDefault8"/>
+                        <label class="form-check-label" for="flexRadioDefault8">
+                            Parcelado
+                        </label>
+                    </div><!--form-check-->
+                </div><!--flex-->
+            </div><!--wrapper__content-->
+        </section><!--wrapper-->
+
+        <section class="wrapper mt-3">
+            <div class="wrapper__content mt-3">
+                <label for="valor">Qual foi o valor total?</label>
+                <input class="custom-input-select" type="text" name="valor" placeholder="R$" />
+            </div><!--wrapper__content-->            
+        </section><!--wrapper-->
       
             <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
                 <button class="voltar">Voltar</button>

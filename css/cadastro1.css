@@ -419,6 +419,8 @@ footer .direitos p{
     font-style: normal;
     font-weight: 400;
     color: #595959;
+    max-width: 100%;
+    margin-top: 0;
 }
 
 footer .direitos a{

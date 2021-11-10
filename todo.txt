@@ -1,0 +1,2 @@
+Add botão de alerta no cadastro2
+Add funcionalidade de aumentar e diminuir número de hospedes
