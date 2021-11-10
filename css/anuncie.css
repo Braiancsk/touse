@@ -496,6 +496,13 @@ section.opcoes__single p{
     width: 37%;
 }
 
+.mt-custom{
+    margin-top:41px;
+}
+.mt-custom-lg{
+    margin-top: 46px;
+}
+
 /*Fim dos estilos para a sessão de opcoes*/
 /*Estilos para o footer do site*/
 
