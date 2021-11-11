@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   let inicial = document.getElementById('inicial');
   let final = document.getElementById('final');
   let salvar = document.getElementById('salvar');
+  let disponivel = document.getElementById('disponivel');
+  let indisponivel = document.getElementById('indisponivel');
+
+
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     selectable: true,
@@ -18,28 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
     titleFormat: { // will produce something like "Tuesday, September 18, 2018"
       month:'long',
     },
-    eventSources: [
-      // your event source
-      
+    events: [
       {
-        events: function(info, successCallback, failureCallback) {
-          salvar.addEventListener('click',()=>{
-           console.log('clicado');
-           
-             calendar.addEvent({
-              title  : 'event1',
-              start  : '2021-11-11',
-              end    : '2021-11-23',
-              display: 'background',
-             })
-
-           
-          });
-        },
-        color: 'yellow',   // an option!
-        textColor: 'black' // an option!
-      }
-      // any other sources...
+        title  : 'R$ 100',
+        start  : '2021-11-11',
+        resourceEditable:'true',
+        editable:'true',
+      },
+      {
+        title  : 'R$ 150',
+        start  : '2021-11-21',
+        end    : '2021-11-28',
+        resourceEditable:'true',
+        editable:'true',
+      },
     ],
 
     eventDidMount: function(info) {
@@ -60,7 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
       // alert('selected ' + info.startStr + ' to ' + info.endStr);
       inicial.value = info.startStr;
       final.value = info.endStr;
-      
+      disponivel.addEventListener('change', ()=>{
+        
+      });
+    
+    },
+    function( changeInfo ){
+      alert('change info');
     },
     
   

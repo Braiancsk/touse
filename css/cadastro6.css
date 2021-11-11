@@ -842,9 +842,9 @@ section.side-form .wrapper-input label{
     background: #722ED1;
     color:white;
 }
-.fc-button-group, .fc-button-primary{
+/* .fc-button-group, .fc-button-primary{
     display: none !important;
-}
+} */
 
 /*Fim dos estilos para o calendário*/
 
