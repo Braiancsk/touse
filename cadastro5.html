@@ -241,7 +241,7 @@
                 </h6>
             </div>
 
-            <div class="icon-alert">
+            <div class="icon-alert" id="info-6">
                 <img src="images/information.svg" alt="icone de informação">
             </div>
         </section><!--wrapper-->
@@ -469,5 +469,23 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        let infoMessage6 = document.getElementById('info-6');
+ 
+        infoMessage6.addEventListener('click', ()=>{
+            Swal.fire({
+                icon: 'info',
+                title: `Exclusividade ToUse`
+                ,
+                text: `Além de contar com uma taxa de administração menor, anúncios exclusivos costumam alugar mais rápido que não exclusivos.
+
+                Se você mudar de ideia após o cadastro, poderá alterar o modelo de exclusividade antes de receber a sua primeira visita.
+                `,
+                
+            });
+        });
+      
+        </script>
 </body>
 </html>

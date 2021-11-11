@@ -22,6 +22,28 @@ body{
 
 /*fim das classes utilitarias*/
 
+/* estilos para modal de alerta */
+.swal2-title{
+    font-size: 16px !important;
+}
+.swal2-html-container{
+    font-size: 13px !important;
+}
+.swal2-styled.swal2-confirm{
+    background-color:#722ED1 !important;
+    width: 200px;
+}
+
+.swal2-icon.swal2-info{
+    width: 40px !important;
+    height: 40px !important;
+}
+.swal2-icon .swal2-icon-content{
+    font-size: 40px !important;
+}
+
+/*fim dos estilos para modal de alerta */
+
 /*estilos para o menu-mobile*/
 .menu-mobile{
     position:absolute;

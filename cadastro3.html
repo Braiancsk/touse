@@ -240,7 +240,7 @@
                 <h6 class="fw-bold">Quais os custos do imóvel?</h6>
             </div>
 
-            <div class="icon-alert">
+            <div class="icon-alert" id="info-4">
                 <img src="images/information.svg" alt="icone de informação">
             </div>
         </section>
@@ -262,7 +262,7 @@
                         </h6>
                     </div>
         
-                    <div class="icon-alert">
+                    <div class="icon-alert" id="info-5">
                         <img src="images/information.svg" alt="icone de informação">
                     </div>
                 </section><!--wrapper-->
@@ -531,6 +531,37 @@
     </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/hamburger.js"></script>
+    <script>
+        let infoMessage4 = document.getElementById('info-4');
+        let infoMessage5 = document.getElementById('info-5');
+        infoMessage4.addEventListener('click', ()=>{
+            Swal.fire({
+                icon: 'info',
+                title: `Sobre o condomíno`
+                ,
+                text: `Para aluguel: Informe apenas o valor referente às despesas ordinárias do condomínio, ou seja, custos rotineiros. Não inclua despesas extraordinárias, como manutenção e obras feitas no edifício, pois essas são de responsabilidade do proprietário.
+                      
+                        Para venda: Informe o valor cheio do condomínio, considerando ordinárias e extraordinárias
+                `,
+                
+            });
+        });
+        
+        infoMessage5.addEventListener('click', ()=>{
+            Swal.fire({
+                icon: 'info',
+                title: `Veja como funciona o pagamento
+                        do IPTU
+                        `
+                ,
+                text: `Para aluguel: O pagamento do IPTU é responsabilidade do proprietário. O valor do imposto é repassado para o inquilino, que realiza o pagamento em 12 vezes. Você receberá o repasse junto com o aluguel todo dia 12.
+
+                        Para venda: O imóvel deve estar com o pagamento do IPTU em dia até a data da venda do imóvel.
+                `,
+                
+            });
+        });</script>
 </body>
 </html>

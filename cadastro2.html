@@ -259,9 +259,9 @@
             </div><!--wrapper__content-->
 
             <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
+                <span id="subtract2" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
+                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes2" placeholder="1" value="1">
+                <span id="plus2" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
             </div><!--wrapper__content-->
         </section><!--wrapper-->
 
@@ -274,9 +274,9 @@
             </div><!--wrapper__content-->
 
             <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
+                <span id="subtract3" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
+                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes3" placeholder="1" value="1">
+                <span id="plus3" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
             </div><!--wrapper__content-->
         </section><!--wrapper-->
 
@@ -289,9 +289,9 @@
             </div><!--wrapper__content-->
 
             <div class="wrapper__content d-flex align-items-center">
-                <span id="subtract" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
-                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes" placeholder="1" value="1">
-                <span id="plus" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
+                <span id="subtract4" class="custom-circle  d-flex align-items-center justify-content-center">-</span>
+                   <input type="text" class="hospedes-input" name="hospedes" id="hospedes4" placeholder="1" value="1" min="1">
+                <span id="plus4" class="custom-circle  d-flex align-items-center justify-content-center">+</span>
             </div><!--wrapper__content-->
         </section><!--wrapper-->
 
@@ -304,7 +304,7 @@
                 </h6>
             </div>
 
-            <div class="icon-alert">
+            <div class="icon-alert" id="info-1">
                 <img src="images/information.svg" alt="icone de informação">
             </div>
         </section><!--wrapper-->
@@ -350,7 +350,7 @@
                 </h6>
             </div>
 
-            <div class="icon-alert">
+            <div class="icon-alert" id="info-2">
                 <img src="images/information.svg" alt="icone de informação">
             </div>
         </section><!--wrapper-->
@@ -436,7 +436,7 @@
                     </h6>
                 </div>
     
-                <div class="icon-alert">
+                <div class="icon-alert" id="info-3">
                     <img src="images/information.svg" alt="icone de informação">
                 </div>
             </section><!--wrapper-->
@@ -667,7 +667,7 @@
                       </h6>
                   </div>
                   <p>Consideramos um imóvel como mobiliado se você vai deixar no imóvel ao menos 4 dos seguintes itens: armários na cozinha, armários no quarto, geladeira, cama, sofá, mesas e cadeiras.
-                    Lembre-se: O contrato do QuintoAndar é de longo prazo e a nossa proteção não cobre itens de decoração e utensílios domésticos.</p>
+                    Lembre-se: O contrato da ToUse é de longo prazo e a nossa proteção não cobre itens de decoração e utensílios domésticos.</p>
               </div><!--side-card -->
 
               <div class="SideCard aceite">
@@ -684,33 +684,6 @@
         
 
 </form>
-
-<script>
-    let box1 = document.getElementById("box1");
-    let box2 = document.getElementById('box2');
-    let box3 = document.getElementById('box3');
-    let boxInput = document.getElementById('box-input');
-    let boxInput2 = document.getElementById('box-input2');
-    let boxInput3 = document.getElementById('box-input3');
-    box1.addEventListener('click',()=>{
-        boxInput.classList.add('box-input-active');
-        boxInput2.classList.remove('box-input-active');
-        boxInput3.classList.remove('box-input-active');
-    });
-
-    box2.addEventListener('click',()=>{
-        boxInput2.classList.add('box-input-active');
-        boxInput.classList.remove('box-input-active');
-        boxInput3.classList.remove('box-input-active');
-    });
-
-    box3.addEventListener('click',()=>{
-        boxInput3.classList.add('box-input-active');
-        boxInput2.classList.remove('box-input-active');
-        boxInput.classList.remove('box-input-active');
-    });
-    
-</script>
 
 
     <footer>
@@ -786,5 +759,8 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/cadastro2.js"></script>
 </body>
 </html>
