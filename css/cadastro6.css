@@ -20,6 +20,37 @@ body{
     font-weight: 700;
 }
 
+.dollar-wrapper,.dollar-wrapper-top{
+    position: relative;
+}
+
+.dollar-wrapper > input[type="text"]{
+    padding: 8px 33px;
+}
+
+.dollar-wrapper:after{
+    content: "R$";
+    font-size: 16px;
+    color:#8C8C8C;
+    position: absolute;
+    top:50px;
+    left:13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dollar-wrapper-top > input[type="text"]{
+    padding: 8px 33px;
+}
+
+.dollar-wrapper-top:after{
+    content: "R$";
+    font-size: 16px;
+    color:#8C8C8C;
+    position: absolute;
+    top:30px;
+    left:13px;
+    font-family: 'Roboto', sans-serif;
+}
 /*fim das classes utilitarias*/
 
 /* estilos para modal de alerta */
@@ -796,13 +827,25 @@ section.side-form .wrapper-input label{
     color: rgba(0, 0, 0, 0.85);
 }
 .fc .fc-daygrid-day.fc-day-today{
-    background: #13BEBA;
+    background: #13bebb00;
     color:white; 
 }
 
 .event{
     background: #722ED1;
 }
+
+.indisponivel{
+    background-color: red;
+}
+.fc .fc-daygrid-day-bg .fc-highlight{
+    background: #722ED1;
+    color:white;
+}
+.fc-button-group, .fc-button-primary{
+    display: none !important;
+}
+
 /*Fim dos estilos para o calendário*/
 
 /*media queries*/

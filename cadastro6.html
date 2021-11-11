@@ -228,7 +228,7 @@
         </div><!--container-->
     </header>
 
-    <form>
+ 
 
 
     <section class="container container-card d-flex">
@@ -247,10 +247,10 @@
         </p>
 
         <section class="wrapper">
-            <div class="wrapper__content mt-3">
-                <label for="valor">Preço por noite</label>
-                <input class="custom-input" type="text" name="valor" placeholder="R$ 120,00" />
-            </div><!--wrapper__content-->            
+            <div class="wrapper__content mt-3 dollar-wrapper-top">
+                <label for="valor">Valor por noite</label>
+                <input class="custom-input" type="text" name="valor" placeholder="0"/>
+            </div><!--wrapper__content-->              
         </section><!--wrapper-->
 
        
@@ -284,12 +284,14 @@
 
                 <div class="wrapper__content">
                     <label for="data-inicial">Data inicial</label>
-                    <input class="date" type="date" name="data-inicial">
+                    <input type="text" name="" id="inicial" class="custom-input">
+                    <input class="date d-none" type="date" name="data-inicial">
                 </div><!--wrapper__content-->
 
                 <div style="margin-left: 10px;" class="wrapper__content">
-                    <label for="data-inicial">Data inicial</label>
-                    <input class="date"  type="date" name="data-inicial">
+                    <label for="data-inicial">Data final</label>
+                    <input type="text" name="" id="final" class="custom-input">
+                    <input class="date d-none"  type="date" name="data-inicial">
                 </div><!--wrapper__content-->
 
             </div><!--wrapper-->
@@ -317,16 +319,16 @@
             </h6>
 
             <section class="wrapper">
-                <div class="wrapper__content mt-3">
-                    <label for="valor">Preço por noite</label>
-                    <input class="custom-input" type="text" name="valor" placeholder="R$ 120,00" />
-                </div><!--wrapper__content-->            
+                <div class="wrapper__content mt-3 dollar-wrapper">
+                    <label for="valor">Valor por noite</label>
+                    <input id="value-noite" class="custom-input" type="text" name="valor" placeholder="0"/>
+                </div><!--wrapper__content-->                  
             </section><!--wrapper-->
 
             <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
                 <button class="cancelar">Cancelar</button>
     
-                <button style="margin-left: 10px;" class="salvar">Salvar</button>
+                <button id="salvar" style="margin-left: 10px;" class="salvar">Salvar</button>
             </div>
 
         </section><!--side-form-->
@@ -334,7 +336,7 @@
  
 
 </section>
-</form>
+
 
 
 
