@@ -244,7 +244,7 @@
         <section class="wrapper mt-3">
             <div class="wrapper__content mt-3 dollar-wrapper">
                 <label for="valor">Valor do anúncio para venda</label>
-                <input class="custom-input" type="text" name="valor" placeholder="0"/>
+                <input id="value" class="custom-input" type="text" name="valor" placeholder="0"/>
             </div><!--wrapper__content-->            
         </section><!--wrapper-->
 
@@ -260,17 +260,17 @@
         <section class="box-valor">
             <div class="box-valor__content line-dotted d-flex align-items-center justify-content-between">
                 <h6>Valor do imóvel</h6>
-                <h6>R$ 100.000,00</h6>
+                <h6 id="imovel-value">0</h6>
             </div><!--box-valor__content-->
 
             <div class="box-valor__content pt-4 d-flex align-items-center justify-content-between">
                 <h6>Taxa 6% To Use</h6>
-                <h6>R$ 6.000,00</h6>
+                <h6 id="percent-value">6.000,00</h6>
             </div><!--box-valor__content-->
 
             <div class="box-valor__content pt-2 d-flex align-items-center justify-content-between">
                 <h6>Valor a receber</h6>
-                <h6>R$ 94.000,00</h6>
+                <h6 id="total-value">94.000,00</h6>
             </div><!--box-valor__content-->
 
         </section><!--box-valor-->
@@ -389,5 +389,6 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/cadastro4.js"></script>
 </body>
 </html>

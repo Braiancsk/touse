@@ -38,6 +38,39 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+#imovel-value,#percent-value,#total-value{
+    position: relative;
+}
+#imovel-value:after{
+    content: "R$";
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    top:0;
+    left:-20px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#percent-value:after{
+    content: "R$";
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    top:0;
+    left:-20px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#total-value:after{
+    content: "R$";
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    top:0;
+    left:-20px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
 /*fim das classes utilitarias*/
 
 /*estilos para o menu-mobile*/
