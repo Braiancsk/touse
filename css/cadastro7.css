@@ -378,11 +378,15 @@ nav .ajuda span{
     margin-left: 10px;
 }
 
-p{
+.SideCard p{
     max-width:293px;
     font-size: 14px;
     color:#434343;
     margin-top: 18px;
+}
+
+.text-xs{
+    font-size: 12px;
 }
 /*Fim dos estilos para o sidecard*/
 
@@ -431,13 +435,15 @@ footer .direitos a{
     text-decoration: none;
 }
 
+/*estilos para o card*/
 .Card{
     background: #FFFFFF;
     box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    max-width:734px;
     padding: 30px;
     color: rgba(0, 0, 0, 0.85);
+    max-width:764px;
+    width: 100%;
 }
 
 .container-card{
@@ -457,7 +463,7 @@ footer .direitos a{
 label.form-check-label{
     filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.016));
     background: #ffffff;
-    padding: 8px 16px;
+    padding: 8px 36px;
     color:#13BEBA;
     font-size:16px;
     border-radius: 25px;
@@ -493,7 +499,6 @@ input[type="radio"]:checked + label{
     color:#8C8C8C;
 }
 
-
 .wrapper-input-custom .custom-field:focus{
     outline: #D9D9D9;
 }
@@ -524,6 +529,191 @@ input[type="radio"]:checked + label{
     display: block;
 }
 
+
+span.custom-circle{
+    filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.016));
+    background:#13BEBA;
+    color:white;
+    padding: 9px 16.5px;
+    border-radius:50%;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=text]{
+    padding: 8px 12px;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    max-width:73px;
+    height:40px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    color:#8C8C8C;
+}
+input[type=text]:focus{
+    outline-color:#D9D9D9;
+}
+
+.wrapper__content p{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.wrapper__content label{
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+}
+.wrapper__content .custom-input{
+    padding:8px 12px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width:300px;
+    width: 100%;
+    display:block;
+    margin: 0;
+    text-align: left;
+    color:#8C8C8C;
+}
+
+.wrapper__input h6{
+    font-weight: 700;
+}
+.form-select:focus{
+    box-shadow: 0 0 0 0.25rem #d9d9d9ab;
+}
+
+.wrapper__content .custom-input-select{
+    padding:8px 12px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width:380px;
+    width: 100%;
+    display:block;
+    margin: 0;
+    text-align: left;
+    color:#8C8C8C;
+}
+
+.wrapper__input label{
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+}
+
+.custom-pl{
+    padding-left: 0 !important;
+}
+
+.options{
+    max-width: 450px;
+}
+
+.date{
+    color:#8C8C8C;
+    padding: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.box-input{
+border: 1px solid #D9D9D9;
+box-sizing: border-box;
+border-radius: 10px;
+padding: 20px;
+transition: 0.1s ease-in-out;
+}
+
+.box-input-active{
+    background: #F5F6FA !important;
+}
+
+.box-input label{
+    color: rgba(0, 0, 0, 0.85);
+    padding: 0;
+    background:0;
+    border: 0;
+    border-radius: 0;
+}
+
+.form-custom:checked + label{
+    background:0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: rgba(0, 0, 0, 0.85) !important;
+}
+
+
+.form-custom p{
+    -ms-text-combine-horizontal: 457px;
+}
+
+
+.icon-alert{
+    display: none;
+}
+
+.box-valor{
+    padding: 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+.box-valor__content h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.line-dotted{
+    border-bottom: 1px dashed #D9D9D9;
+    padding-bottom: 10px;
+}
+
+.title-sm{
+    color: rgba(0, 0, 0, 0.85);
+    font-size:14px;
+}
+
+.box-input p{
+    max-width:407px;
+    color:#434343;
+    margin-top: 10px;
+}
+
+.box-input span{
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size:14px;
+}
+
+.box-input h6.label-taxa{
+    color:white;
+    font-size:10px;
+    background: #13BEBA;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.custom-date{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: rgba(0, 0, 0, 0.25);
+    max-width:186px;
+    width: 100%;
+}
+
+.wrapper-date + .wrapper-date{
+    margin-left: 10px;
+}
 
 /*media queries*/
 @media screen and (max-width: 1165px){
@@ -774,15 +964,54 @@ input[type="radio"]:checked + label{
     .custom-w{
         width: 100%;
     }
-    .custom-pl{
-        padding-left: 0 !important;
-    }
+    
     .wrapper-input-custom .custom-field{
         max-width: 100%;
     }
-    .Card{
-        margin: 0 auto;
+
+    .radio-custom{
+        padding: 8px 20px !important;
     }
+    .pl-0{
+        padding-left: 0 !important;
+    }
+    .mt-20{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .text-mobile{
+        font-size: 14px;
+        max-width:130px;
+    }
+ 
+    span.custom-circle{
+        width: 30px;
+        height:30px;
+        padding: 5px 11px;
+    }
+
+    .custom-input-mobile{
+        padding:8px 13px !important;
+    }
+
+    .mt-mobile{
+        margin-top: 0;
+    }
+
+    .ml-5{
+        margin-left: 10px;
+    }
+    
+    .icon-alert{
+        display: block;
+    }
+    
+    .wrapper-date + .wrapper-date{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
 }
 
 
@@ -802,6 +1031,13 @@ input[type="radio"]:checked + label{
     }
     .apartamento{
         padding: 8px 16px !important;
+    }
+    .pl-0{
+        padding-left: 0 !important;
+    }
+    .mt-20{
+        margin-top: 20px;
+        display: block;
     }
     
 }
@@ -825,5 +1061,18 @@ input[type="radio"]:checked + label{
     .apartamento{
         padding: 8px 16px !important;
     }
-    
+    .pl-0{
+        padding-left: 0 !important;
+    }
+    .mt-20{
+        margin-top: 20px;
+        display: block;
+    }
+    label.form-check-label{
+        font-size: 11px !important;
+    }
+    .voltar,.proximo{
+        padding: 8px 20px !important;
+    }
+
 }

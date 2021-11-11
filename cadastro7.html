@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/cadastro1.css">
+    <link rel="stylesheet" href="css/cadastro7.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -227,134 +227,83 @@
         </div><!--container-->
     </header>
 
+    <form>
+
+
     <section class="container container-card d-flex">
     <div class="Card">
-        <h5>ETAPA 1 de 6</h5>
 
-        <div class="wrapper-icon d-flex align-items-center">
-            <img src="images/tipo.png" alt="icone"/>
-            <h6 class="fw-bold">Que tipo de imóvel você quer anunciar?</h6>
-        </div>
-
-        <div class="wrapper d-flex flex-md-row flex-column align-items-center mt-4">
-
-        <div class="custom-w d-flex align-items-center justify-content-between justify-content-md-start">
-        <div class="form-check custom-pl">
-        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
-        <label class="form-check-label apartamento" for="flexRadioDefault1">
-            Apartamento
-        </label>
-        </div>
-
-        <div class="form-check custom-pl">
-        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-        <label class="form-check-label studio" for="flexRadioDefault2">
-            Studio / Kitnet
-        </label>
-        </div>
-        </div>    
-      
-
-        <div class="custom-w d-flex align-items-center justify-content-between justify-content-md-start">
-        <div class="form-check custom-pl">
-        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
-        <label class="form-check-label casa" for="flexRadioDefault3">
-            Casa
-        </label>
-        </div>
-
-        <div class="form-check custom-pl">
-        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault4"/>
-        <label class="form-check-label condominio" for="flexRadioDefault4">
-            Casa em condomínio
-        </label>
-        </div>
-        </div>
+        <section class="wrapper d-flex align-items-center justify-content-between">
         
-        </div>
+                <h5 class="fw-bold mt-2">Um fotógrafo profissional da To Use irá até o seu imóvel para tirar as fotos para o anúncio. As sessões duram em média 30 minutos.
+                </h5>
+        
+        </section><!--wrapper-->
 
-        <div class="wrapper-icon d-flex align-items-center">
-            <img src="images/escolha.png" alt="icone"/>
-            <h6 class="fw-bold">Escolha o tipo do anúncio</h6>
-        </div>
+        <section class="wrapper">
+            <div class="wrapper__content mt-3">
+                <h5 class="title-sm">Por quanto você quer alugar?
+                </h5>
+                <label for="valor">Anunciamos entre R$ 500,00 até R$ 15.000,00</label>
+                <input class="custom-input" type="text" name="valor" placeholder="R$ 0,00" />
+            </div><!--wrapper__content-->            
+        </section><!--wrapper-->
 
-        <div class="wrapper">
-            <div class="form-check form-switch mt-3">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-            <label class="custom-label" for="flexSwitchCheckDefault">Aluguel</label>
-            </div>
-        </div>
+       
+        <section class="mt-5 mb-5">
+        
+            <div class="box-input box-input-active" id="box-input">
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input form-custom" type="radio" name="flexRadioDefault17" id="box1" checked>
+                    <label class="form-check-label mt-1 mx-1" for="box1">
+                        Com horário marcado: alguém deve acompanhar o fotógrafo
+                    </label>
+                  </div>    
+                  <p class="text-xs">O fotógrafo vai ao imóvel no dia e horário marcado</p>
+                  
+            </div><!--box-input-->
+            
+        </section>
 
-        <div class="wrapper">
-            <div class="form-check form-switch mt-3">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-            <label class="custom-label" for="flexSwitchCheckDefault">Venda</label>
-            </div>
-        </div>
+        <section class="mt-5 mb-5">
+            <h6 class="fw-bold mt-2">Escolha a data e o horário
+            </h6>
+           
+            
+            <div class="d-md-flex align-items-center mt-4">
+                <div class="wrapper-date d-flex flex-column">
+                    <label for="data-fotografo">Data</label>
+                    <input class="custom-date" type="date" name="data-fotografo" />
+                </div><!--wrapper-date-->
 
-        <div class="wrapper">
-            <div class="form-check form-switch mt-3">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-            <label class="custom-label" for="flexSwitchCheckDefault">Temporada</label>
-            </div>
-        </div>
+                <div class="wrapper-date d-flex flex-column">
+                <label for="horario-fotografo">Horário</label>
+                <input class="custom-date" type="time" name="horario-fotografo" />
+                </div><!--wrapper-date-->
+                
+            </div><!--d-flex-->
+        </section>
+     
 
-        <div class="wrapper-input-custom d-flex flex-column mt-4">
-            <label class="custom-label" for="localizacao">
-                Qual a localização do imóvel?
-            </label>
-            <input class="custom-field" type="text" placeholder="Digite Aqui"/>
-        </div>
-
-
-        <div class="d-md-flex align-items-center">
-        <div class="wrapper-input-custom d-flex flex-column mt-4">
-            <label class="custom-label" for="localizacao">
-                Número
-            </label>
-            <input class="custom-field" type="text" placeholder="Digite Aqui" id="telefone"/>
-        </div>
-
-        <div class="wrapper-input-custom d-flex flex-column mt-4 mx-md-4">
-            <label class="custom-label" for="localizacao">
-             Complemento
-            </label>
-            <input class="custom-field" type="text" placeholder="Digite Aqui"/>
-        </div>
-        </div>
-
-        <div class="d-md-flex align-items-center">
-        <div class="wrapper-input-custom d-flex flex-column mt-4">
-            <label class="custom-label" for="localizacao">
-                Andar
-            </label>
-            <input class="custom-field" type="text" placeholder="Digite Aqui"/>
-        </div>
-
-        <div class="wrapper-input-custom d-flex flex-column mt-4 mx-md-4">
-            <label class="custom-label" for="localizacao">
-                CEP
-            </label>
-            <input class="custom-field" type="text" placeholder="Digite Aqui" id="cep"/>
-        </div>
-        </div>
 
         <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
-            <button class="voltar">Voltar</button>
-
-            <button class="proximo">Próximo</button>
+                <button class="voltar">Voltar</button>
+    
+                <button class="proximo">Próximo</button>
         </div>
 
-    </div><!--Card-->
+        </div><!--card-->
+        </section><!--container-card-->
+        
 
-    <div class="d-flex flex-column">
+    <!-- <div class="d-flex flex-column">
         <div class="SideCard">
             <div class="wrapper d-flex align-items-center">
                 <img src="images/escolha-sidecard.svg" alt="icone"/>
                 <h6 class="custom-title">Escolha o tipo do seu imóvel</h6>
             </div>
             <p>É importante informar com precisão o tipo do seu imóvel pois isso garante que seu anúncio apareça nos filtros de busca corretamente.</p>
-        </div><!--side Card-->
+        </div>
     
         <div class="SideCard mt-2">
             <div class="wrapper d-flex align-items-center">
@@ -363,14 +312,39 @@
                 </h6>
             </div>
             <p>Selecione se quer anunciar seu imóvel para aluguel ou venda ou os dois. Caso mude de ideia, você poderá alterar depois.</p>
-        </div><!--side Card-->
-    </div><!--wrapper-->
+        </div>
+    </div> -->
    
 
 </section>
+</form>
 
+<script>
+    let box1 = document.getElementById("box1");
+    let box2 = document.getElementById('box2');
+    let box3 = document.getElementById('box3');
+    let boxInput = document.getElementById('box-input');
+    let boxInput2 = document.getElementById('box-input2');
+    let boxInput3 = document.getElementById('box-input3');
+    box1.addEventListener('click',()=>{
+        boxInput.classList.add('box-input-active');
+        boxInput2.classList.remove('box-input-active');
+        boxInput3.classList.remove('box-input-active');
+    });
 
+    box2.addEventListener('click',()=>{
+        boxInput2.classList.add('box-input-active');
+        boxInput.classList.remove('box-input-active');
+        boxInput3.classList.remove('box-input-active');
+    });
 
+    box3.addEventListener('click',()=>{
+        boxInput3.classList.add('box-input-active');
+        boxInput2.classList.remove('box-input-active');
+        boxInput.classList.remove('box-input-active');
+    });
+    
+</script>
 
 
     <footer>
@@ -446,6 +420,5 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/mask.js"></script>
 </body>
 </html>

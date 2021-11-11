@@ -1,3 +1,5 @@
-Add função de alerta na etapa2, 3
+Add função de alerta nas páginas de cadastro
 Add funcionalidade de aumentar e diminuir número de hospedes
-Funcionalidade de calculo automatico na etapa 4 
+Funcionalidade de calculo automatico na etapa 4
+Funcionalidade de calendário
+ 
