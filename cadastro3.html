@@ -234,17 +234,23 @@
     <div class="Card">
         <h5>ETAPA 3 de 6</h5>
 
-        <section class="wrapper-icon d-flex align-items-center">
-            <img src="images/escolha.png" alt="icone"/>
-            <h6 class="fw-bold">Quais os custos do imóvel?</h6>
+        <section class="wrapper-icon d-flex align-items-center justify-content-between">
+            <div class="wrapper__content d-flex align-items-center">
+                <img src="images/escolha.png" alt="icone"/>
+                <h6 class="fw-bold">Quais os custos do imóvel?</h6>
+            </div>
+
+            <div class="icon-alert">
+                <img src="images/information.svg" alt="icone de informação">
+            </div>
         </section>
 
         <p class="text-xs mt-4">Se não souber o valor exato, você pode informar um aproximado e alterar depois.</p>
 
         <section class="wrapper mt-3">
-            <div class="wrapper__content mt-3">
+            <div class="wrapper__content mt-3 dollar-wrapper">
                 <label for="valor">Valor do condomínio</label>
-                <input class="custom-input" type="text" name="valor" placeholder="R$" />
+                <input class="custom-input" type="text" name="valor" placeholder="0"/>
             </div><!--wrapper__content-->            
         </section><!--wrapper-->
 
@@ -319,10 +325,12 @@
         </section><!--wrapper-->
 
         <section class="wrapper mt-3">
-            <div class="wrapper__content mt-3">
-                <label for="valor">Qual foi o valor da parcela</label>
-                <input class="custom-input-select" type="text" name="valor" placeholder="R$" />
-            </div><!--wrapper__content-->            
+            <section class="wrapper mt-3">
+                <div class="wrapper__content mt-3 dollar-wrapper">
+                    <label for="valor">Qual foi o valor da parcela</label>
+                    <input class="custom-input" type="text" name="valor" placeholder="0"/>
+                </div><!--wrapper__content-->            
+            </section><!--wrapper-->       
         </section><!--wrapper-->
 
         <section class="wrapper mt-5 mb-3">
@@ -375,10 +383,12 @@
         </section><!--wrapper-->
 
         <section class="wrapper mt-3">
-            <div class="wrapper__content mt-3">
-                <label for="valor">Qual foi o valor total?</label>
-                <input class="custom-input-select" type="text" name="valor" placeholder="R$" />
-            </div><!--wrapper__content-->            
+            <section class="wrapper mt-3">
+                <div class="wrapper__content mt-3 dollar-wrapper">
+                    <label for="valor">Qual foi o valor total</label>
+                    <input class="custom-input" type="text" name="valor" placeholder="0"/>
+                </div><!--wrapper__content-->            
+            </section><!--wrapper-->            
         </section><!--wrapper-->
       
             <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
@@ -388,30 +398,37 @@
             </div>
 
         </div><!--card-->
+
+        <div class="d-flex flex-column">
+            <div class="SideCard sobre-card">
+                <div class="wrapper d-flex align-items-center">
+                    <img src="images/condominio.svg" alt="icone"/>
+                    <h6 class="custom-title">Sobre o condomíno
+                    </h6>
+                </div>
+                <p>Para aluguel: Informe apenas o valor referente às despesas ordinárias do condomínio, ou seja, custos rotineiros. Não inclua despesas extraordinárias, como manutenção e obras feitas no edifício, pois essas são de responsabilidade do proprietário.
+                </p>
+                <p>Para venda: Informe o valor cheio do condomínio, considerando ordinárias e extraordinárias
+                </p>
+            </div><!--sidecard-->
+        
+            <div class="SideCard iptu-card">
+                <div class="wrapper d-flex align-items-center">
+                    <img src="images/condominio.svg" alt="icone"/>
+                    <h6 class="custom-title">Veja como funciona o pagamento do IPTU                    
+                    </h6>
+                </div>
+                <p>Para aluguel: O pagamento do IPTU é responsabilidade do proprietário. O valor do imposto é repassado para o inquilino, que realiza o pagamento em 12 vezes. Você receberá o repasse junto com o aluguel todo dia 12.
+                </p>
+                <p>Para venda: O imóvel deve estar com o pagamento do IPTU em dia até a data da venda do imóvel.
+                </p>
+            </div><!--sidecard-->
+        </div><!--flex-->
+
         </section><!--container-card-->
         
 
-    <!-- <div class="d-flex flex-column">
-        <div class="SideCard">
-            <div class="wrapper d-flex align-items-center">
-                <img src="images/escolha-sidecard.svg" alt="icone"/>
-                <h6 class="custom-title">Escolha o tipo do seu imóvel</h6>
-            </div>
-            <p>É importante informar com precisão o tipo do seu imóvel pois isso garante que seu anúncio apareça nos filtros de busca corretamente.</p>
-        </div>
-    
-        <div class="SideCard mt-2">
-            <div class="wrapper d-flex align-items-center">
-                <img src="images/anuncio-sidecard.svg" alt="icone"/>
-                <h6 class="custom-title">Escolha o tipo de anúncio
-                </h6>
-            </div>
-            <p>Selecione se quer anunciar seu imóvel para aluguel ou venda ou os dois. Caso mude de ideia, você poderá alterar depois.</p>
-        </div>
-    </div> -->
    
-
-</section>
 </form>
 
 <script>

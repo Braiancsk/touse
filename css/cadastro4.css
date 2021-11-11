@@ -20,6 +20,24 @@ body{
     font-weight: 700;
 }
 
+.dollar-wrapper{
+    position: relative;
+}
+
+.dollar-wrapper > input[type="text"]{
+    padding: 8px 33px;
+}
+
+.dollar-wrapper:after{
+    content: "R$";
+    font-size: 16px;
+    color:#8C8C8C;
+    position: absolute;
+    top:30px;
+    left:13px;
+    font-family: 'Roboto', sans-serif;
+}
+
 /*fim das classes utilitarias*/
 
 /*estilos para o menu-mobile*/
