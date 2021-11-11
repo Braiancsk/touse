@@ -20,6 +20,24 @@ body{
     font-weight: 700;
 }
 
+.dollar-wrapper{
+    position: relative;
+}
+
+.dollar-wrapper > input[type="text"]{
+    padding: 8px 33px;
+}
+
+.dollar-wrapper:after{
+    content: "R$";
+    font-size: 16px;
+    color:#8C8C8C;
+    position: absolute;
+    top:30px;
+    left:13px;
+    font-family: 'Roboto', sans-serif;
+}
+
 /*fim das classes utilitarias*/
 
 /*estilos para o menu-mobile*/
@@ -380,13 +398,18 @@ nav .ajuda span{
 
 .SideCard p{
     max-width:293px;
-    font-size: 14px;
+    font-size: 12px;
     color:#434343;
     margin-top: 18px;
 }
 
 .text-xs{
     font-size: 12px;
+}
+
+.exclusividade{
+    max-height:400px;
+    margin-top: 100px;
 }
 /*Fim dos estilos para o sidecard*/
 
@@ -738,9 +761,17 @@ transition: 0.1s ease-in-out;
 
 }
 
-@media screen and (max-width: 996px){
+@media screen and (max-width: 998px){
     .SideCard{
         display:none;
+    }
+}
+
+
+@media screen and (max-width: 998px){
+
+    .icon-alert{
+        display: block;
     }
 }
 
@@ -988,9 +1019,7 @@ transition: 0.1s ease-in-out;
         margin-left: 10px;
     }
     
-    .icon-alert{
-        display: block;
-    }
+
     
 }
 
