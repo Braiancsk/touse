@@ -321,12 +321,12 @@
             <section class="wrapper">
                 <div class="wrapper__content mt-3 dollar-wrapper">
                     <label for="valor">Valor por noite</label>
-                    <input id="value-noite" class="custom-input" type="text" name="valor" placeholder="0"/>
+                    <input id="valor-noite" class="custom-input" type="text" name="valor" placeholder="0"/>
                 </div><!--wrapper__content-->                  
             </section><!--wrapper-->
 
             <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
-                <button class="cancelar">Cancelar</button>
+                <button id="cancelar" class="cancelar">Cancelar</button>
     
                 <button id="salvar" style="margin-left: 10px;" class="salvar">Salvar</button>
             </div>
@@ -410,8 +410,10 @@
             
         </div><!--container-->
     </footer>
-
+    <!-- rrule lib -->
+    <script src='https://cdn.jsdelivr.net/npm/rrule@2.6.4/dist/es5/rrule.min.js'></script>
     <script src="js/main.min.js"></script>
+    <script src='js/locales-all.min.js'></script>
     <script src="js/calendar.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>

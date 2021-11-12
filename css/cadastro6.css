@@ -836,11 +836,18 @@ section.side-form .wrapper-input label{
 }
 
 .indisponivel{
-    background-color: red;
+    background-color: red !important;
 }
 .fc .fc-daygrid-day-bg .fc-highlight{
-    background: #722ED1;
+    background: #722ed138;
     color:white;
+}
+
+.fc-toolbar-chunk + .fc-toolbar-chunk + .fc-toolbar-chunk{
+    display: none;
+}
+.fc .fc-toolbar{
+    justify-content:center;
 }
 /* .fc-button-group, .fc-button-primary{
     display: none !important;
