@@ -1248,6 +1248,10 @@ section.side-form-mobile .wrapper-input label{
     .side-form-active{
         display:block !important;
     }
+
+    .overflow-none{
+        overflow: none;
+    }
 }
 
 

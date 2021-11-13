@@ -73,9 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dateClick: function(info) {
       // alert('clicked ' + info.dateStr);
      // change the day's background color just for fun
-     inicial.value = info.startStr;
-      final.value = info.endStr;
-        //abrir modal no mobile
+ 
     },
     select: function(info) {
       // alert('selected ' + info.startStr + ' to ' + info.endStr);
@@ -87,14 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
       //abrir modal no mobile
       let modal = document.querySelector('.side-form-mobile');
       let bgModal = document.querySelector('.bg-side-form');
-
+      let body = document.body;
       modal.classList.add('side-form-active');
       bgModal.classList.add('side-form-active');
-      document.body.style.overflow = 'hidden';
-    },
-    
-   
-  
+      body.classList.add('overflow-none');
+    }
   });
   
   calendar.render();
