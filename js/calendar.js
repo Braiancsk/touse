@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function removeEvent() {
     let cancelar = document.getElementById('cancelar');
     cancelar.addEventListener('click', ()=>{
-        const allID = randomID.map((event)=>event)
+        var allID = randomID.map((event)=>event)
         calendar.getEventById(allID).remove()
   })
 }
@@ -199,11 +199,12 @@ removeEvent();
   //remover o evento
   function removeEventMobile() {
     cancelarMobile.addEventListener('click', ()=>{
-        const allID = randomID.map((event)=>event)
+        let body = document.body;
+        var allID = randomID.map((event)=>event)
         calendar.getEventById(allID).remove()
         modal.classList.remove('side-form-active');
         bgModal.classList.remove('side-form-active');
-        document.body.style.overflow = 'auto';
+        body.classList.remove('overflow-none');
   })
 }
 removeEventMobile();

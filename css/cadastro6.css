@@ -798,12 +798,13 @@ section.side-form-mobile{
     margin-left: 20px;
     max-height: 600px;
     position:fixed;
-    top:30px;
+    top:0;
     left:0;
     right: 0;
     z-index: 99999;
     margin: 0 2%;
     display: none;
+    overflow-y: scroll;
 }
 
 .bg-side-form{
@@ -1250,8 +1251,14 @@ section.side-form-mobile .wrapper-input label{
     }
 
     .overflow-none{
-        overflow: none;
+        overflow: hidden;
     }
+    section.side-form-mobile{
+        height:auto;
+    }
+    #calendar{
+        height:460px !important;
+    }   
 }
 
 
