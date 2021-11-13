@@ -4,9 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
   let final = document.getElementById('final');
   let salvar = document.getElementById('salvar');
   let indisponivel = document.getElementById('indisponivel');
+  let disponivel = document.getElementById('disponivel');
 
-
-
+  //gerar random id
+  function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  const rndInt = randomIntFromInterval(1, 30)
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     selectable: true,
@@ -34,29 +38,51 @@ document.addEventListener('DOMContentLoaded', function() {
       month:'long',
     },
     resources: [
-      {
-        id: 'a',
-        title: 'Room A' 
-      }
+      { id: `${rndInt}`, title: 'Resource A' },
+      { id: 'a', title: 'Resource B' }
     ],
-    resources: function(fetchInfo, successCallback, failureCallback) {
-      somethingAsynchonous({
-        start: fetchInfo.startStr,
-        end: fetchInfo.endStr,
-        timeZone: fetchInfo.timeZone
-      }, function(resources) {
-        successCallback(resources);
-        resources.getResourceById( resourceId )
-      });
+    eventSources: {
+      events: [
+        {
+          title: 'Event1',
+          start: '2021-11-11',
+          id: 'a',
+          resourceId: `${rndInt}`,
+          color: 'blue',   // an option!
+          className: 'disponivel',
+          resourceEditable:'true',
+          editable:'true',
+        },
+        {
+          title: 'Indisponivel',
+          start: '2021-11-15',
+          id: 'b',
+          resourceId: `${rndInt}`,
+          className: 'indisponivel',
+          resourceEditable:'true',
+          editable:'true',
+        },
+        {
+          title: 'Event2',
+          start: '2021-11-12',
+          id: '1',
+          resourceId: 'a',
+          resourceEditable:'true',
+          editable:'true',
+        }
+        // etc...
+      ],
+      color: 'red',   // an option!
+      textColor: 'white' // an option!,
+      
     },
-  
-    events: [],
+
     
 
     eventDidMount: function(info) {
       // {description: "Lecture", department: "BioChemistry"}
       // console.log(info.event.extendedProps);
- 
+     
     },
 
    
@@ -65,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
      // change the day's background color just for fun
    
       console.log(info.dayEl);
-      calendar.getEventById('a')
     },
     select: function(info) {
       // alert('selected ' + info.startStr + ' to ' + info.endStr);
@@ -81,65 +106,75 @@ document.addEventListener('DOMContentLoaded', function() {
   
   calendar.render();
   calendar.setOption('locale', 'pt-br');
+
+  //variavel de disponibilidade
+  var setDisponibilidade = 'disponivel';
   
-  //remover o evento
-  function removeEvent() {
-    let cancelar = document.getElementById('cancelar');
-
-    cancelar.addEventListener('click', ()=>{
-    
-    if(randomID === randomID) {
-      calendar.getEvents().forEach(event=>event.remove(randomID))
-    }
-
-    console.log('removido');
-  })
-}
-removeEvent();
-
-
+  //add evento no calendário
   let valor = document.getElementById('valor-noite');
-  var randomID = function getRandomInt(min, max) {
-    min = 1;
-    max = 31;
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-
   function addEvent(event){
     calendar.addEvent(
       {
-      id: `${randomID}`,
+      id: `${Math.random(rndInt)}`,
       title: `R$ ${valor.value}`, 
       start:`${inicial.value}`,
       end: `${final.value}`,
       resourceEditable:'true',
       editable:'true',
-
+      className: `${setDisponibilidade}`,
+      
     },
+    
   )
   }
 
 
-  //Salvar o evento no calendario clicando no botão 
-  salvar.addEventListener('click', ()=>{
-    let selected = document.querySelector('.fc-h-event .fc-event-title-container');
-    addEvent();
-    console.log(randomID);
+  let calendarID = calendar.getEventById(rndInt)
+  console.log(calendarID);
 
-    if(indisponivel.checked === true) {
-      selected.classList.add('indisponivel');
+  //remover o evento
+  function removeEvent() {
+    let cancelar = document.getElementById('cancelar');
+    cancelar.addEventListener('click', ()=>{
+      
+      if(rndInt === calendarID) {
+        calendar.getEventById(rndInt).remove()
+      }
+  })
+}
+removeEvent();
+
+
+
+  //Salvar o evento no calendario clicando no botão 
+ 
+  salvar.addEventListener('click', ()=>{
+  
+    //verificar se está disponivel ou não
+    if(indisponivel.checked === true){
+      setDisponibilidade = 'indisponivel';
+    }else{
+      setDisponibilidade = 'disponivel';
     }
+
+    addEvent(); 
+    console.log(Math.random(rndInt));
   })
 
   //Salvar o evento no calendario apertando enter 
   valor.addEventListener('keyup', (e)=>{
     if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
-      addEvent();
-      console.log(randomID);
-      let selected = document.querySelector('.fc-h-event .fc-event-title-container');
-      if(indisponivel.checked === true) {
-        selected.classList.add('indisponivel');
+
+        //verificar se está disponivel ou não
+      if(indisponivel.checked === true){
+        setDisponibilidade = 'indisponivel';
+      }else{
+        setDisponibilidade = 'disponivel';
       }
+
+      addEvent();
+      console.log(rndInt);
+    
   }
   })  
 });

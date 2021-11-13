@@ -762,6 +762,7 @@ section.side-form{
     padding: 30px;
     max-width: 442px;
     margin-left: 20px;
+    max-height: 600px;
 }
 
 section.side-form label{
@@ -835,6 +836,10 @@ section.side-form .wrapper-input label{
     background: #722ED1;
 }
 
+.disponivel{
+    background: #722ED1 !important;
+}
+
 .indisponivel{
     background-color: red !important;
 }
@@ -848,6 +853,28 @@ section.side-form .wrapper-input label{
 }
 .fc .fc-toolbar{
     justify-content:center;
+    position: relative;
+    left: -40px;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    position: relative;
+    left: 20px;
+}
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child){
+    z-index: 9999;
+    right: -196px;
+}
+
+.fc .fc-button-primary{
+    background:transparent;
+    border: 0;
+    color:#111111;
+}
+.fc .fc-button-primary:hover{
+    background:transparent;
+    border: 0;
+    color:#111111;
 }
 /* .fc-button-group, .fc-button-primary{
     display: none !important;
@@ -1146,7 +1173,14 @@ section.side-form .wrapper-input label{
     .icon-alert{
         display: block;
     }
-    
+    .fc .fc-toolbar{
+        justify-content:start;
+        left:0;
+    }
+    .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+        left: 24px;
+    }
+  
 }
 
 
