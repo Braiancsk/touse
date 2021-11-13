@@ -136,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
     cancelar.addEventListener('click', ()=>{
         const allID = randomID.map((event)=>event)
         calendar.getEventById(allID).remove()
-        console.log(allID)
   })
 }
 removeEvent();

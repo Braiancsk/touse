@@ -817,9 +817,7 @@ section.side-form-mobile{
     display:none;
 }
 
-.side-form-active{
-    display:block !important;
-}
+
 
 section.side-form-mobile label{
     color: rgba(0, 0, 0, 0.85);
@@ -1246,6 +1244,9 @@ section.side-form-mobile .wrapper-input label{
 
     .tips-mobile{
         display:block;
+    }
+    .side-form-active{
+        display:block !important;
     }
 }
 
