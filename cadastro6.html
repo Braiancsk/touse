@@ -262,7 +262,9 @@
                 </h6>
             </div>
         </section><!--wrapper-->
-           
+        <p class="text-xs tips-mobile mt-3">Clique e segure em uma data para costumizar</p>
+        <p class="text-xs tips-mobile">Segure e arraste para selecionar múltiplas datas</p>
+
 
         <div id='calendar'></div>
 
@@ -329,6 +331,64 @@
                 <button id="cancelar" class="cancelar">Cancelar</button>
     
                 <button id="salvar" style="margin-left: 10px;" class="salvar">Salvar</button>
+            </div>
+
+        </section><!--side-form-->
+
+        <div class="bg-side-form"></div>
+        <section class="side-form-mobile">
+            <h5>Personalizar data</h5>
+            <h6 class="mt-3">Datas selecionadas</h6>
+
+            <div class="wrapper d-flex">
+
+                <div class="wrapper__content">
+                    <label for="data-inicial">Data inicial</label>
+                    <input type="text" name="" id="inicialMobile" class="custom-input">
+                    <input class="date d-none" type="date" name="data-inicial">
+                </div><!--wrapper__content-->
+
+                <div style="margin-left: 10px;" class="wrapper__content">
+                    <label for="data-inicial">Data final</label>
+                    <input type="text" name="" id="finalMobile" class="custom-input">
+                    <input class="date d-none"  type="date" name="data-inicial">
+                </div><!--wrapper__content-->
+
+            </div><!--wrapper-->
+
+            <h6 class="mt-4">Disponibilidade
+            </h6>
+
+            <section class="wrapper-input mt-4">
+                <div class="form-check  d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="disponivelMobile"  checked>
+                    <label class="form-check-label" for="disponivelMobile">
+                        Disponível
+                    </label>
+                  </div>
+                  <div class="form-check mt-4 d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="indisponivelMobile">
+                    <label class="form-check-label" for="indisponivelMobile">
+                        Indisponível
+                    </label>
+                  </div>
+            </section><!--wrapper-->
+
+
+            <h6 class="mt-4">Preço por noite
+            </h6>
+
+            <section class="wrapper">
+                <div class="wrapper__content mt-3 dollar-wrapper">
+                    <label for="valor">Valor por noite</label>
+                    <input id="valorMobile" class="custom-input" type="text" name="valor" placeholder="0"/>
+                </div><!--wrapper__content-->                  
+            </section><!--wrapper-->
+
+            <div class="wrapper-input-custom d-flex justify-content-between align-items-center">
+                <button id="cancelarMobile" class="cancelar">Cancelar</button>
+    
+                <button id="salvarMobile" style="margin-left: 10px;" class="salvar">Salvar</button>
             </div>
 
         </section><!--side-form-->

@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let salvar = document.getElementById('salvar');
   let indisponivel = document.getElementById('indisponivel');
   let disponivel = document.getElementById('disponivel');
+  let inicialMobile = document.getElementById('inicialMobile');
+  let finalMobile = document.getElementById('finalMobile');
+  let cancelarMobile = document.getElementById('cancelarMobile');
+  let salvarMobile = document.getElementById('salvarMobile');
+  let indisponivelMobile = document.getElementById('indisponivelMobile')
+
 
   //gerar random id
   function randomIntFromInterval(min, max) { // min and max included 
@@ -67,15 +73,24 @@ document.addEventListener('DOMContentLoaded', function() {
     dateClick: function(info) {
       // alert('clicked ' + info.dateStr);
      // change the day's background color just for fun
-   
-      console.log(info.dayEl);
+     inicial.value = info.startStr;
+      final.value = info.endStr;
+        //abrir modal no mobile
     },
     select: function(info) {
       // alert('selected ' + info.startStr + ' to ' + info.endStr);
       inicial.value = info.startStr;
       final.value = info.endStr;
-  
-    
+      inicialMobile.value = info.startStr;
+      finalMobile.value = info.endStr;
+
+      //abrir modal no mobile
+      let modal = document.querySelector('.side-form-mobile');
+      let bgModal = document.querySelector('.bg-side-form');
+
+      modal.classList.add('side-form-active');
+      bgModal.classList.add('side-form-active');
+      document.body.style.overflow = 'hidden';
     },
     
    
@@ -93,7 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let calendarID = calendar.getEventById(randomID)
   console.log(calendarID);
   
-  //add evento no calendário
+//add evento no calendário
+
+
   let valor = document.getElementById('valor-noite');
   function addEvent(event){
     calendar.addEvent(
@@ -163,7 +180,103 @@ removeEvent();
     
   }
   })  
+
+  //funções do mobile
+  //add evento no calendário
+  let valorMobile = document.getElementById('valorMobile');
+  function addEventMobile(event){
+    calendar.addEvent(
+      {
+      id: `${randomID}`,
+      title: `R$ ${valorMobile.value}`, 
+      start:`${inicialMobile.value}`,
+      end: `${finalMobile.value}`,
+      resourceEditable:'true',
+      editable:'true',
+      className: `${setDisponibilidade}`,
+      
+    },
+    
+  )
+  }
+
+
+
+  //remover o evento
+  function removeEventMobile() {
+    cancelarMobile.addEventListener('click', ()=>{
+        const allID = randomID.map((event)=>event)
+        calendar.getEventById(allID).remove()
+        modal.classList.remove('side-form-active');
+        bgModal.classList.remove('side-form-active');
+        document.body.style.overflow = 'auto';
+  })
+}
+removeEventMobile();
+
+
+
+  //Salvar o evento no calendario clicando no botão 
+ 
+  salvarMobile.addEventListener('click', ()=>{
+  
+    //verificar se está disponivel ou não
+    if(indisponivelMobile.checked === true){
+      setDisponibilidade = 'indisponivel';
+    }else{
+      setDisponibilidade = 'disponivel';
+    }
+    randomID.push(Math.random(randomID));
+    
+
+    addEventMobile(); 
+
+    
+      modal.classList.remove('side-form-active');
+      bgModal.classList.remove('side-form-active');
+      document.body.style.overflow = 'auto';
+
+    
+  })
+
+  //Salvar o evento no calendario apertando enter 
+  valorMobile.addEventListener('keyup', (e)=>{
+    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+
+        //verificar se está disponivel ou não
+      if(indisponivelMobile.checked === true){
+        setDisponibilidade = 'indisponivel';
+      }else{
+        setDisponibilidade = 'disponivel';
+      }
+
+      addEventMobile();
+      randomID.push(Math.random(randomID));
+
+      modal.classList.remove('side-form-active');
+        bgModal.classList.remove('side-form-active');
+        document.body.style.overflow = 'auto';
+  
+    
+  }
+  })  
+
 });
+
+
+//fechar modal
+let modal = document.querySelector('.side-form-mobile');
+let bgModal = document.querySelector('.bg-side-form');
+
+
+bgModal.addEventListener('click',()=>{
+   modal.classList.remove('side-form-active');
+   bgModal.classList.remove('side-form-active');
+   document.body.style.overflow = 'auto';
+});
+
+
+
 
 
 

@@ -789,6 +789,62 @@ section.side-form .wrapper-input label{
     margin-left:8px;
 }
 
+section.side-form-mobile{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 442px;
+    margin-left: 20px;
+    max-height: 600px;
+    position:fixed;
+    top:30px;
+    left:0;
+    right: 0;
+    z-index: 99999;
+    margin: 0 2%;
+    display: none;
+}
+
+.bg-side-form{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.76);
+    z-index: 999;
+    width: 100%;
+    height:100vh;
+    display:none;
+}
+
+.side-form-active{
+    display:block !important;
+}
+
+section.side-form-mobile label{
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+section.side-form-mobile h6{
+    color: #434343;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.side-form-mobile .wrapper-input label{
+    color: rgba(0, 0, 0, 0.85);
+    padding: 0;
+    background:0;
+    border: 0;
+    border-radius: 0;
+    margin-top: 3px;
+    margin-left:8px;
+}
+
 .form-check-input[type=radio]{
     padding: 10px;
 }
@@ -875,6 +931,10 @@ section.side-form .wrapper-input label{
     background:transparent;
     border: 0;
     color:#111111;
+}
+
+.tips-mobile{
+    display:none;
 }
 /* .fc-button-group, .fc-button-primary{
     display: none !important;
@@ -1175,12 +1235,18 @@ section.side-form .wrapper-input label{
     }
     .fc .fc-toolbar{
         justify-content:start;
-        left:0;
+        left:16;
     }
     .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
         left: 24px;
     }
-  
+    .Card{
+        padding: 20px;
+    }
+
+    .tips-mobile{
+        display:block;
+    }
 }
 
 
@@ -1207,6 +1273,10 @@ section.side-form .wrapper-input label{
     .mt-20{
         margin-top: 20px;
         display: block;
+    }
+    .fc .fc-toolbar{
+        justify-content:start;
+        left:0;
     }
     
 }
@@ -1246,5 +1316,8 @@ section.side-form .wrapper-input label{
     .cancelar,.salvar{
         padding: 8px 12px !important;
     }
-
+    .fc .fc-toolbar{
+        justify-content:start;
+        left:-30px;
+    }
 }
