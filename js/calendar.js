@@ -103,21 +103,26 @@ document.addEventListener('DOMContentLoaded', function() {
   let calendarID = calendar.getEventById(randomID)
   console.log(calendarID);
   
+
+  //verificar disponibilidade
+  var disponivelName = 'indisponivel'
+    
+  
+   
+  
+
 //add evento no calendário
-
-
   let valor = document.getElementById('valor-noite');
   function addEvent(event){
     calendar.addEvent(
       {
       id: `${randomID}`,
-      title: `R$ ${valor.value}`, 
+      title: `${disponivelName}`, 
       start:`${inicial.value}`,
       end: `${final.value}`,
       resourceEditable:'true',
       editable:'true',
-      className: `${setDisponibilidade}`,
-      
+      className: `${setDisponibilidade}`,   
     },
     
   )
@@ -144,8 +149,10 @@ removeEvent();
     //verificar se está disponivel ou não
     if(indisponivel.checked === true){
       setDisponibilidade = 'indisponivel';
+      disponivelName = 'indisponivel'
     }else{
       setDisponibilidade = 'disponivel';
+      disponivelName = `R$ ${valor.value}`
     }
     randomID.push(Math.random(randomID));
     
@@ -164,8 +171,10 @@ removeEvent();
         //verificar se está disponivel ou não
       if(indisponivel.checked === true){
         setDisponibilidade = 'indisponivel';
+        disponivelName = 'indisponivel'
       }else{
         setDisponibilidade = 'disponivel';
+        disponivelName = `R$ ${valor.value}`
       }
 
       addEvent();
@@ -182,7 +191,7 @@ removeEvent();
     calendar.addEvent(
       {
       id: `${randomID}`,
-      title: `R$ ${valorMobile.value}`, 
+      title: `${disponivelName}`, 
       start:`${inicialMobile.value}`,
       end: `${finalMobile.value}`,
       resourceEditable:'true',
@@ -218,18 +227,20 @@ removeEventMobile();
     //verificar se está disponivel ou não
     if(indisponivelMobile.checked === true){
       setDisponibilidade = 'indisponivel';
+      disponivelName = 'indisponivel'
     }else{
       setDisponibilidade = 'disponivel';
+      disponivelName = `R$ ${valorMobile.value}`
     }
     randomID.push(Math.random(randomID));
     
 
     addEventMobile(); 
 
-    
+      let body = document.body;
       modal.classList.remove('side-form-active');
       bgModal.classList.remove('side-form-active');
-      document.body.style.overflow = 'auto';
+      body.classList.remove('overflow-none');
 
     
   })
@@ -241,16 +252,19 @@ removeEventMobile();
         //verificar se está disponivel ou não
       if(indisponivelMobile.checked === true){
         setDisponibilidade = 'indisponivel';
+        disponivelName = 'indisponivel'
       }else{
         setDisponibilidade = 'disponivel';
+        disponivelName = `R$ ${valorMobile.value}`
       }
 
       addEventMobile();
       randomID.push(Math.random(randomID));
 
+      let body = document.body;
       modal.classList.remove('side-form-active');
-        bgModal.classList.remove('side-form-active');
-        document.body.style.overflow = 'auto';
+      bgModal.classList.remove('side-form-active');
+      body.classList.remove('overflow-none');
   
     
   }
@@ -265,9 +279,17 @@ let bgModal = document.querySelector('.bg-side-form');
 
 
 bgModal.addEventListener('click',()=>{
-   modal.classList.remove('side-form-active');
-   bgModal.classList.remove('side-form-active');
-   document.body.style.overflow = 'auto';
+    let body = document.body;
+    modal.classList.remove('side-form-active');
+    bgModal.classList.remove('side-form-active');
+    body.classList.remove('overflow-none');
+});
+
+cancelarMobile.addEventListener('click', ()=>{
+  let body = document.body;
+  modal.classList.remove('side-form-active');
+  bgModal.classList.remove('side-form-active');
+  body.classList.remove('overflow-none');
 });
 
 
