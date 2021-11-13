@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
   function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-  const rndInt = randomIntFromInterval(1, 30)
+  var rndInt = randomIntFromInterval(1, 100)
+
+  var randomID = []
+
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     selectable: true,
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     refetchResourcesOnNavigate: true,
     timeZone: 'UTC',
     locale: 'pt-br',
+    longPressDelay:'Integer',
 
 
     buttonText:{
@@ -43,33 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ],
     eventSources: {
       events: [
-        {
-          title: 'Event1',
-          start: '2021-11-11',
-          id: 'a',
-          resourceId: `${rndInt}`,
-          color: 'blue',   // an option!
-          className: 'disponivel',
-          resourceEditable:'true',
-          editable:'true',
-        },
-        {
-          title: 'Indisponivel',
-          start: '2021-11-15',
-          id: 'b',
-          resourceId: `${rndInt}`,
-          className: 'indisponivel',
-          resourceEditable:'true',
-          editable:'true',
-        },
-        {
-          title: 'Event2',
-          start: '2021-11-12',
-          id: '1',
-          resourceId: 'a',
-          resourceEditable:'true',
-          editable:'true',
-        }
+  
         // etc...
       ],
       color: 'red',   // an option!
@@ -109,13 +87,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //variavel de disponibilidade
   var setDisponibilidade = 'disponivel';
+
+
+      
+  let calendarID = calendar.getEventById(randomID)
+  console.log(calendarID);
   
   //add evento no calendário
   let valor = document.getElementById('valor-noite');
   function addEvent(event){
     calendar.addEvent(
       {
-      id: `${Math.random(rndInt)}`,
+      id: `${randomID}`,
       title: `R$ ${valor.value}`, 
       start:`${inicial.value}`,
       end: `${final.value}`,
@@ -129,17 +112,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  let calendarID = calendar.getEventById(rndInt)
-  console.log(calendarID);
 
   //remover o evento
   function removeEvent() {
     let cancelar = document.getElementById('cancelar');
     cancelar.addEventListener('click', ()=>{
-      
-      if(rndInt === calendarID) {
-        calendar.getEventById(rndInt).remove()
-      }
+        const allID = randomID.map((event)=>event)
+        calendar.getEventById(allID).remove()
+        console.log(allID)
   })
 }
 removeEvent();
@@ -156,9 +136,14 @@ removeEvent();
     }else{
       setDisponibilidade = 'disponivel';
     }
+    randomID.push(Math.random(randomID));
+    
+    console.log(randomID);
 
     addEvent(); 
-    console.log(Math.random(rndInt));
+
+
+    
   })
 
   //Salvar o evento no calendario apertando enter 
@@ -173,7 +158,8 @@ removeEvent();
       }
 
       addEvent();
-      console.log(rndInt);
+      randomID.push(Math.random(randomID));
+      console.log(randomID);
     
   }
   })  
