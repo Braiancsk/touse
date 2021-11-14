@@ -1254,7 +1254,7 @@ section.side-form-mobile .wrapper-input label{
         overflow: hidden;
     }
     section.side-form-mobile{
-        height:auto;
+        height:500px !important;
     }
     #calendar{
         height:460px !important;
