@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   var rndInt = randomIntFromInterval(1, 100)
 
-  var randomID = []
+
 
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ],
     eventSources: {
       events: [
-  
+        // Insira os eventos aqui
         // etc...
       ],
       color: 'red',   // an option!
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dateClick: function(info) {
       // alert('clicked ' + info.dateStr);
      // change the day's background color just for fun
- 
+
     },
     select: function(info) {
       // alert('selected ' + info.startStr + ' to ' + info.endStr);
@@ -99,18 +99,13 @@ document.addEventListener('DOMContentLoaded', function() {
   var setDisponibilidade = 'disponivel';
 
 
-      
-  let calendarID = calendar.getEventById(randomID)
-  console.log(calendarID);
-  
 
-  //verificar disponibilidade
+//verificar disponibilidade
   var disponivelName = 'indisponivel'
-    
   
-   
+//array de ids  
+var randomID = []
   
-
 //add evento no calendário
   let valor = document.getElementById('valor-noite');
   function addEvent(event){
@@ -130,20 +125,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  //remover o evento
+//remover o evento
   function removeEvent() {
-    let cancelar = document.getElementById('cancelar');
-    cancelar.addEventListener('click', ()=>{
-        var allID = randomID.map((event)=>event)
-        calendar.getEventById(allID).remove()
-  })
+    
+    if(randomID === randomID) {
+      allID = calendar.getEventById( randomID ).remove()
+    }  
 }
-removeEvent();
 
 
+//remover o evento clicando em cancelar 
+let cancelar = document.getElementById('cancelar');
+cancelar.addEventListener('click', ()=>{
+   removeEvent();
+})
 
-  //Salvar o evento no calendario clicando no botão 
- 
+
+//Salvar o evento no calendario clicando no botão 
   salvar.addEventListener('click', ()=>{
   
     //verificar se está disponivel ou não
@@ -154,7 +152,7 @@ removeEvent();
       setDisponibilidade = 'disponivel';
       disponivelName = `R$ ${valor.value}`
     }
-    randomID.push(Math.random(randomID));
+    randomID.push(Math.random(rndInt));
     
     console.log(randomID);
 
@@ -271,7 +269,6 @@ removeEventMobile();
   })  
 
 });
-
 
 //fechar modal
 let modal = document.querySelector('.side-form-mobile');

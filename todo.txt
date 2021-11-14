@@ -1,4 +1,2 @@
-Funcionalidade de calculo automatico na etapa 4
 Funcionalidade de calendário
-Botões não funcionam na modal de temporada
 Formatar números na etapa 4
