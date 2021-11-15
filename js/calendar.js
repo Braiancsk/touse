@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
     dateClick: function(info) {
       // alert('clicked ' + info.dateStr);
      // change the day's background color just for fun
+    //  const allID = calendar.getEventById( randomID )
+    //  console.log(allID.id)
 
     },
     select: function(info) {
@@ -125,12 +127,18 @@ var randomID = []
 
 
 
+
 //remover o evento
   function removeEvent() {
     
-    if(randomID === randomID) {
-      allID = calendar.getEventById( randomID ).remove()
-    }  
+      const allID = calendar.getEventById( randomID )
+
+      if(allID.id == randomID){
+        allID.remove();
+      }else{
+        console.log('ID não bate')
+      }
+      
 }
 
 
@@ -207,8 +215,13 @@ cancelar.addEventListener('click', ()=>{
   function removeEventMobile() {
     cancelarMobile.addEventListener('click', ()=>{
         let body = document.body;
-        var allID = randomID.map((event)=>event)
-        calendar.getEventById(allID).remove()
+        const allID = calendar.getEventById( randomID )
+
+      if(allID.id == randomID){
+        allID.remove();
+      }else{
+        console.log('ID não bate')
+      }
         modal.classList.remove('side-form-active');
         bgModal.classList.remove('side-form-active');
         body.classList.remove('overflow-none');
