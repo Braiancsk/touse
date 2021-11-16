@@ -346,7 +346,15 @@ section.diferenciais .cards{
     box-sizing: border-box;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.11);
     border-radius: 12px;
-    padding: 40px 25px;
+    padding: 30px 25px;
+}
+
+section.diferenciais .cards:nth-child(1){
+    height:378px;
+}
+
+section.diferenciais .cards:nth-child(2){
+    height:378px;
 }
 
 .swiper-slide{
@@ -367,6 +375,7 @@ section.diferenciais .cards h4{
 }
 section.diferenciais .cards p{
     color:#434343;
+    font-size: 14px;
 }
 
 
@@ -433,7 +442,7 @@ footer h4{
 }
 
 footer p{
-    max-width:343px;
+    max-width:450px;
 }
 
 footer .social-icons img{
@@ -512,7 +521,7 @@ footer .direitos a{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
     .input-wrapper{
         border-bottom: 1px solid #722ED1;
         border-right: 0 !important;
