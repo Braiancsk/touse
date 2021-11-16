@@ -20,11 +20,21 @@ body{
 .float-whatsapp:hover > .pulse{
     color:white !important;
 }
-.whats_top_menu .buttons .button.avatar{
-    background: url('../images/avatar-exemplo.jpg') !important;
-    background-size: contain !important;
-    background-position:center !important;
-    background-repeat:no-repeat !important;
+.avatar{
+    background-color:white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -8px;
+}
+
+.avatar > img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 9px;
+    left: 8px;
 }
 
 #colMapa{
