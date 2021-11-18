@@ -321,6 +321,15 @@ section.favoritos nav.nav-favoritos h6{
     background: transparent !important;
 }
 
+.nav-favoritos .swiper-wrapper{
+    height:100px;
+}
+
+.nav-favoritos .swiper-slide{
+    max-width:140px;
+    width: 100%;
+}
+
 section.favoritos nav.nav-favoritos .btn-wrapper{
     margin: 0 10px;
     padding:11px 0;
@@ -399,6 +408,7 @@ section.pra-alugar .box-cards article{
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 23%;
+    height: 590px;
     margin: 0 1%;
 }
 
@@ -415,6 +425,7 @@ section.pra-alugar .swiper-slide{
     height: 580px;
     margin-top: 26px;
     width: 100%;
+    display: none;
 }
 
 
@@ -564,6 +575,14 @@ footer .direitos a{
     text-decoration: none;
 }
 
+.btn-favoritos,.btn-descartados,.btn-aprovados{
+    max-width: 106px;
+}
+
+.swiper2{
+    overflow: hidden;
+}
+
 
 /*Fim dos estilos para a sessão de cards*/
 
@@ -621,7 +640,8 @@ footer .direitos a{
 
     section.pra-alugar .box-cards article{
         width: 100%;
-        margin: 0 0;
+        margin: 0 auto;
+        display: none;
     }
 
     section.pra-alugar .swiper{

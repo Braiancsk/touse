@@ -222,20 +222,43 @@
     <section class="favoritos">
         <div class="container">
             <nav class="nav-favoritos d-flex justify-content-center align-items-center">
-                <div id="btn-favoritos" class="btn-wrapper d-flex active">
-                    <img class="contain" src="images/publicados.png" alt="icone"/>
-                    <h6>Publicados</h6>
-                </div><!--btn-wrapper-->
-    
-                <div id="btn-descartados" class="btn-wrapper d-flex">
-                    <img class="contain" src="images/aguardando.png" alt="icone"/>
-                    <h6>Pendentes</h6>
-                </div><!--btn-wrapper-->
+                <!-- Slider main container -->
+<div class="swiper2">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div id="btn-favoritos" class="btn-wrapper d-flex active">
+            <img class="contain" src="images/publicados.png" alt="icone"/>
+            <h6>Publicados</h6>
+        </div><!--btn-wrapper-->
+      </div>
 
-                <div id="btn-aprovados" class="btn-wrapper d-flex">
-                    <img class="contain" src="images/alugados.png" alt="icone"/>
-                    <h6>Alugados/reservados</h6>
-                </div><!--btn-wrapper-->
+      <div class="swiper-slide">
+
+        <div id="btn-descartados" class="btn-wrapper d-flex">
+            <img class="contain" src="images/aguardando.png" alt="icone"/>
+            <h6>Pendentes</h6>
+        </div><!--btn-wrapper-->
+      </div>
+      <div class="swiper-slide">
+        <div id="btn-aprovados" class="btn-wrapper d-flex">
+            <img class="contain" src="images/alugados.png" alt="icone"/>
+            <h6>Alugados/reservados</h6>
+        </div><!--btn-wrapper-->
+      </div>
+
+    </div><!--swiper-wrapper-->
+
+  </div><!--swiper-->
+                
+                
+                
+                
+                
+    
+
+                
             </nav><!--nav-favoritos-->
         </div><!--container-->
     </section>
@@ -266,6 +289,202 @@
             <h2>Seus imóveis publicados</h2>
 
 <!--sessão para alugar-->
+<div class="box-cards">
+    <section class="row desktop">
+
+        <!--card individual-->
+        <article class="col-md-3">
+       
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Apartamento</p>
+                    <h6>Alameda Arminda Nogueira</h6>
+                    <p>Vila Santa Cruz - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Aluguel: R$2000,00</h5>
+
+                <div class="valores d-flex b-top justify-content-around">
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/editar.svg" alt="icone">
+                        <p class="color-text">Editar</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/remover.svg" alt="icone">
+                        <p class="color-text">Remover</p>
+                    </div>
+                </div><!--valores-->
+            </div>
+   
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+        
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Antônio Figueiredo</h6>
+                    <p>Centro - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>72 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>3 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00</p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Aluguel: R$2000,00</h5>
+
+                <div class="valores d-flex b-top justify-content-around">
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/editar.svg" alt="icone">
+                        <p class="color-text">Editar</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/remover.svg" alt="icone">
+                        <p class="color-text">Remover</p>
+                    </div>
+                </div><!--valores-->
+            </div>
+  
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+         
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua dos anjos</h6>
+                    <p>Piratininga - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00 </p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Aluguel: R$2000,00</h5>
+
+                <div class="valores d-flex b-top justify-content-around">
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/editar.svg" alt="icone">
+                        <p class="color-text">Editar</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/remover.svg" alt="icone">
+                        <p class="color-text">Remover</p>
+                    </div>
+                </div><!--valores-->
+            </div>
+  
+        </article><!--col-md-3-->
+
+        <!--card individual-->
+        <article class="col-md-3">
+          
+            <div class="wrapper">
+                <div class="img-produto">
+                    <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                </div><!--img-produto-->
+
+                <div class="descricao">
+                    <p>Casa</p>
+                    <h6>Rua Edna Vasques</h6>
+                    <p>Parque dos Lima - Franca, SP</p>
+                </div><!--descricao-->
+
+                <div class="especs d-flex justify-content-around">
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/regua-icon.svg" alt="icone de régua">
+                        <p>50 m²</p>
+                    </div><!--icone-wrapper-->
+
+                    <div class="icone-wrapper d-flex">
+                        <img src="images/cama-icon.svg" alt="icone de cama">
+                        <p>2 quartos</p>
+                    </div><!--icone-wrapper-->
+                </div><!--especs-->
+
+                <div class="valores d-flex">
+                    <p>Condomínio: R$ 150,00 </p>
+                    <p>IPTU: R$ 250,00 </p>
+                </div><!--valores-->
+
+                <h5>Aluguel: R$2000,00</h5>
+
+                <div class="valores d-flex b-top justify-content-around">
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/editar.svg" alt="icone">
+                        <p class="color-text">Editar</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pointer">
+                        <img src="images/remover.svg" alt="icone">
+                        <p class="color-text">Remover</p>
+                    </div>
+                </div><!--valores-->
+            </div>
+
+        </article><!--col-md-3-->
+
+        
+    </section><!--row-->
+</div><!--cards-->
+
+
             <!--slider dos cards para mobile-->
 
             <!-- Slider main container -->

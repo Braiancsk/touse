@@ -48,3 +48,19 @@ const swiper4 = new Swiper('.swiper', {
             },    
           },
   });
+
+  const swiper5 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: "auto",
+    centeredSlides: false,
+    spaceBetween: 10,
+    freeMode: true,
+        breakpoints: {
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },    
+          },
+  });
