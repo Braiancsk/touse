@@ -284,7 +284,7 @@ nav .wrapper-input input[type="search"]:focus{
 }
 
 nav .logo > img{
-    max-width: 70px;
+    max-width: 90px;
     height: 50px;
     object-fit: contain;
 }
