@@ -737,7 +737,7 @@ transition: 0.1s ease-in-out;
 }
 
 .wrapper-date + .wrapper-date{
-    margin-left: 10px;
+    margin-top: 20px;
 }
 
 .wrapper__upload label{
@@ -1098,10 +1098,7 @@ transition: 0.1s ease-in-out;
         display: block;
     }
     
-    .wrapper-date + .wrapper-date{
-        margin-left: 0;
-        margin-top: 20px;
-    }
+
 
     .font-14{
         font-size: 14px !important;
@@ -1178,22 +1175,4 @@ transition: 0.1s ease-in-out;
         padding: 8px 20px !important;
     }
 
-}
-
-@media screen and (max-width: 500px){
-    .foto-enviada{
-        max-width:77px;
-        height:70px;
-    }
-    .wrapper__uploaded{
-        height:90px;
-    }
-    .wrapper__upload label{
-        padding:26px;
-    }
-    .upload-progress{
-        height:90px;
-        padding: 8px;
-        margin-top: 10px;
-    }
 }

@@ -182,6 +182,7 @@ div.sub-menu-nav a{
     overflow-x: hidden;
 }
 
+
 .hamburger-wrapper{
     display: none;
 }
@@ -193,7 +194,7 @@ div.sub-menu-nav a{
 /*Estilos para o nav do site*/
 nav{
     padding: 12px 0;
-    background:white;
+    background: white;
 }
 
 nav .wrapper-input{
@@ -334,7 +335,7 @@ section.favoritos nav.nav-favoritos .btn-wrapper{
     display:block !important;
 }
 
-#favoritos,#descartados{
+#favoritos,#descartados,#aprovados{
     display:none;
 }
 
@@ -411,11 +412,11 @@ section.pra-alugar .swiper-slide{
     max-width:300px;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    height: 468px;
-    display: none;
+    height: 580px;
     margin-top: 26px;
     width: 100%;
 }
+
 
 .img-produto img{
     object-fit: cover;
@@ -459,11 +460,9 @@ font-style: normal;
 font-weight: 700;
 text-align: center;
 color: rgba(0, 0, 0, 0.85);
+margin-bottom: 20px;
 }
 
-section.pra-alugar .swiper{
-    display: none;
-}
 
 /*Fim dos estilo para cards do mobile*/
 section.pra-alugar .box-cards .icone-wrapper > img{
@@ -512,6 +511,14 @@ section.pra-alugar .box-cards .btn-wrapper a{
     border: 1px solid #D9D9D9;
     box-shadow: 0px 2px 0px 0px #00000004;
     padding: 5px 13.5px;
+}
+
+.b-top{
+    border-top: 1px solid #E9E9E9;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 /*Estilos para o footer do site*/
@@ -612,39 +619,20 @@ footer .direitos a{
         margin: 0 auto;
     }
 
-    .box-cards{
-        display: none;
-    }
-
     section.pra-alugar .box-cards article{
         width: 100%;
         margin: 0 0;
     }
 
     section.pra-alugar .swiper{
-        display: block;
-        height:550px;
+        height:630px;
     }
 
     section.pra-alugar .swiper-slide{
         display: block;
-        height: 520px;
     }
 
-    .swiper-button-next, .swiper-rtl .swiper-button-prev{
-        width: 30px !important;
-        height: 30px !important;   
-    }
-    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-        font-size: 14px !important;
-    }
-    .swiper-button-next::after{
-        font-size: 14px !important;
-    }
-    .swiper-button-prev, .swiper-rtl .swiper-button-next{
-        width: 30px !important;
-        height: 30px !important;
-    }
+
     header.slides-produto img{
         object-fit: cover;
         width: 100%;
@@ -692,4 +680,5 @@ footer .direitos a{
     .logo{
         order:2;
     }
+
 }

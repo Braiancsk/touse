@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/cadastro7.css">
+    <link rel="stylesheet" href="css/cadastro8.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -235,32 +235,14 @@
 
         <section class="wrapper d-flex align-items-center justify-content-between">
         
-                <h5 class="fw-bold mt-2">Um fotógrafo profissional da ToUse irá até o seu imóvel para tirar as fotos para o anúncio. As sessões duram em média 30 minutos.
+                <h5 class="fw-bold mt-2">Sua sessão de fotos foi agendada para:
                 </h5>
         
         </section><!--wrapper-->
-       
-        <section class="mt-5 mb-5">
-        
-            <div class="box-input box-input-active" id="box-input">
-                <div class="form-check d-flex align-items-center">
-                    <input class="form-check-input form-custom" type="radio" name="flexRadioDefault17" id="box1" checked>
-                    <label class="form-check-label mt-1 mx-1 font-14" for="box1">
-                        Com horário marcado: alguém deve acompanhar o fotógrafo
-                    </label>
-                  </div>    
-                  <p class="text-xs">O fotógrafo vai ao imóvel no dia e horário marcado</p>
-                  
-            </div><!--box-input-->
-            
-        </section>
 
-        <section class="mt-2 mb-5">
-            <h6 class="fw-bold mt-2">Escolha a data e o horário
-            </h6>
-           
-            
-            <div class="d-md-flex align-items-center mt-4">
+
+        <section class="mt-2 mb-5">            
+            <div class="align-items-center mt-4">
                 <div class="wrapper-date d-flex flex-column">
                     <label for="data-fotografo">Data</label>
                     <input class="custom-date" type="date" name="data-fotografo" />
@@ -274,191 +256,7 @@
             </div><!--d-flex-->
         </section>
 
-        <section class="mt-4">
-            
-            <h5 class="fw-bold mt-2">Ou envie suas próprias fotos
-            </h5>
-
-            <div class="wrapper d-flex align-items-center flex-wrap">
-
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-1" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                    <!--modal da imagem-->                          
-                    <template id="my-template">
-                        <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                        <swal-param name="allowEscapeKey" value="false" />
-                        <swal-param
-                        name="customClass"
-                        value='{ "popup": "my-popup" }' />
-                    </template>
-                    <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-2" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                        <!--modal da imagem-->                          
-                        <template id="my-template2">
-                            <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                            <swal-param name="allowEscapeKey" value="false" />
-                            <swal-param
-                            name="customClass"
-                            value='{ "popup": "my-popup" }' />
-                        </template>
-                        <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-                
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-3" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                        <!--modal da imagem-->                          
-                        <template id="my-template3">
-                            <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                            <swal-param name="allowEscapeKey" value="false" />
-                            <swal-param
-                            name="customClass"
-                            value='{ "popup": "my-popup" }' />
-                        </template>
-                        <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-
         
-                <!--caixa de progresso enquanto acontece o upload-->
-                <div class="upload-progress d-flex flex-column justify-content-center">
-                       <p>Enviando...</p>
-                       <div class="progress" style="height: 2px;">
-                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                </div><!--wrapper__upload-single-->
-                    
-              
-            
-                <div class="wrapper__upload d-flex flex-column align-items-center justify-content-center">
-
-                    <div class="wrapper__upload-single">
-                        <input class="d-none" type="file" name="image" id="image-upload">
-                        <label for="image-upload">
-                            <img src="images/plus.svg" alt="icone"/>
-                            <span>Enviar</span>
-                        </label>
-                    </div><!--wrapper__upload-single-->
-                    
-                </div><!--wrapper__content-->
-            </div><!--wrapper-->
-        </section><!--enviar fotos-->
-
-
-        <!--sessão de enviar vídeos-->
-        <section class="mt-4">
-            
-            <h5 class="fw-bold mt-2">Envie os vídeos
-            </h5>
-
-            <div class="wrapper d-flex align-items-center flex-wrap">
-
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-1" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                    <!--modal da imagem-->                          
-                    <template id="my-template">
-                        <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                        <swal-param name="allowEscapeKey" value="false" />
-                        <swal-param
-                        name="customClass"
-                        value='{ "popup": "my-popup" }' />
-                    </template>
-                    <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-2" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                        <!--modal da imagem-->                          
-                        <template id="my-template2">
-                            <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                            <swal-param name="allowEscapeKey" value="false" />
-                            <swal-param
-                            name="customClass"
-                            value='{ "popup": "my-popup" }' />
-                        </template>
-                        <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-                
-                <div class="wrapper__uploaded"> 
-                    <div class="icons">
-                        <img id="modal-3" class="eye" src="images/eye.svg" alt="icone" />
-                        <img class="trash" src="images/excluir.svg" alt="icone" />
-                    </div>
-
-                        <!--modal da imagem-->                          
-                        <template id="my-template3">
-                            <swal-image src="images/upload-photo.jpg" alt="imagem ampliada" />
-                            <swal-param name="allowEscapeKey" value="false" />
-                            <swal-param
-                            name="customClass"
-                            value='{ "popup": "my-popup" }' />
-                        </template>
-                        <!--fim da modal da imagem-->
-                    
-                    <!--imagem que o user enviou-->
-                    <img class="img-fluid foto-enviada" src="images/upload-photo.jpg" alt="icone"/>  
-                </div><!--wrapper__upload-single-->
-
-        
-                <!--caixa de progresso enquanto acontece o upload-->
-                <div class="upload-progress d-flex flex-column justify-content-center">
-                       <p>Enviando...</p>
-                       <div class="progress" style="height: 2px;">
-                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                </div><!--wrapper__upload-single-->
-                    
-              
-            
-                <div class="wrapper__upload d-flex flex-column align-items-center justify-content-center">
-
-                    <div class="wrapper__upload-single">
-                        <input class="d-none" type="file" name="image" id="image-upload">
-                        <label for="image-upload">
-                            <img src="images/plus.svg" alt="icone"/>
-                            <span>Enviar</span>
-                        </label>
-                    </div><!--wrapper__upload-single-->
-                    
-                </div><!--wrapper__content-->
-            </div><!--wrapper-->
-        </section><!--enviar fotos-->
      
 
 
@@ -469,26 +267,6 @@
         </div>
 
         </div><!--card-->
-
-        <div class="d-flex flex-column">
-              <div class="SideCard">
-                  <div class="wrapper d-flex align-items-center">
-                      <img src="images/seguranca.svg" alt="icone"/>
-                      <h6 class="custom-title">Recomendação de segurança</h6>
-                  </div>
-                  <p>Se possível, para evitar qualquer aglomeração, libere o imóvel para a sessão de fotos e deixe as chaves na portaria.
-                </p>
-              </div><!--sidecard-->
-          
-              <div class="SideCard mt-2">
-                  <div class="wrapper d-flex align-items-center">
-                      <img src="images/fotos.svg" alt="icone"/>
-                      <h6 class="custom-title">Sobre a sessão de fotos
-                      </h6>
-                  </div>
-                  <p>Sessões sem horário marcado normalmente são realizadas antes, fazendo com o que o seu anúncio vá mais rápido para o ar.</p>
-              </div><!--sidecard-->
-
           </div><!--d-flex-->
         </section><!--container-card-->
         
@@ -597,7 +375,5 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/cadastro7.js"></script>
 </body>
 </html>
