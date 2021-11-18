@@ -54,7 +54,7 @@ const swiper4 = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: "auto",
-    centeredSlides: false,
+    centeredSlides:true,
     spaceBetween: 10,
     freeMode: true,
         breakpoints: {

@@ -331,7 +331,6 @@ section.favoritos nav.nav-favoritos h6{
 }
 
 section.favoritos nav.nav-favoritos .btn-wrapper{
-    margin: 0 10px;
     padding:11px 0;
     transition: 0.1s ease-in-out;
 }
@@ -359,6 +358,10 @@ section.vazio h5,section.descartados h5{
     font-style: normal;
     font-weight: 500;
     margin-top: 20px;
+}
+
+.ml{
+    margin-left: 5px !important;
 }
 
 /*fim da sessão de estilos de favoritos vazio*/
@@ -425,6 +428,10 @@ section.pra-alugar .swiper-slide{
     height: 580px;
     margin-top: 26px;
     width: 100%;
+    display: none;
+}
+
+.swiper{
     display: none;
 }
 
@@ -581,6 +588,7 @@ footer .direitos a{
 
 .swiper2{
     overflow: hidden;
+    width: 100%;
 }
 
 
@@ -701,4 +709,10 @@ footer .direitos a{
         order:2;
     }
 
+    section.pra-alugar h2{
+        font-size: 24px;
+    }
+    .swiper{
+        display: block;
+    }
 }
