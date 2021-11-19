@@ -136,7 +136,7 @@ div.sub-menu-nav{
     top:30px;
     z-index:-1;
     padding: 30px;
-    width: 255%;
+    width: 222%;
     opacity: 0;
     transition: 0.2s ease-in-out;
 }
@@ -149,9 +149,15 @@ div.sub-menu-nav{
 div.sub-menu-nav a{
     text-decoration: none;
     color:#434343;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
+.line-menu{
+    width: 100%;
+    height:1px;
+    background-color:#D9D9D9;
+    margin: 10px 0;
+}
 
 /*fim dos estilos de submenu da nav principal*/
 
@@ -178,6 +184,7 @@ div.sub-menu{
     border-radius: 10px;
     padding: 30px;
     width: 250%;
+    max-width: 259px;
     opacity: 0;
     transition: 0.2s ease-in-out;
 }
@@ -660,7 +667,7 @@ input[type=date] > i{
 /*Fim dos estilos para a sessão de cards*/
 
 /*media queries*/
-@media screen and (max-width: 995px){
+@media screen and (max-width: 1199px){
     .hamburger-wrapper{
         display: block;
     }
@@ -676,10 +683,9 @@ input[type=date] > i{
     nav .mobile{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: start !important;
         align-items: center;
     }
-
 }
 
 @media screen and (max-width: 768px){
@@ -736,9 +742,6 @@ input[type=date] > i{
         height:600px;
     }
 
-    nav .mobile{
-        justify-content: start !important;
-    }
 
     .logo{
         order:2;

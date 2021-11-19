@@ -1,2 +1,1 @@
-Funcionalidade de calendário
-Formatar números na etapa 4
+Criar uma página com os cards de exemplo para inserir nas páginas favoritos, meus imoveis e etc...

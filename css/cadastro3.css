@@ -229,6 +229,14 @@ div.sub-menu-nav a{
     padding: 10px 0;
 }
 
+
+.line-menu{
+    width: 100%;
+    height:1px;
+    background-color:#D9D9D9;
+    margin: 10px 0;
+}
+
 /*fim dos estilos de submenu da nav principal*/
 
 .swiper-container{
@@ -736,9 +744,10 @@ transition: 0.1s ease-in-out;
     nav .mobile{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: start !important;
         align-items: center;
     }
+
     .side-form-up{
         position: relative;
         top:-200px;
@@ -853,9 +862,7 @@ transition: 0.1s ease-in-out;
         padding: 0 2%;
     }
    
-    nav .mobile{
-        justify-content: start !important;
-    }
+
 
     .logo{
         order:2;

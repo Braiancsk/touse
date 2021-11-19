@@ -17,15 +17,14 @@
  <!--menu mobile-->
  <div class="menu-mobile">
     <div class="wrapper mb-4">
-      <div class="user d-flex align-items-center">
-        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
-        <span class="mx-2" id="btn-user">Usuário</span>
-        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
-        </div><!--user-->
-      </div><!--wrapper-->
+        <p>Entre para ver seus favoritos, visitas, propostas e aluguéis</p>
+    </div><!--wrapper-->
   
+    <div class="btn-wrapper">
+       <a href="buscar.html">Encontrar imóveis</a>
+    </div><!--wrapper-->
   
-    <div class="line mt-4"></div>
+    <div class="line"></div>
   
     <div class="wrapper d-flex align-items-center my-3">
         <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
@@ -44,35 +43,39 @@
   
     <div class="wrapper d-flex align-items-center my-3">
         <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
-        <a href="canceladas.html">Contratos e boletos</a>
+        <a href="#">Contratos e boletos</a>
+    </div><!--wrapper-->
+  
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+        <a href="meus-imoveis.html">Meus imóveis</a>
     </div><!--wrapper-->
   
     <div class="line"></div>
   
-  
     <div class="wrapper my-4">
-        <a href="#" class="sub-nav">Imovéis para alugar</a>
+        <a href="busca.html" class="sub-nav">Imovéis para alugar</a>
     </div><!--wrapper-->
   
     <div class="wrapper my-3">
-        <a href="#" class="sub-nav">Imovéis para comprar</a>
+        <a href="busca.html" class="sub-nav">Imovéis para comprar</a>
     </div><!--wrapper-->
   
     <div class="wrapper d-flex reference my-1">
-        <a href="#" class="sub-nav">Para proprietários</a>
+        <a class="sub-nav">Para proprietários</a>
         <img src="images/arrow-down.svg" alt="icone">
         <div class="sub-menu d-flex flex-column justify-content-around">
-                    <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
+                    <a href="anuncie.html" class="sub-nav">Anunciar imovéis para alugar</a>
                     <div class="line"></div>
-                    <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
+                    <a href="anuncie.html" class="sub-nav">Anunciar imovéis para comprar</a>
                     <div class="line"></div>
-                    <a href="#" class="sub-nav">Meus imovéis</a>
+                    <a href="meus-imoveis.html" class="sub-nav">Meus imovéis</a>
                   
         </div><!--submenu-->
     </div><!--wrapper-->
   
     <div class="wrapper my-3">
-        <a href="#" class="sub-nav">Sobre nós</a>
+        <a href="sobre.html" class="sub-nav">Sobre nós</a>
     </div><!--wrapper-->
   
     <div class="line"></div>
@@ -96,128 +99,107 @@
   </div><!--menu-mobile-->
   <!--fim do menu mobile-->
   <div class="bg"></div><!--background para menu mobile ativado-->
+  <nav>
+  <div class="container">
+    <div class="row d-flex">
+        <div class="col-1 d-flex justify-content-between mobile">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                </div>
+            </a>
   
+            <div class="hamburger-wrapper">
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div><!--hamburger-wrapper-->
+        </div><!--col-3-->
   
-    <nav>
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-1 d-flex justify-content-between mobile">
-                    <a href="index.html">
-                        <div class="logo">
-                            <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
-                        </div>
-                    </a>
-
-                    <div class="hamburger-wrapper">
-                        <button class="hamburger hamburger--slider" type="button">
-                            <span class="hamburger-box">
-                              <span class="hamburger-inner"></span>
-                            </span>
-                          </button>
-                    </div><!--hamburger-wrapper-->
-                </div><!--col-3-->
-
-                <div class="col-9 links">
-                    <ul class="d-flex align-items-center">
-                        <div class="wrapper-input mx-1">
-                          <input type="search" name="pesquisar" id="pesquisar" placeholder="Rua, bairro ou código">
-                          <img src="images/lupa.svg" alt="icone"/>
-                        </div>
-                        <div class="reference">
-                            <li><a href="#">Imovéis para alugar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                            <div class="sub-menu-nav d-flex flex-column">
-                                <a href="#" class="sub-nav">Imovéis para alugar</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Imovéis para alugar</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Imovéis para alugar</a>
-                                
-                            </div><!--sub-menu-nav-->
-                        </div><!--reference-->
-    
-                        <div class="reference">
-                            <li><a href="#">Imovéis para comprar</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                            <div class="sub-menu-nav d-flex flex-column">
-                                <a href="#" class="sub-nav">Imovéis para comprar</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Imovéis para comprar</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Imovéis para comprar</a>
-                             
-                            </div><!--sub-menu-nav-->
-                        </div><!--reference-->
-                      
-                        <div class="reference">
-                        <li><a href="#">Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                        <div class="sub-menu-nav d-flex flex-column">
-                            <a href="#" class="sub-nav">Anunciar imovéis para alugar</a>
-                            <div class="line"></div>
-                            <a href="#" class="sub-nav">Anunciar imovéis para comprar</a>
-                            <div class="line"></div>
-                            <a href="#" class="sub-nav">Meus imovéis</a>
+        <div class="col-9 links">
+      
+                <ul class="d-flex align-items-center">
+                  <div class="wrapper-input mx-1">
+                    <input type="search" name="pesquisar" id="pesquisar" placeholder="Rua, bairro ou código">
+                    <img src="images/lupa.svg" alt="icone"/>
+                  </div>
+         
+                        <li><a href="busca.html">Imovéis para alugar</a></li>
+                
+  
+                  
+                        <li><a href="busca.html">Imovéis para comprar</a></li>
+                   
+                        <li><a href="busca.html">Imovéis para temporada</a></li>
+  
+                    <div class="reference">
+                    <li><a>Para proprietário</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
+                    <div class="sub-menu-nav d-flex flex-column">
+                        <a href="anuncie.html" class="sub-nav">Anunciar imovéis para alugar</a>
+                        <div class="line-menu"></div>
+                        <a href="anuncie.html" class="sub-nav">Anunciar imovéis para comprar</a>
+                
+                    </div><!--sub-menu-nav-->
+                    </div><!--reference-->
+  
+                 
+                    <li><a href="#">Indicar imóveis</a></li>
                           
-                        </div><!--sub-menu-nav-->
-                        </div><!--reference-->
-    
-                        <div class="reference">
-                            <li><a href="#">Indicar imóveis</a><img src="images/arrow-down.svg" alt="icone de seta para baixo"/></li>
-                            <div class="sub-menu-nav d-flex flex-column">
-                                <a href="#" class="sub-nav">Indicar imovéis</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Indicar imovéis</a>
-                                <div class="line"></div>
-                                <a href="#" class="sub-nav">Indicar imovéis</a>
-                                
-                            </div><!--sub-menu-nav-->
-                        </div><!--reference-->
-                     
-                        <li><a href="#">Sobre nós</a></li>
-                    </ul>
-                </div><!--col-9-->
-
-                <div class="col-2 d-flex align-items-center">
-                    <div class="ajuda d-flex align-items-center">
-                        <a href="#">Ajuda</a>
-                    <div class="user">
-                        <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
-                        <span id="btn-user">Usuário</span>
-                        <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
-                    <!--sub menu de usuário-->
-                    <div class="sub-menu">
-                        <div class="wrapper d-flex align-items-center">
-                            <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
-                            <a href="favoritos.html">Favoritos e listas</a>
-                        </div><!--wrapper-->
-
-                        <div class="wrapper d-flex align-items-center">
-                            <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
-                            <a href="historico.html">Visitas agendadas</a>
-                        </div><!--wrapper-->
-
-                        <div class="wrapper d-flex align-items-center">
-                            <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
-                            <a href="canceladas.html">Propostas enviadas</a>
-                        </div><!--wrapper-->
-
-                        <div class="wrapper d-flex align-items-center">
-                            <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
-                            <a href="canceladas.html">Contratos e boletos</a>
-                        </div><!--wrapper-->
-
-                        <div class="line my-1"></div>
-
-                        <div class="wrapper flex-column d-flex">
-                            <a href="minhaconta.html">Minha conta</a>
-                            <a href="#">Sair da conta</a>
-                        </div><!--wrapper-->
-                    </div><!--sub-menu-->
-
-                    </div><!--user-->
-                    </div><!--ajuda-->
-                </div><!--col-3-->
-            </div><!--row-->
-        </div><!--container-->
-    </nav>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+        </div><!--col-9-->
+  
+        <div class="col-2 d-flex align-items-center">
+            <div class="ajuda d-flex align-items-center">
+                <a href="#">Ajuda</a>
+            <div class="user">
+                <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                <span id="btn-user">Usuário</span>
+                <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                
+                <!--sub menu de usuário-->
+                <div class="sub-menu">
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                        <a href="favoritos.html">Favoritos e listas</a>
+                    </div><!--wrapper-->
+  
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                        <a href="historico.html">Visitas agendadas</a>
+                    </div><!--wrapper-->
+  
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                        <a href="canceladas.html">Propostas enviadas</a>
+                    </div><!--wrapper-->
+  
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                        <a href="#">Contratos e boletos</a>
+                    </div><!--wrapper-->
+  
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+                        <a href="meus-imoveis.html">Meus imóveis</a>
+                    </div><!--wrapper-->
+  
+                    <div class="line my-1"></div>
+  
+                    <div class="wrapper flex-column d-flex">
+                        <a href="minhaconta.html">Minha conta</a>
+                        <a href="#">Sair da conta</a>
+                    </div><!--wrapper-->
+                </div><!--sub-menu-->
+  
+            </div><!--user-->
+            </div><!--ajuda-->
+        </div><!--col-3-->
+    </div><!--row-->
+  </div><!--container-->
+  </nav>
 
     
     <section class="minha-conta  d-flex justify-content-center align-items-center">
