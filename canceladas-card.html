@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/favoritos.css">
+    <link rel="stylesheet" href="css/canceladas.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
 </head>
 <body>
+
  <!--menu mobile-->
  <div class="menu-mobile">
     <div class="wrapper mb-4">
@@ -207,51 +208,278 @@
         <div class="container">
             <nav class="nav-favoritos d-flex justify-content-center align-items-center">
                 <div id="btn-favoritos" class="btn-wrapper d-flex active">
-                    <img class="contain" src="images/favoritos.png" alt="icone"/>
-                    <h6>Favoritos</h6>
+                    <h6>Canceladas</h6>
                 </div><!--btn-wrapper-->
     
                 <div id="btn-descartados" class="btn-wrapper d-flex">
-                    <img src="images/descartados.svg" alt="icone"/>
-                    <h6>Descartados</h6>
+                    <h6>Em Andamento</h6>
                 </div><!--btn-wrapper-->
             </nav><!--nav-favoritos-->
         </div><!--container-->
     </section>
 
 
- <!--favoritos vazio-->    
+        
+<!--se houver canceladas -->
+     
+<section class="pra-alugar mt-5">
+    <div class="container">
+        <div class="box-cards">
+            <section class="row desktop">
+        
+  <!--card individual-->
+  <article class="col-md-3">
+    <a class="text-decoration-none" href="detalhes.html">
+    <div class="wrapper">
+        <div class="img-produto">
+            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+        </div><!--img-produto-->
+
+        <div class="descricao">
+            <p>Apartamento</p>
+            <h6>Alameda Arminda Nogueira</h6>
+            <p>Vila Santa Cruz - Franca, SP</p>
+            <p>Aluguel: R$ 2000,00</p>
+            <p>Condomínio: R$ 150,00</p>
+            <p>IPTU: R$ 250,00 </p>
+        </div><!--descricao-->
+
+        <div class="state">
+        
+                <div class="state-single d-flex">
+                    <img src="images/visitado.svg" alt="icone"/>
+                    <p class="mx-3 state-checked">Visitar</p>
+                </div><!--state-single-->
+
+                <div class="state-single d-flex">
+                    <span class="circle state-atual">2</span>
+                    <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+                </div><!--state-single-->
+
+                <div class="state-single d-flex">
+                    <span class="circle">3</span>
+                    <p class="mx-3">Contrato</p>
+                </div><!--state-single-->
+
+        </div><!--state-->
+    </div>
+</a>
+</article><!--col-md-3-->
+
+<!--card individual-->
+<article class="col-md-3">
+    <a class="text-decoration-none" href="detalhes.html">
+    <div class="wrapper">
+        <div class="img-produto">
+            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+        </div><!--img-produto-->
+
+        <div class="descricao">
+            <p>Apartamento</p>
+            <h6>Rua Antônio Figueiredo</h6>
+            <p>Vila Santa Cruz - Franca, SP</p>
+            <p>Aluguel: R$ 2000,00</p>
+            <p>Condomínio: R$ 150,00</p>
+            <p>IPTU: R$ 250,00 </p>
+        </div><!--descricao-->
+
+        <div class="state">
+        
+            <div class="state-single d-flex">
+                <img src="images/visitado.svg" alt="icone"/>
+                <p class="mx-3 state-checked">Visitar</p>
+            </div><!--state-single-->
+
+            <div class="state-single d-flex">
+                <span class="circle state-atual">2</span>
+                <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+            </div><!--state-single-->
+
+            <div class="state-single d-flex">
+                <span class="circle">3</span>
+                <p class="mx-3">Contrato</p>
+            </div><!--state-single-->
+       
+
+    </div><!--state-->
+    </div>
+</a>
+</article><!--col-md-3-->
+
+        
+            
+            </section><!--row-->
+        </div><!--cards-->
+
+
+
+<!--slider dos cards para mobile-->
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+
+                        <div class="descricao">
+                            <p>Apartamento</p>
+                            <h6>Alameda Arminda Nogueira</h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                            <p>Aluguel: R$ 2000,00</p>
+                            <p>Condomínio: R$ 150,00</p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--descricao-->
+
+                        <div class="state">
+                        
+                            <div class="state-single d-flex">
+                                <img src="images/visitado.svg" alt="icone"/>
+                                <p class="mx-3 state-checked">Visitar</p>
+                            </div><!--state-single-->
+
+                            <div class="state-single d-flex">
+                                <span class="circle state-atual">2</span>
+                                <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+                            </div><!--state-single-->
+
+                            <div class="state-single d-flex">
+                                <span class="circle">3</span>
+                                <p class="mx-3">Contrato</p>
+                            </div><!--state-single-->
+
+                          </div><!--state-->
+                    </div><!--card-mobile-->
+                </a>
+                </div><!--slider-single-->
+
+ <!--slider-individual-->
+                <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa1.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+        
+                        <div class="descricao">
+                            <p>Apartamento</p>
+                            <h6>Alameda Arminda Nogueira</h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                            <p>Aluguel: R$ 2000,00</p>
+                            <p>Condomínio: R$ 150,00</p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--descricao-->
+        
+                        <div class="state">
+                        
+                                <div class="state-single d-flex">
+                                    <img src="images/visitado.svg" alt="icone"/>
+                                    <p class="mx-3 state-checked">Visitar</p>
+                                </div><!--state-single-->
     
-    <section class="vazio show" id="favoritos">
+                                <div class="state-single d-flex">
+                                    <span class="circle state-atual">2</span>
+                                    <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+                                </div><!--state-single-->
+
+                                <div class="state-single d-flex">
+                                    <span class="circle">3</span>
+                                    <p class="mx-3">Contrato</p>
+                                </div><!--state-single-->
+                        </div><!--state-->
+
+                    </div><!--card-mobile-->
+                </a>
+                </div><!--slider-single-->
+
+    <!--slider-individual-->
+                <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa2.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
         
-        <!--se não houver favoritos -->
-        <div class="container flex-column d-flex justify-content-center align-items-center">
-            <div class="coracao mt-5">
-                <img src="images/hear-blue.svg" alt="icone"/>
-            </div><!--coracao-->
-            <h5>Você não tem imóveis favoritos</h5>
-            <p class="mt-3">Clique no botão <img src="images/favoritos.png" alt="icone"> para salvar os seus imóveis favoritos aqui</p>
-        </div><!--container-->
+                        <div class="descricao">
+                            <p>Apartamento</p>
+                            <h6>Alameda Arminda Nogueira</h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                            <p>Aluguel: R$ 2000,00</p>
+                            <p>Condomínio: R$ 150,00</p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--descricao-->
         
+                        <div class="state">
+                        
+                                <div class="state-single d-flex">
+                                    <img src="images/visitado.svg" alt="icone"/>
+                                    <p class="mx-3 state-checked">Visitar</p>
+                                </div><!--state-single-->
+    
+                                <div class="state-single d-flex">
+                                    <span class="circle state-atual">2</span>
+                                    <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+                                </div><!--state-single-->
+
+                                <div class="state-single d-flex">
+                                    <span class="circle">3</span>
+                                    <p class="mx-3">Contrato</p>
+                                </div><!--state-single-->
+                        </div><!--state-->
 
 
-<!--se houver favoritos por favor pegue a sessão se houver favoritos no arquivo cards-favoritos.html-->
+                    </div><!--card-mobile-->
+                </a>
+                </div><!--slider-single-->
 
+    <!--slider-individual-->
+                <div class="swiper-slide">
+                    <a class="text-decoration-none" href="detalhes.html">
+                    <div class="box-cards-mobile">
+                        <div class="img-produto">
+                            <img class="img-fluid" src="images/casa3.jpg" alt="foto de produto"/>
+                        </div><!--img-produto-->
+        
+                        <div class="descricao">
+                            <p>Casa</p>
+                            <h6>Rua dos anjos </h6>
+                            <p>Vila Santa Cruz - Franca, SP</p>
+                            <p>Aluguel: R$ 2000,00</p>
+                            <p>Condomínio: R$ 150,00</p>
+                            <p>IPTU: R$ 250,00 </p>
+                        </div><!--descricao-->
+        
+                        <div class="state">
+                        
+                                <div class="state-single d-flex">
+                                    <img src="images/visitado.svg" alt="icone"/>
+                                    <p class="mx-3 state-checked">Visitar</p>
+                                </div><!--state-single-->
+    
+                                <div class="state-single d-flex">
+                                    <span class="circle state-atual">2</span>
+                                    <p class="mx-3">Ver ou fazer avaliação de crédito </p>
+                                </div><!--state-single-->
 
-
-    </section><!--vazio-->
-
-
-<!--descartados vazio-->
-    <section class="descartados" id="descartados">
-        <div class="container flex-column d-flex justify-content-center align-items-center">
-            <div class="coracao mt-5">
-                <img src="images/trashcan-violet.svg" alt="icone"/>
-            </div><!--coracao-->
-            <h5>Você não tem imóveis descartados</h5>
-            <p class="mt-3">Clique no botão <img src="images/lixo.svg" alt="icone"> para descartar</p>
-        </div><!--container-->
-    </section><!--vazio-->
+                                <div class="state-single d-flex">
+                                    <span class="circle">3</span>
+                                    <p class="mx-3">Contrato</p>
+                                </div><!--state-single-->
+                        </div><!--state-->
+                    </div><!--card-mobile-->
+                </a>
+                </div><!--slider-single-->
+                
+            </div>
+               
+            </div><!--swipper-->
+    </div><!--container-->
+</section><!--pra-alugar-->
 
 
 
@@ -333,7 +561,7 @@
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/favoritos.js"></script>
-    <script src="js/detalhes.js"></script>
+    <script src="js/canceladas.js"></script>
     <script src="js/hamburger.js"></script>
 </body>
 </html>

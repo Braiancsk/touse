@@ -720,8 +720,13 @@ footer .direitos a{
         padding-left: 0 !important;
     }
 
-
     .logo{
         order:2;
     }
+
+        
+    .custom-height{
+        height: 585px !important;
+    }
+
 }
