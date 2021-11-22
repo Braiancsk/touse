@@ -331,6 +331,10 @@ nav .ajuda span{
 
 
 /*sessão de estilos de favoritos vazio*/
+nav.nav-favoritos{
+    background-color: transparent;
+}
+
 section.favoritos nav.nav-favoritos h6{
     font-size: 18px;
     font-style: normal;
