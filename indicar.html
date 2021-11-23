@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/indicar.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>ToUse</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
+</head>
+<body>
+   <!--menu mobile-->
+   <div class="menu-mobile">
+    <div class="wrapper mb-4">
+        <p>Entre para ver seus favoritos, visitas, propostas e aluguéis</p>
+    </div><!--wrapper-->
+
+    <div class="btn-wrapper">
+       <a href="buscar.html">Encontrar imóveis</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+        <a href="favoritos.html">Favoritos e listas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+        <a href="historico.html">Visitas agendadas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+        <a href="canceladas.html">Propostas enviadas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+        <a href="#">Contratos e boletos</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+        <a href="meus-imoveis.html">Meus imóveis</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper my-4">
+        <a href="busca.html" class="sub-nav">Imovéis para alugar</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper my-4">
+        <a href="busca.html" class="sub-nav">Imovéis para comprar</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper my-4">
+        <a href="sobre.html" class="sub-nav">Sobre nós</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper flex-column d-flex my-3">
+        <a class="my-3" href="minhaconta.html">Minha conta</a>
+        <a class="my-3" href="#">Sair da conta</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper my-3">
+        <a href="#">Ajuda</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper py-3">
+        <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+    </div><!--wrapper-->
+</div><!--menu-mobile-->
+<!--fim do menu mobile-->
+<div class="bg"></div><!--background para menu mobile ativado-->
+<nav>
+<div class="container">
+    <div class="row d-flex">
+        <div class="col-1 d-flex justify-content-between mobile">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                </div>
+            </a>
+
+            <div class="hamburger-wrapper">
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div><!--hamburger-wrapper-->
+        </div><!--col-3-->
+
+        <div class="col-9 links">
+                <ul class="d-flex align-items-center">
+         
+                        <li><a href="busca.html">Imovéis para alugar</a></li>
+                
+
+                  
+                        <li><a href="busca.html">Imovéis para comprar</a></li>
+                   
+                        <li><a href="busca.html">Imovéis para temporada</a></li>
+                    
+                        <li><a href="#">Indicar imóveis</a></li>
+                            
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+        </div><!--col-9-->
+
+        <div class="col-2 d-flex align-items-center">
+            <div class="ajuda d-flex align-items-center">
+                <a href="#">Ajuda</a>
+            <div class="user">
+                <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                <span id="btn-user">Usuário</span>
+                <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                
+                <!--sub menu de usuário-->
+                <div class="sub-menu">
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                        <a href="favoritos.html">Favoritos e listas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                        <a href="historico.html">Visitas agendadas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                        <a href="canceladas.html">Propostas enviadas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                        <a href="#">Contratos e boletos</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+                        <a href="meus-imoveis.html">Meus imóveis</a>
+                    </div><!--wrapper-->
+
+                    <div class="line my-1"></div>
+
+                    <div class="wrapper flex-column d-flex">
+                        <a href="minhaconta.html">Minha conta</a>
+                        <a href="#">Sair da conta</a>
+                    </div><!--wrapper-->
+                </div><!--sub-menu-->
+
+            </div><!--user-->
+            </div><!--ajuda-->
+        </div><!--col-3-->
+    </div><!--row-->
+</div><!--container-->
+</nav>
+
+    <header class="d-flex justify-content-center align-items-end">
+        <div class="container d-flex justify-content-end align-items-baseline">
+            <img src="images/t.png" alt="icone">
+            <div class="card-hero">
+                <h1>Trabalhe conosco</h1>
+                <p class="color-text">Escolha qual a sua função e envie seus dados</p>
+                
+                <form>
+
+       
+                <div class="d-flex flex-md-nowrap flex-wrap">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Corretor
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Fotógrafo
+                        </label>
+                    </div><!--form-check-->
+
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Vistoriador
+                        </label>
+                    </div><!--form-check-->
+                </div><!--flex-->
+
+                <div class="d-flex justify-content-between mt-3 flex-md-nowrap flex-wrap"">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault4"/>
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            Parceiro de reparos
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault5"/>
+                        <label class="form-check-label lg-label" for="flexRadioDefault5">
+                            Porteiro
+                        </label>
+                    </div><!--form-check-->
+
+                </div><!--flex-->
+
+                <section class="wrapper__content mt-4 d-flex flex-column">
+                        <label for="valor">Seu nome completo *</label>
+                        <input class="custom-input" type="text" name="valor" placeholder="0"/>         
+                </section><!--wrapper-->
+
+                
+                <section class="wrapper__content mt-4 d-flex flex-column">
+                    <label for="valor">Seu WhatsApp com DDD  *</label>
+                    <input class="custom-input" type="text" name="valor" placeholder="0"/>         
+            </section><!--wrapper-->
+
+            
+            <section class="wrapper__content mt-4 d-flex flex-column">
+                <label for="valor">Seu email *</label>
+                <input class="custom-input" type="email" name="valor" placeholder="0"/>         
+             </section><!--wrapper-->
+
+             <input class="enviar" type="submit" value="Enviar" />
+            </form>
+            </div><!--card-hero-->
+            <img src="images/u.png" alt="icone">
+        </div><!--container-->
+    </header>
+    
+    <section class="information d-flex justify-content-center my-5">
+       <h2 class="color-title">Por que ser um Parceiro To Use</h2>
+    </section>
+
+    <section class="diferenciais">
+        <div class="container d-flex justify-content-center">
+            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="icon d-flex justify-content-center">
+                            <img src="images/digital.png" alt="icone">
+                        </div><!--icon-->
+                        <h4>Digital e Físico</h4>
+                        <p>Oferecemos uma plataforma digital com calor humano para alugar rápido, sem fiador ou depósito caução. Agende sua visita online e feche negócio online ou fisicamente em um de nossos parceiros.</p>
+                    </div><!--cards-->
+                </div><!--slide-single-->
+
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="icon d-flex justify-content-center">
+                            <img src="images/identidade.png" alt="icone">
+                        </div><!--icon-->
+                        <h4>Nosso DNA</h4>
+                        <p>A plataforma é virtual, mas somos feitos por pessoas e com base nisso temos em cada local um ponto de atendimento com calor humano.</p>
+                    </div><!--cards-->
+                </div><!--slide-single-->
+
+                <div class="swiper-slide">
+                    <div class="cards">
+                        <div class="icon d-flex justify-content-center">
+                            <img src="images/acreditamos.png" alt="icone">
+                        </div><!--icon-->
+                        <h4>O que acreditamos</h4>
+                        <p>Nossa marca simboliza uma parceria para o bem comum, e queremos conquistar o Brasil, tendo como missão encantar e ajudar os nossos clientes a realizar seus sonhos, com o lema: Um por todos e todos por um, pois só assim acreditamos que alcançaremos o sucesso para todos.</p>
+                    </div><!--cards-->
+                </div><!--slide-single-->
+
+                
+    
+            </div>
+        </div><!--container-->
+    </section><!--diferenciais-->
+
+    <section class="sobre">
+        <div class="container  d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-md-6 celular order-md-1">
+                    <img class="img-fluid" src="images/celular.png" alt="imagem de celular com o app da empresa">
+                </div><!--col-md-6-->
+
+                <div class="col-md-6 order-md-0">
+                    <div class="text">
+                        <h2>PARCEIROS ÚNICOS PARA UM NEGÓCIO ÚNICO</h2>
+                        <p>Não somos perfeitos, apesar de buscamos um atendimento e modelo de negócio que possa ser a melhor opção para quem de alguma forma tenha contato com a marca TOUSE, seja na presença física ou online, com menos burocracia e mais efetividade tanto para proprietários quanto para consumidores finais.</p>
+                    </div>
+                    <div class="text-mobile">
+                        <h2>PARCEIROS ÚNICOS PARA UM NEGÓCIO ÚNICO</h2>
+                        <p>Não somos perfeitos, apesar de buscamos um atendimento e modelo de negócio que possa ser a melhor opção para quem de alguma forma tenha contato com a marca TOUSE, seja na presença física ou online, com menos burocracia e mais efetividade tanto para proprietários quanto para consumidores finais.</p>
+                    </div><!--text-mobile-->
+                </div><!--col-md-6-->
+            
+            </div><!--row-->
+            
+        </div><!--container-->
+    </section><!--sobre-->
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                    <img src="images/logo-footer.png" alt="logo da empresa"/>
+                    <div class="social-icons d-flex justify-content-center w-50 my-3">
+                        <a href="#"><img src="images/tiktok.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/facebook-icon.svg" alt="icone do facebook"/></a>
+                        <a href="#"><img src="images/twitter-icon.svg" alt="icone do twiiter"/></a>
+                        <a href="#"><img src="images/yt-icon.svg" alt="icone do youtube"/></a>
+                    </div><!--social-icons-->
+                </div><!--col-md-6-->
+
+   
+            </div><!--row-->
+
+            <div class="wrapper d-md-flex justify-content-between">
+                <div class="wrapper__single d-flex align-items-center">
+                    <img src="images/email-icon-blue.svg" alt="icone">
+                    <span>ola@touse.com</span>
+                </div><!--wrappper__single-->
+
+                <div class="wrapper__single d-flex align-items-center">
+                    <img src="images/phone-blue-icon.svg" alt="icone">
+                    <span>+91 98765 43210</span>
+                </div><!--wrappper__single-->
+
+                <div class="wrapper__single d-flex align-items-center">
+                    <img src="images/endereco-blue-icon.svg" alt="icone">
+                    <span>Endereço</span>
+                </div><!--wrappper__single-->
+                
+            </div><!--wrapper-->
+
+            <div class="direitos d-md-flex justify-content-around">
+                <a href="#">Termos e Privacidade | Política de Privacidade</a>
+                <a href="#">Termos e Condições de Uso | Política de Cookies</a>
+                <div class="order-md-1">
+                    <p>© 2021 ® TOUSE BRASIL LTDA. CRECI-SP J.10.436</p>
+                </div>
+            </div><!--direitos-->
+            
+        </div><!--container-->
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/sobre.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
