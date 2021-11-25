@@ -177,7 +177,7 @@
             <img src="images/t.png" alt="icone">
             <div class="card-hero">
                 <h1>Trabalhe conosco</h1>
-                <p class="color-text">Escolha qual a sua função e envie seus dados</p>
+                <p class="color-text text-center">Escolha qual a sua função e envie seus dados</p>
                 
                 <form>
 
@@ -224,19 +224,19 @@
 
                 <section class="wrapper__content mt-4 d-flex flex-column">
                         <label for="valor">Seu nome completo *</label>
-                        <input class="custom-input" type="text" name="valor" placeholder="0"/>         
+                        <input class="custom-input" type="text" name="nome" placeholder="Digite aqui" required/>         
                 </section><!--wrapper-->
 
                 
                 <section class="wrapper__content mt-4 d-flex flex-column">
                     <label for="valor">Seu WhatsApp com DDD  *</label>
-                    <input class="custom-input" type="text" name="valor" placeholder="0"/>         
+                    <input id="telefone" class="custom-input" type="text" name="valor" placeholder="(00) 00000-0000" required/>         
             </section><!--wrapper-->
 
             
             <section class="wrapper__content mt-4 d-flex flex-column">
                 <label for="valor">Seu email *</label>
-                <input class="custom-input" type="email" name="valor" placeholder="0"/>         
+                <input class="custom-input" type="email" name="valor" placeholder="Digite aqui" required/>         
              </section><!--wrapper-->
 
              <input class="enviar" type="submit" value="Enviar" />
@@ -251,9 +251,60 @@
     </section>
 
     <section class="diferenciais">
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center flex-wrap">
             
-            <!-- Slider main container -->
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/burocracia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Livre de burocracia
+                </h4>
+                <p class="text-center">Diga adeus à papelada.
+                    Com a ToUse você não precisa se preocupar com a parte burocrática e longas horas em filas de cartório. Fazemos tudo de forma 100% digital.</p>
+            </div><!--cards-->
+
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/autonomia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Autonomia total
+                </h4>
+                <p class="text-center">Seja dono do seu próprio tempo. Como Corretor Parceiro ToUse, você encontra flexibilidade para escolher os dias e horários de sua preferência.
+                </p>
+            </div><!--cards-->
+
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/tecnologia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Investimos em tecnologia
+                </h4>
+                <p class="text-center">Tudo na palma da sua mão. 
+                    Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
+            </div><!--cards-->
+
+            <div class="cards desktop mt-3">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/ganhe.png" alt="icone">
+                </div><!--icon-->
+                <h4>Ganhe mais dinheiro
+                </h4>
+                <p class="text-center">Tudo na palma da sua mão. 
+                    Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
+            </div><!--cards-->
+
+            <div class="cards desktop mt-3">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/foco.png" alt="icone">
+                </div><!--icon-->
+                <h4>Foco nos negócios
+                </h4>
+                <p class="text-center">Na ToUse, o foco é oferecer aos proprietários e inquilinos uma experiência incrível e isto aumenta sua chance de fechar negócios.
+                </p>
+            </div><!--cards-->
+
+
+<!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -261,32 +312,63 @@
                 <div class="swiper-slide">
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/digital.png" alt="icone">
+                            <img src="images/burocracia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>Digital e Físico</h4>
-                        <p>Oferecemos uma plataforma digital com calor humano para alugar rápido, sem fiador ou depósito caução. Agende sua visita online e feche negócio online ou fisicamente em um de nossos parceiros.</p>
+                        <h4>Livre de burocracia
+                        </h4>
+                        <p class="text-center">Diga adeus à papelada.
+                            Com a ToUse você não precisa se preocupar com a parte burocrática e longas horas em filas de cartório. Fazemos tudo de forma 100% digital.</p>
                     </div><!--cards-->
                 </div><!--slide-single-->
 
                 <div class="swiper-slide">
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/identidade.png" alt="icone">
+                            <img src="images/autonomia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>Nosso DNA</h4>
-                        <p>A plataforma é virtual, mas somos feitos por pessoas e com base nisso temos em cada local um ponto de atendimento com calor humano.</p>
+                        <h4>Autonomia total
+                        </h4>
+                        <p class="text-center">Seja dono do seu próprio tempo. Como Corretor Parceiro ToUse, você encontra flexibilidade para escolher os dias e horários de sua preferência.
+                        </p>
                     </div><!--cards-->
                 </div><!--slide-single-->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide">          
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/acreditamos.png" alt="icone">
+                            <img src="images/tecnologia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>O que acreditamos</h4>
-                        <p>Nossa marca simboliza uma parceria para o bem comum, e queremos conquistar o Brasil, tendo como missão encantar e ajudar os nossos clientes a realizar seus sonhos, com o lema: Um por todos e todos por um, pois só assim acreditamos que alcançaremos o sucesso para todos.</p>
+                        <h4>Investimos em tecnologia
+                        </h4>
+                        <p class="text-center">Tudo na palma da sua mão. 
+                            Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
                     </div><!--cards-->
                 </div><!--slide-single-->
+
+                <div class="swiper-slide">          
+                   
+                <div class="cards">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="images/ganhe.png" alt="icone">
+                    </div><!--icon-->
+                    <h4>Ganhe mais dinheiro
+                    </h4>
+                    <p class="text-center">Tudo na palma da sua mão. 
+                        Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
+                </div><!--cards-->
+                </div><!--slide-single-->
+
+                <div class="swiper-slide">          
+                    <div class="cards">
+                        <div class="icon d-flex justify-content-center">
+                            <img src="images/foco.png" alt="icone">
+                        </div><!--icon-->
+                        <h4>Foco nos negócios
+                        </h4>
+                        <p class="text-center">Na ToUse, o foco é oferecer aos proprietários e inquilinos uma experiência incrível e isto aumenta sua chance de fechar negócios.
+                        </p>
+                    </div><!--cards-->
+                    </div><!--slide-single-->
 
                 
     
@@ -372,5 +454,6 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/sobre.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/mask.js"></script>
 </body>
 </html>

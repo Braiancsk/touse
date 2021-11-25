@@ -454,6 +454,12 @@ section.diferenciais .cards{
     padding: 30px 25px;
 }
 
+.desktop{
+    max-width:334px;
+    margin:10px;
+    height:378px;
+}
+
 section.diferenciais .cards:nth-child(1){
     height:378px;
 }
@@ -489,6 +495,7 @@ section.sobre{
     mix-blend-mode: normal;
     color: #F5F6FA;
     height:385px;
+    margin-top: 90px;
 }
 
 section.sobre h2{
@@ -611,7 +618,9 @@ footer .direitos a{
     text-decoration: none;
 }
 
-
+.swiper{
+    display: none;
+}
 /*Fim dos estilos para a sessão de cards*/
 
 /*media queries*/
@@ -805,6 +814,13 @@ footer .direitos a{
         max-width:440px;
         width: 100%;
     }  
+    .swiper{
+        display:block;
+    }
+
+    .desktop{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 411px){
