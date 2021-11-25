@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/trabalhe-conosco.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,21 +184,139 @@
 </nav>
 
     <header class="d-flex justify-content-center align-items-end">
-        <div class="container d-flex justify-content-center align-items-baseline">
+        <div class="container d-flex justify-content-end align-items-baseline">
             <img src="images/t.png" alt="icone">
-            <h1 class="text-white mb-4">Uma imobiliária 100% digital</h1>
+            
+            <div class="card-hero">
+                <h1>Trabalhe conosco</h1>
+                <p class="color-text text-center">Escolha qual a sua função e envie seus dados</p>
+                
+                <form>
+
+       
+                <div class="d-flex flex-md-nowrap flex-wrap">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked/>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Corretor
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Fotógrafo
+                        </label>
+                    </div><!--form-check-->
+
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Vistoriador
+                        </label>
+                    </div><!--form-check-->
+                </div><!--flex-->
+
+                <div class="d-flex justify-content-around justify-content-md-between mt-3 flex-md-nowrap flex-wrap"">
+                    <div class="form-check custom-pl">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault4"/>
+                        <label class="form-check-label" for="flexRadioDefault4">
+                            Parceiro de reparos
+                        </label>
+                    </div><!--form-check-->
+    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="flexRadioDefault5"/>
+                        <label class="form-check-label lg-label" for="flexRadioDefault5">
+                            Porteiro
+                        </label>
+                    </div><!--form-check-->
+
+                </div><!--flex-->
+
+                <section class="wrapper__content mt-4 d-flex flex-column">
+                        <label for="valor">Seu nome completo *</label>
+                        <input class="custom-input" type="text" name="nome" placeholder="Digite aqui" required/>         
+                </section><!--wrapper-->
+
+                
+                <section class="wrapper__content mt-4 d-flex flex-column">
+                    <label for="valor">Seu WhatsApp com DDD  *</label>
+                    <input id="telefone" class="custom-input" type="text" name="valor" placeholder="(00) 00000-0000" required/>         
+            </section><!--wrapper-->
+
+            
+            <section class="wrapper__content mt-4 d-flex flex-column">
+                <label for="valor">Seu email *</label>
+                <input class="custom-input" type="email" name="valor" placeholder="Digite aqui" required/>         
+             </section><!--wrapper-->
+
+             <input class="enviar" type="submit" value="Enviar" />
+            </form>
+            </div><!--card-hero-->
             <img src="images/u.png" alt="icone">
         </div><!--container-->
     </header>
     
-    <section class="information d-flex justify-content-center mt-5">
-        <p>Alugue rápido, sem fiador ou depósito caução. Agende visitas online, feche negócio direto com o proprietário e assine um contrato digital: nada de fila no cartório.</p>
+    <section class="information d-flex justify-content-center">
+       <h2 class="color-title">Por que ser um Parceiro To Use</h2>
     </section>
 
     <section class="diferenciais">
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center flex-wrap">
             
-            <!-- Slider main container -->
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/burocracia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Livre de burocracia
+                </h4>
+                <p class="text-center">Diga adeus à papelada.
+                    Com a ToUse você não precisa se preocupar com a parte burocrática e longas horas em filas de cartório. Fazemos tudo de forma 100% digital.</p>
+            </div><!--cards-->
+
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/autonomia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Autonomia total
+                </h4>
+                <p class="text-center">Seja dono do seu próprio tempo. Como Corretor Parceiro ToUse, você encontra flexibilidade para escolher os dias e horários de sua preferência.
+                </p>
+            </div><!--cards-->
+
+            <div class="cards desktop">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/tecnologia.png" alt="icone">
+                </div><!--icon-->
+                <h4>Investimos em tecnologia
+                </h4>
+                <p class="text-center">Tudo na palma da sua mão. 
+                    Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
+            </div><!--cards-->
+
+            <div class="cards desktop mt-3">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/ganhe.png" alt="icone">
+                </div><!--icon-->
+                <h4>Ganhe mais dinheiro
+                </h4>
+                <p class="text-center">A ToUse impacta muita gente em todo o Brasil. Portanto, você tem muita oportunidade de aumentar sua renda conosco.
+                </p>
+            </div><!--cards-->
+
+            <div class="cards desktop mt-3">
+                <div class="icon d-flex justify-content-center">
+                    <img src="images/foco.png" alt="icone">
+                </div><!--icon-->
+                <h4>Foco nos negócios
+                </h4>
+                <p class="text-center">Na ToUse, o foco é oferecer aos proprietários e inquilinos uma experiência incrível e isto aumenta sua chance de fechar negócios.
+                </p>
+            </div><!--cards-->
+
+
+<!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -206,32 +324,63 @@
                 <div class="swiper-slide">
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/digital.png" alt="icone">
+                            <img src="images/burocracia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>Digital e Físico</h4>
-                        <p>Oferecemos uma plataforma digital com calor humano para alugar rápido, sem fiador ou depósito caução. Agende sua visita online e feche negócio online ou fisicamente em um de nossos parceiros.</p>
+                        <h4>Livre de burocracia
+                        </h4>
+                        <p class="text-center">Diga adeus à papelada.
+                            Com a ToUse você não precisa se preocupar com a parte burocrática e longas horas em filas de cartório. Fazemos tudo de forma 100% digital.</p>
                     </div><!--cards-->
                 </div><!--slide-single-->
 
                 <div class="swiper-slide">
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/identidade.png" alt="icone">
+                            <img src="images/autonomia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>Nosso DNA</h4>
-                        <p>A plataforma é virtual, mas somos feitos por pessoas e com base nisso temos em cada local um ponto de atendimento com calor humano.</p>
+                        <h4>Autonomia total
+                        </h4>
+                        <p class="text-center">Seja dono do seu próprio tempo. Como Corretor Parceiro ToUse, você encontra flexibilidade para escolher os dias e horários de sua preferência.
+                        </p>
                     </div><!--cards-->
                 </div><!--slide-single-->
 
-                <div class="swiper-slide">
+                <div class="swiper-slide">          
                     <div class="cards">
                         <div class="icon d-flex justify-content-center">
-                            <img src="images/acreditamos.png" alt="icone">
+                            <img src="images/tecnologia.png" alt="icone">
                         </div><!--icon-->
-                        <h4>O que acreditamos</h4>
-                        <p>Nossa marca simboliza uma parceria para o bem comum, e queremos conquistar o Brasil, tendo como missão encantar e ajudar os nossos clientes a realizar seus sonhos, com o lema: Um por todos e todos por um, pois só assim acreditamos que alcançaremos o sucesso para todos.</p>
+                        <h4>Investimos em tecnologia
+                        </h4>
+                        <p class="text-center">Tudo na palma da sua mão. 
+                            Aplicativos exclusivos para que você tenha o controle de toda a sua rotina, tendo previsibilidade e controle do seu dia.</p>
                     </div><!--cards-->
                 </div><!--slide-single-->
+
+                <div class="swiper-slide">          
+                   
+                <div class="cards">
+                    <div class="icon d-flex justify-content-center">
+                        <img src="images/ganhe.png" alt="icone">
+                    </div><!--icon-->
+                    <h4>Ganhe mais dinheiro
+                    </h4>
+                    <p class="text-center">A ToUse impacta muita gente em todo o Brasil. Portanto, você tem muita oportunidade de aumentar sua renda conosco.
+                    </p>
+                </div><!--cards-->
+                </div><!--slide-single-->
+
+                <div class="swiper-slide">          
+                    <div class="cards">
+                        <div class="icon d-flex justify-content-center">
+                            <img src="images/foco.png" alt="icone">
+                        </div><!--icon-->
+                        <h4>Foco nos negócios
+                        </h4>
+                        <p class="text-center">Na ToUse, o foco é oferecer aos proprietários e inquilinos uma experiência incrível e isto aumenta sua chance de fechar negócios.
+                        </p>
+                    </div><!--cards-->
+                    </div><!--slide-single-->
 
                 
     
@@ -272,9 +421,9 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center img-logo-footer">
                     <img src="images/logo-footer.png" alt="logo da empresa"/>
-                    <div class="social-icons d-flex justify-content-around w-50 my-3">
+                    <div class="social-icons d-flex justify-content-center w-50 my-3">
                         <a href="#"><img src="images/tiktok.svg" alt="icone do instagram"/></a>
                         <a href="#"><img src="images/instagram-icon.svg" alt="icone do instagram"/></a>
                         <a href="#"><img src="images/facebook-icon.svg" alt="icone do facebook"/></a>
@@ -283,13 +432,6 @@
                     </div><!--social-icons-->
                 </div><!--col-md-6-->
 
-                <div class="col-md-6 identidade">
-                    <h4>Imobiliária? Não, somos seu parceiro!</h4>
-                    <p class="color-text">A TOUSE nasceu em 2021, para ser a convergência de todos os canais imobiliários onde o cliente aluga ou compra sua moradia em um ambiente online e o offline sem perceber a diferença, um ambiente, virtual e físico que Todos Usam para compras ou contratação de serviços diferentes em um só local.
-                        Uma Plataforma full service de tecnologia, parcerias e soluções para o Mercado Imobiliário, que conecta o mercado B2B e B2C e os mais diversos serviço no ramo imobiliário em todo Brasil.
-                        O negócio baseia-se na parceria estratégia, Um por Todos e Todos por Um!
-                        </p>
-                </div><!--col-md-6-->
    
             </div><!--row-->
 
@@ -324,5 +466,6 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/sobre.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/mask.js"></script>
 </body>
 </html>
