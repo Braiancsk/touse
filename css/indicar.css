@@ -408,6 +408,12 @@ header{
     position: relative;
 }
 
+header > .container{
+    background-image: url('../images/woman.png');
+    background-repeat: no-repeat;
+    background-position: left 100px;
+    background-size:contain;
+}
 .card-hero{
     padding: 30px;
     background: #FFFFFF;
@@ -621,6 +627,9 @@ footer .direitos a{
 .swiper{
     display: none;
 }
+.information{
+    margin: 63px;
+}
 /*Fim dos estilos para a sessão de cards*/
 
 /*media queries*/
@@ -769,9 +778,6 @@ footer .direitos a{
     .logo{
         order:2;
     }
-    header h1{
-        text-align: left !important;
-    }
     
     section.sobre{
         height:auto;
@@ -813,6 +819,9 @@ footer .direitos a{
     .card-hero{
         max-width:440px;
         width: 100%;
+        position: relative;
+        top: 400px;
+        margin: 0 auto;
     }  
     .swiper{
         display:block;
@@ -820,6 +829,18 @@ footer .direitos a{
 
     .desktop{
         display: none;
+    }
+    header{
+        overflow: initial;
+    }
+
+    .information{
+        margin-top: 450px;
+    }
+    header > .container{
+        background-repeat: no-repeat;
+        background-position: center -20px;
+        background-size: cover;
     }
 }
 
