@@ -558,6 +558,8 @@ section.pra-alugar .box-cards .icone-wrapper > img{
 
 .img-produto > img{
     border-radius:12px 12px 0 0;
+    height: 209px;
+    width: 100%;
 }
 
 section.pra-alugar .descricao{
