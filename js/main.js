@@ -30,25 +30,28 @@ const swiper = new Swiper('.swiper', {
 let temporada = document.querySelector('.temporada');
 let localidades = document.querySelector('.localidades');
 let temporadaBtn = document.getElementById('temporada');
-let alugarBtn = document.getElementById('flexRadioDefault1');
-let comprarBtn = document.getElementById('flexRadioDefault2');
+let alugarBtn = document.getElementById('alugar');
+let comprarBtn = document.getElementById('comprar');
 
-temporadaBtn.addEventListener('click', ()=>{
+temporadaBtn.addEventListener('change', ()=>{
   if(temporadaBtn.checked){
+    console.log(temporadaBtn.id)
     localidades.style.display = 'none';
     temporada.style.display = 'block';
   }
 });
 
-alugarBtn.addEventListener('click', ()=>{
+alugarBtn.addEventListener('change', ()=>{
   if(alugarBtn.checked){
+    console.log(alugarBtn.id)
     localidades.style.display = 'block';
     temporada.style.display = 'none';
   }
 });
 
-comprarBtn.addEventListener('click', ()=>{
+comprarBtn.addEventListener('change', ()=>{
   if(comprarBtn.checked){
+    console.log(comprarBtn.id)
     localidades.style.display = 'block';
     temporada.style.display = 'none';
   }

@@ -6,13 +6,30 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>ToUse</title>
+    <!-- Primary Meta Tags -->
+    <title>Conecte-se ao seu sonho de morar</title>
+    <meta name="title" content="Conecte-se ao seu sonho de morar">
+    <meta name="description" content="Compra, Venda, Locação ou Temporada. A ToUse oferece imóveis confiáveis para qualquer pessoas, em qualquer lugar ou qualquer momento, realizando desejos, sempre através de parceiros locais. "Um por Todos e Todos por Um"">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://touse.com.br/">
+    <meta property="og:title" content="Conecte-se ao seu sonho de morar">
+    <meta property="og:description" content="Compra, Venda, Locação ou Temporada. A ToUse oferece imóveis confiáveis para qualquer pessoas, em qualquer lugar ou qualquer momento, realizando desejos, sempre através de parceiros locais. "Um por Todos e Todos por Um"">
+    <meta property="og:image" content="card_icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://touse.com.br/">
+    <meta property="twitter:title" content="Conecte-se ao seu sonho de morar">
+    <meta property="twitter:description" content="Compra, Venda, Locação ou Temporada. A ToUse oferece imóveis confiáveis para qualquer pessoas, em qualquer lugar ou qualquer momento, realizando desejos, sempre através de parceiros locais. "Um por Todos e Todos por Um"">
+    <meta property="twitter:image" content="images/card_icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
 </head>
 <body>
@@ -190,18 +207,18 @@
                 <h1><b>Conecte-se </b>ao seu <b>sonho</b> de morar</h1>
                 <p class="text-mobile">Alugue ou compre seu imóvel sem complicação</p>
 
-                <form class="filtrar-pesquisa">
+                <form class="filtrar-pesquisa" action="busca.html">
 
                     <div class="box-alugar-comprar d-flex justify-content-center align-items-center">
                         <div class="form-check d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                            <label autocomplete="off" class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="alugar" checked>
+                            <label autocomplete="off" class="form-check-label" for="alugar">
                               Alugar
                             </label>
                           </div>
                           <div class="form-check d-flex justify-content-center align-items-center">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label autocomplete="off" class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="comprar">
+                            <label autocomplete="off" class="form-check-label" for="comprar">
                                 Comprar
                             </label>
                           </div>
@@ -223,7 +240,7 @@
                                         <img src="images/location-icon.svg" alt="icone de localização">
                                         <span class="mx-1">Cidade</span>
                                     </div><!--icon-input-->
-                                    <input type="text" name="cidade" id="cidade" placeholder="Busque por cidade">
+                                    <input type="text" name="cidade" id="cidade" placeholder="Busque por cidade" required>
                                 </div><!--input-wrapper-->
 
                                 <div style="border-right: 1px solid #722ED1;" class="input-wrapper col-md-6 py-2">
@@ -231,7 +248,7 @@
                                         <img src="images/home-icon.svg" alt="icone de localização">
                                         <span class="mx-1">Bairro</span>
                                     </div><!--icon-input-->
-                                    <input type="text" name="bairro" id="bairro" placeholder="Busque por bairro">
+                                    <input type="text" name="bairro" id="bairro" placeholder="Busque por bairro" required>
                                 </div><!--input-wrapper-->
 
                                 <div style="border-right: 1px solid #722ED1;" class="input-wrapper col-md-3 py-2">
@@ -240,7 +257,7 @@
                                         <span class="mx-1">Valor</span>
                                     </div><!--icon-input-->
 
-                                        <select class="form-select" aria-label="Default select example" name="preco">
+                                        <select class="form-select" aria-label="Default select example" name="preco" required>
                                             <option selected>Selecione um valor</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -255,7 +272,7 @@
                                         <span>Quartos</span>
                                     </div><!--icon-input-->
                                  
-                                        <select class="form-select" aria-label="Default select example" name="quartos">
+                                        <select class="form-select" aria-label="Default select example" name="quartos" required>
                                             <option selected>Selecione</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -1436,6 +1453,35 @@ if (document.getElementById('whats_telefone'))
 	});
 }
 </script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0ufkROKT174x66dPYaGZPIhAodUwpuc&libraries=places"></script> 
+ <script>
+    const locationUser = []
+    var latitudeUser = ''
+    var longitudeUser = ''
+      const sucessCallback = (position) => {
+       locationUser.push(position)
+       locationUser.map(value => {
+        
+        latitudeUser = value.coords.latitude
+        longitudeUser = value.coords.longitude
+        console.log(latitudeUser)
+        console.log(longitudeUser)
+       })
+      }
+
+      
+    
+      const errorCallback = (error) => {
+        console.error(error)
+      }
+
+      navigator.geolocation.getCurrentPosition(sucessCallback,errorCallback)
+
+</script> 
+
 
 
     <footer>

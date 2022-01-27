@@ -51,6 +51,7 @@ $(document).ready(function(){
 	
 	    autocomplete = new google.maps.places.Autocomplete((document.getElementById('GetDirectionsAddress')),{types: ['geocode']});  
 	}
+
 	
 	function calculateAndDisplayRoute(directionsService, directionsDisplay, marker) {
 	    directionsService.route({
