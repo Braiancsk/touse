@@ -1583,13 +1583,14 @@ if (document.getElementById('whats_telefone'))
 
     async function calculateDistance(){
         const origin = {lat: latitudeUser, lng:longitudeUser}
-        const destination = {let: 40.7767644, lng: -73.9761399}
-        const uri = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${latitudeUser},${longitudeUser}&destinations=-16.33514691523753, -48.93735480054268&key=AIzaSyBOlVtd-yNW985W5HSHJsZgi6gyk_WoZys`
+        const destination = {lat: -16.323379363789776, lng: -48.94898159959658}
+        const imovelLatitude = '-16.323379363789776'
+        const imovelLongitude = '-48.94898159959658'
+        const uri = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${latitudeUser},${longitudeUser}&destinations=${imovelLatitude},${imovelLongitude}&key=AIzaSyBOlVtd-yNW985W5HSHJsZgi6gyk_WoZys`
         const encoded = encodeURI(uri);
         var requestOptions = {
         method: 'GET',
         redirect: 'follow',
-        mode: 'no-cors'
         };
 
         try{
