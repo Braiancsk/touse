@@ -218,6 +218,10 @@ position: relative;
     opacity:1;
 }
 
+.user:hover > div.sub-menu-login{
+    z-index: 999999;
+    opacity:1;
+}
 div.sub-menu{
     position: absolute;
     top: 25px;
@@ -232,12 +236,36 @@ div.sub-menu{
     opacity: 0;
     transition: 0.2s ease-in-out;
 }
+div.sub-menu-login{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: -1;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    width: max-content;
+    max-width: 500px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
 
-.sub-menu a{
-    color:#434343;
+.sub-menu-login a{
+    color:#ffffff !important;
     text-decoration: none;
     font-size: 14px;
-    margin: 10px 5px;
+    background:#15beba;
+    padding:5px;
+    max-width:100%;
+    display:block;
+    width:100%;
+    text-align:center;
+    border-radius:8px;
+}
+.sub-menu-login p{
+    font-size:13px;
+    margin-top:10px;
 }
 
 .line{

@@ -155,47 +155,73 @@
             <div class="col-2 d-flex align-items-center">
                 <div class="ajuda d-flex align-items-center">
                     <a href="#">Ajuda</a>
-                <div class="user">
+
+
+            <!-----------------------caso o usários esteja logado-------------------->
+                <!-- <div class="user">
                     <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
                     <span id="btn-user">Usuário</span>
                     <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
                     
-                    <!--sub menu de usuário-->
+                 
                     <div class="sub-menu">
                         <div class="wrapper d-flex align-items-center">
                             <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
                             <a href="favoritos.html">Favoritos e listas</a>
-                        </div><!--wrapper-->
+                        </div>
 
                         <div class="wrapper d-flex align-items-center">
                             <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
                             <a href="historico.html">Visitas agendadas</a>
-                        </div><!--wrapper-->
+                        </div>
 
                         <div class="wrapper d-flex align-items-center">
                             <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
                             <a href="canceladas.html">Propostas enviadas</a>
-                        </div><!--wrapper-->
+                        </div>
 
                         <div class="wrapper d-flex align-items-center">
                             <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
                             <a href="#">Contratos e boletos</a>
-                        </div><!--wrapper-->
+                        </div>
 
                         <div class="wrapper d-flex align-items-center">
                             <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
                             <a href="meus-imoveis.html">Meus imóveis</a>
-                        </div><!--wrapper-->
+                        </div>
 
                         <div class="line my-1"></div>
 
                         <div class="wrapper flex-column d-flex">
                             <a href="minhaconta.html">Minha conta</a>
                             <a href="#">Sair da conta</a>
-                        </div><!--wrapper-->
-                    </div><!--sub-menu-->
+                        </div>
+                    </div>
 
-                </div><!--user-->
+                </div> -->
+
+
+            <!-----------------------caso o usários não esteja logado-------------------->
+            <div class="user">
+                <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                <span id="btn-user">Entrar</span>
+                <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                
+                <!--sub menu de usuário-->
+                <div class="sub-menu-login">
+                    <div class="wrapper d-flex align-items-center">
+                        <a href="login.html">Login</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center flex-column">
+                        <p>Ainda não possui uma conta?</p><a href="cadastrar.html"> Cadastra-se</a>
+                    </div><!--wrapper-->
+
+                 
+                </div><!--sub-menu-->
+
+            </div><!--user-->
+
                 </div><!--ajuda-->
             </div><!--col-3-->
         </div><!--row-->
@@ -1454,36 +1480,6 @@ if (document.getElementById('whats_telefone'))
 }
 </script>
 
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0ufkROKT174x66dPYaGZPIhAodUwpuc&libraries=places"></script> 
- <script>
-    const locationUser = []
-    var latitudeUser = ''
-    var longitudeUser = ''
-      const sucessCallback = (position) => {
-       locationUser.push(position)
-       locationUser.map(value => {
-        
-        latitudeUser = value.coords.latitude
-        longitudeUser = value.coords.longitude
-        console.log(latitudeUser)
-        console.log(longitudeUser)
-       })
-      }
-
-      
-    
-      const errorCallback = (error) => {
-        console.error(error)
-      }
-
-      navigator.geolocation.getCurrentPosition(sucessCallback,errorCallback)
-
-</script> 
-
-
-
     <footer>
         <div class="container">
             <div class="row">
@@ -1559,5 +1555,52 @@ if (document.getElementById('whats_telefone'))
     <script src="js/hamburger.js"></script>
     <script src="https://unpkg.com/js-datepicker"></script>
     <script src="js/date.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0ufkROKT174x66dPYaGZPIhAodUwpuc&libraries=places"></script> 
+ <script>
+    const locationUser = []
+    var latitudeUser = ''
+    var longitudeUser = ''
+      const sucessCallback = (position) => {
+       locationUser.push(position)
+       locationUser.map(value => {
+        
+        latitudeUser = value.coords.latitude
+        longitudeUser = value.coords.longitude
+        console.log(latitudeUser)
+        console.log(longitudeUser)
+       })
+       
+       calculateDistance()
+      }
+
+      
+    
+      const errorCallback = (error) => {
+        console.error(error)
+      }
+
+      navigator.geolocation.getCurrentPosition(sucessCallback,errorCallback)
+
+    async function calculateDistance(){
+        const origin = {lat: latitudeUser, lng:longitudeUser}
+        const destination = {let: 40.7767644, lng: -73.9761399}
+        const uri = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${latitudeUser},${longitudeUser}&destinations=-16.33514691523753, -48.93735480054268&key=AIzaSyBOlVtd-yNW985W5HSHJsZgi6gyk_WoZys`
+        const encoded = encodeURI(uri);
+        var requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+        
+        };
+
+        try{
+            const response = await fetch(encoded,requestOptions)
+            const data = await response.json()
+            console.log(data)
+        }catch(error){
+            console.error(error.message)
+        }
+    }
+    
+</script> 
 </body>
 </html>
