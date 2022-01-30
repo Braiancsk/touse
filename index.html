@@ -35,6 +35,8 @@
 <body>
     <!--menu mobile-->
     <div class="menu-mobile">
+
+        
         <div class="wrapper mb-4">
             <p>Entre para ver seus favoritos, visitas, propostas e aluguéis</p>
         </div><!--wrapper-->
@@ -43,33 +45,53 @@
            <a href="buscar.html">Encontrar imóveis</a>
         </div><!--wrapper-->
 
-        <div class="line"></div>
+      
 
-        <div class="wrapper d-flex align-items-center my-3">
+        <div class="line mb-3"></div>
+
+          <!--Caso o usuário não esteja logado-->
+          <div class="login">
+            <div class="wrapper">
+                <p>Já tem uma conta</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="wrapper">
+                <p>Ou crie uma conta</p>
+                <a href="cadastrar.html"> Cadastra-se</a>
+            </div>
+        </div>
+
+        <!--caso o usuário esteja logado-->
+       
+<!--        
+            <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+            <span id="btn-user">Usuário</span>
+            <div class="wrapper d-flex align-items-center my-3">
             <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
             <a href="favoritos.html">Favoritos e listas</a>
-        </div><!--wrapper-->
+        </div>
 
         <div class="wrapper d-flex align-items-center my-3">
             <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
             <a href="historico.html">Visitas agendadas</a>
-        </div><!--wrapper-->
+        </div>
 
         <div class="wrapper d-flex align-items-center my-3">
             <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
             <a href="canceladas.html">Propostas enviadas</a>
-        </div><!--wrapper-->
+        </div>
 
         <div class="wrapper d-flex align-items-center my-3">
             <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
             <a href="#">Contratos e boletos</a>
-        </div><!--wrapper-->
+        </div>
 
         <div class="wrapper d-flex align-items-center my-3">
             <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
             <a href="meus-imoveis.html">Meus imóveis</a>
-        </div><!--wrapper-->
-
+        </div>  -->
+        <!--fim do usuário logado -->
         <div class="line"></div>
 
         <div class="wrapper my-4">
@@ -204,17 +226,20 @@
             <!-----------------------caso o usários não esteja logado-------------------->
             <div class="user">
                 <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+        
                 <span id="btn-user">Entrar</span>
                 <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
                 
                 <!--sub menu de usuário-->
                 <div class="sub-menu-login">
-                    <div class="wrapper d-flex align-items-center">
+                    <div class="wrapper">
+                        <p>Já tem uma conta</a>
                         <a href="login.html">Login</a>
                     </div><!--wrapper-->
 
-                    <div class="wrapper d-flex align-items-center flex-column">
-                        <p>Ainda não possui uma conta?</p><a href="cadastrar.html"> Cadastra-se</a>
+                    <div class="wrapper">
+                        <p>Ou crie uma conta</p>
+                        <a href="cadastrar.html"> Cadastra-se</a>
                     </div><!--wrapper-->
 
                  
@@ -1061,7 +1086,7 @@
             </div><!--title-cards-->
 <!--card-individual-->
             <div class="box-cards">
-                <section class="row desktop">
+                <section id="section-cards" class="row desktop">
                     <article class="col-md-3">
                         <a class="text-decoration-none" href="detalhes-temporada.html">
                         <div class="wrapper">
@@ -1480,6 +1505,8 @@ if (document.getElementById('whats_telefone'))
 }
 </script>
 
+    <div class="d-flex" id="distancia"></div>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -1566,14 +1593,16 @@ if (document.getElementById('whats_telefone'))
         
         latitudeUser = value.coords.latitude
         longitudeUser = value.coords.longitude
-        console.log(latitudeUser)
-        console.log(longitudeUser)
+        // console.log(latitudeUser)
+        // console.log(longitudeUser)
+
        })
        
-       calculateDistance()
+           calculateDistance()
+        
       }
 
-      
+
     
       const errorCallback = (error) => {
         console.error(error)
@@ -1581,26 +1610,90 @@ if (document.getElementById('whats_telefone'))
 
       navigator.geolocation.getCurrentPosition(sucessCallback,errorCallback)
 
-    async function calculateDistance(){
-        const origin = {lat: latitudeUser, lng:longitudeUser}
-        const destination = {lat: -16.323379363789776, lng: -48.94898159959658}
+    //setar a distancia
+    const distance = []
+    var km = []
+    let distancia = document.getElementById('section-cards')
+
+    function calculateDistance(){
+        //latitude do imovel 
         const imovelLatitude = '-16.323379363789776'
         const imovelLongitude = '-48.94898159959658'
-        const uri = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${latitudeUser},${longitudeUser}&destinations=${imovelLatitude},${imovelLongitude}&key=AIzaSyBOlVtd-yNW985W5HSHJsZgi6gyk_WoZys`
-        const encoded = encodeURI(uri);
-        var requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-        };
 
-        try{
-            const response = await fetch(encoded,requestOptions)
-            const data = await response.json()
-            console.log(data)
-        }catch(error){
-            console.error(error.message)
-        }
+        const matrix = new google.maps.DistanceMatrixService();
+ 
+        matrix.getDistanceMatrix({
+        //origem do acesso/localização do usuário
+        origins: [new google.maps.LatLng(latitudeUser, longitudeUser)],
+        //destinos do usuário
+        destinations: [new google.maps.LatLng(imovelLatitude, imovelLongitude), new google.maps.LatLng(-16.324120700582213, -48.95391686378314), new google.maps.LatLng(-16.339973377819437, -48.93766455325328), new google.maps.LatLng(-16.330213009541414, -48.938780352112886)],
+        travelMode: google.maps.TravelMode.DRIVING,
+        }, function(response, status) {
+        //do something
+    
+        distance.push(response.rows)
+        
+        distance.map(value => {
+            value.map(distance => distance.elements.map(el => {
+                
+             
+                km.push(el.distance.text)
+                
+                const noDuplicate = km.splice(0,3)
+                console.log(noDuplicate)
+              
+              
+           
+
+               
+
+            //     noDuplicate.map(value => {
+                
+              
+            //     distancia.innerHTML += `
+            //         <article class="col-md-3">
+            //             <a class="text-decoration-none" href="detalhes-temporada.html">
+            //             <div class="wrapper">
+            //                 <div class="img-produto">
+            //                     <img class="img-fluid" src="images/apartamento1.jpg" alt="foto de produto"/>
+            //                 </div><!--img-produto-->
+    
+            //                 <div class="descricao">
+            //                     <p>Apartamento</p>
+            //                     <h6>Alameda Arminda Nogueira</h6>
+            //                     <p>Vila Santa Cruz - Franca, SP</p>
+            //                 </div><!--descricao-->
+    
+            //                 <div class="especs d-flex justify-content-around">
+            //                     <div class="icone-wrapper d-flex">
+            //                         <img src="images/map.svg" alt="icone de régua">
+            //                         <p>${value}</p>
+            //                     </div><!--icone-wrapper-->
+    
+            //                     <div class="icone-wrapper d-flex">
+            //                         <img src="images/cama-icon.svg" alt="icone de cama">
+            //                         <p>2 quartos</p>
+            //                     </div><!--icone-wrapper-->
+            //                 </div><!--especs-->
+    
+    
+            //                 <h5>R$ 721,00 / Noite</h5>
+            //             </div>
+            //         </a>
+            //         </article><!--col-md-3-->
+            //      ` 
+            //  })
+                    
+            }
+            
+            ))
+        })
+        });
     }
+
+
+  
+
     
 </script> 
 </body>

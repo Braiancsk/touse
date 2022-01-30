@@ -1,0 +1,600 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/parceiros2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>ToUse</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
+</head>
+<body>
+   <!--menu mobile-->
+   <div class="menu-mobile">
+    <div class="wrapper mb-4">
+        <p>Entre para ver seus favoritos, visitas, propostas e aluguéis</p>
+    </div><!--wrapper-->
+
+    <div class="btn-wrapper">
+       <a href="buscar.html">Encontrar imóveis</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+        <a href="favoritos.html">Favoritos e listas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+        <a href="historico.html">Visitas agendadas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+        <a href="canceladas.html">Propostas enviadas</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+        <a href="#">Contratos e boletos</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper d-flex align-items-center my-3">
+        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+        <a href="meus-imoveis.html">Meus imóveis</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper my-4">
+        <a href="busca.html" class="sub-nav">Imovéis para alugar</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper my-4">
+        <a href="busca.html" class="sub-nav">Imovéis para comprar</a>
+    </div><!--wrapper-->
+
+    
+    <div class="wrapper my-4">
+        <a href="busca.html" class="sub-nav">Imovéis para temporada</a>
+    </div><!--wrapper-->
+
+    <div class="wrapper my-4">
+        <a href="indicar.html" class="sub-nav">Indicar imóveis</a>
+    </div><!--wrapper-->
+   
+
+    <div class="wrapper my-4">
+        <a href="sobre.html" class="sub-nav">Sobre nós</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper flex-column d-flex my-3">
+        <a class="my-3" href="minhaconta.html">Minha conta</a>
+        <a class="my-3" href="#">Sair da conta</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper my-3">
+        <a href="#">Ajuda</a>
+    </div><!--wrapper-->
+
+    <div class="line"></div>
+
+    <div class="wrapper py-3">
+        <p>© 2021 ® ToUse Serviços Imobiliários Ltda.CRECI-SP Jxx.xxx </p>
+    </div><!--wrapper-->
+</div><!--menu-mobile-->
+<!--fim do menu mobile-->
+<div class="bg"></div><!--background para menu mobile ativado-->
+<nav>
+<div class="container">
+    <div class="row d-flex">
+        <div class="col-1 d-flex justify-content-between mobile">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                </div>
+            </a>
+
+            <div class="hamburger-wrapper">
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div><!--hamburger-wrapper-->
+        </div><!--col-3-->
+
+        <div class="col-9 links">
+                <ul class="d-flex align-items-center">
+         
+                        <li><a href="busca.html">Imovéis para alugar</a></li>
+                
+
+                  
+                        <li><a href="busca.html">Imovéis para comprar</a></li>
+                   
+                        <li><a href="busca.html">Imovéis para temporada</a></li>
+
+                    
+                        <li><a href="indicar.html">Indicar imóveis</a></li>
+                            
+                        <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+        </div><!--col-9-->
+
+        <div class="col-2 d-flex align-items-center">
+            <div class="ajuda d-flex align-items-center">
+                <a href="#">Ajuda</a>
+            <div class="user">
+                <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
+                <span id="btn-user">Usuário</span>
+                <img class="img-fluid" src="images/arrow-down.svg" alt="icone de seta para baixo"/>
+                
+                <!--sub menu de usuário-->
+                <div class="sub-menu">
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/favoritos-menu.svg" alt="icone"/>
+                        <a href="favoritos.html">Favoritos e listas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/visitas-menu.svg" alt="icone"/>
+                        <a href="historico.html">Visitas agendadas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/propostas-menu.svg" alt="icone"/>
+                        <a href="canceladas.html">Propostas enviadas</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/contrato-menu.svg" alt="icone"/>
+                        <a href="#">Contratos e boletos</a>
+                    </div><!--wrapper-->
+
+                    <div class="wrapper d-flex align-items-center">
+                        <img class="img-fluid" src="images/menu-imoveis.svg" alt="icone"/>
+                        <a href="meus-imoveis.html">Meus imóveis</a>
+                    </div><!--wrapper-->
+
+                    <div class="line my-1"></div>
+
+                    <div class="wrapper flex-column d-flex">
+                        <a href="minhaconta.html">Minha conta</a>
+                        <a href="#">Sair da conta</a>
+                    </div><!--wrapper-->
+                </div><!--sub-menu-->
+
+            </div><!--user-->
+            </div><!--ajuda-->
+        </div><!--col-3-->
+    </div><!--row-->
+</div><!--container-->
+</nav>
+
+    <header class="">
+        <div class="container d-flex align-items-center">
+            <img src="images/parceiros-man.png" alt="homem segurando um laptop" />
+
+            <div class="header__cta text-white">
+                <h1>Você pode realizar desejos onde quiser, quando quiser</h1>
+                <p>A TOUSE é uma plataforma de parcerias imobiliárias única e exclusiva que oferece em um só lugar Locação, Temporada e Venda.
+                </p>
+
+                <a href="#" class="">Saiba mais</a>
+            </div>
+        </div><!--container-->
+    </header>
+    
+    <section class="video my-5 container text-center">
+        <h4>Assista ao vídeo
+        </h4>
+
+        <div class="video__box">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_SaeH1qpng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="diferenciais container text-center">
+        <h4>Seu parceiro imobiliário para realizar desejos.</h4>
+        <p>Na TOUSE, disponibiliza seu imóvel para temporada, aluguel ou venda de forma prática, eficiente, confiável e digital. Somos mais rápidos do que as imobiliárias tradicionais, menos imóveis parados e mais imóveis locados e vendidos.</p>
+    </section>
+
+    <section class="cards px-2 my-5">
+        <div class="container">
+
+            <div class="row justify-content-between gap-2 flex-md-nowrap">
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/parceiros-icon-1.png" alt="icone de casa" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Por que anunciar seu imóvel na TOUSE?
+                        </h6>
+                        <p>Alugue, venda ou Temporada seu imóvel sem sair de casa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/cursor-line.png" alt="icone de cursor" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Suporte Online e Presencial Exclusivo
+                        </h6>
+                        <p>Suporte Online, de Imobiliárias tradicionais e corretores especialistas locais, com segurança, atendimento personalizado e presencial
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between gap-2 flex-md-nowrap mt-3">
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/wifi-line.png" alt="icone de wifi" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Do anúncio até a assinatura do contrato, 
+                            todo o nosso processo é online.                            
+                        </h6>
+                        <p>Alugue, venda ou reserve para Temporada mais rápido. Cumprimos os prazos combinados, garantindo a agilidade no processo de locação venda e reserva para temporada
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/open-arm-line.png" alt="icone de braços abertos" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Suporte Online e Presencial Exclusivo
+                        </h6>
+                        <p>Suporte Online, de Imobiliárias tradicionais e corretores especialistas locais, com segurança, atendimento personalizado e presencial
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between gap-2 flex-md-nowrap mt-3">
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/home-heart-line.png" alt="icone de casa" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Totalmente livre de burocracia
+                        </h6>
+                        <p>Fazemos tudo de forma 100% digital.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center gap-3 card__single">
+
+                    <div class="card__icon d-flex justify-content-center align-items-center">
+                        <img src="images/camera-line.png" alt="icone de camera fotografica" />
+                    </div>
+                
+                    <div class="cards__content mt-3">
+                        <h6>Fazemos fotos profissionais do seu imóvel
+                        </h6>
+                        <p>Anúncios atrativo com propostas de pessoas realmente interessadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="ajuda">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 ajuda__content d-flex flex-column justify-content-center align-items-end">
+                    <h2>Receba ajuda exclusiva e
+                        gratuita dos atendentes da TOUSE
+                       pelo Whatsapp</h2>
+
+                       <a href="#">Falar agora</a>
+
+                       <div class="ajuda__mobile">
+                        <h6 class="fw-bold">Etapa 1</h6>
+                        <p>Tire todas as suas duvidas</p>
+
+                        <h6 class="fw-bold">Etapa 2</h6>
+                        <p>Alugue seu imóvel por mês ou temporada com toda
+                            confiança TOUSE</p>
+
+                    
+                        <div class="d-flex ajuda__cta align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="images/ajuda-elipse.png" alt="atendente touse" />
+                                <span>Maria Auxiliadora</span>
+                            </div>
+
+                        
+                            <a href="#">Pergunte a um atendente</a>
+                    
+                        </div>
+
+                       </div>
+                </div>
+
+                <div class="col-md-6 ajuda__img d-flex justify-content-center">
+                    <img src="images/whatsapp-parceiros.png" alt="icone de whatsapp" />
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row align-items-center">
+           
+                <div class="col-md-6 d-flex justify-content-center order-md-1">
+                    <img class="img-fluid" src="images/3d-calendar.png" alt="calendário em 3d">
+                </div>
+
+                <div class="col-md-6 info__content order-md-0">
+                    <h2>Perfeito para quem aluga ou tem imóveis de temporada</h2>
+                    <p>Receba o valor da locação mesmo se o inquilino atrasar e análise criteriosa de crédito dos interessados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img class="img-fluid" src="images/3d-book.png" alt="calendário em 3d">
+                </div>
+
+                <div class="col-md-6 info__content">
+                    <h2>Perfeito para quem vende
+                    </h2>
+                    <p>Você anuncia seu imóvel e sabe de tudo o que acontece pelo sistema TOUSE.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-center order-md-1">
+                    <img class="img-fluid" src="images/3d-balloon.png" alt="calendário em 3d">
+                </div>
+
+                <div class="col-md-6 info__content order-md-0">
+                    <h2>Assessoria completa, do início ao fim da compra.
+                    </h2>
+                    <p>Temos um dos processo de venda mais rápido 
+                        do mercado.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img class="img-fluid" src="images/3d-heart.png" alt="calendário em 3d">
+                </div>
+
+                <div class="col-md-6 info__content">
+                    <h2>Orientações e dicas exclusivas
+                    </h2>
+                    <p>Colocamos você em contato com um atendente TOUSE para responder todas as perguntas, quando você precisar.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+
+    <section class="sobre">
+        <div class="container  d-flex flex-column justify-content-center align-items-center">
+            <div class="row align-items-center">
+                <div class="col-md-6 sobre__content">
+                    <div class="text">
+                        <h2>Ajuda prática para anunciar seu imóvel</h2>
+                        <p>Nossa atendente vai ajudar você a criar o anúncio, além de compartilhar dicas sobre tirar fotos, descrever seu imóvel e muito mais.
+
+                        <h2>Prepare-se para realizar desejosl</h2>
+                        <p>Você vai receber a ajuda e as orientações de que precisa para começar a locação e receber avaliações de excelência.
+                        </p>
+                    </div>
+                </div><!--col-md-6-->
+
+                <div class="col-md-6 celular">
+                    <img class="img-fluid" src="images/celular.png" alt="imagem de celular com o app da empresa">
+                </div><!--col-md-6-->
+    
+            </div><!--row-->
+            
+        </div><!--container-->
+    </section><!--sobre-->
+
+
+    <section class="form">
+        <div class="container">
+            <form action="">
+                <h4>Preencha os dados para receber um atendimento dos nossos parceiros</h4>
+            
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="name">Nome</label>
+                        <input class="form__input" type="text" name="nome" placeholder="Digite aqui" id="name" required/>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="uf">UF</label>
+                        <input class="form__input" type="text" name="uf" placeholder="Digite aqui" id="uf" required/>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="cidade">Cidade de interesse</label>
+                        <input class="form__input" type="text" name="cidade" placeholder="Digite aqui" id="cidade" required/>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="telefone">Telefone</label>
+                        <input class="form__input" type="text" name="telefone" placeholder="Digite aqui" id="telefone" required/>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="email">Email</label>
+                        <input class="form__input" type="email" name="email" placeholder="Digite aqui" id="email" required/>
+                    </div>
+                </div>
+
+                <p>Qual seu interesse de parceria?</p>
+
+                <div class="d-flex gap-2 form__tipo justify-content-center">
+                    
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="tipo" id="locacao" checked>
+                        <label class="form-check-label" for="locacao">
+                            Locação
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="tipo" id="venda">
+                        <label class="form-check-label" for="venda">
+                            Venda
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input d-none" type="radio" name="tipo" id="temporada">
+                        <label class="form-check-label" for="temporada">
+                            Temporada
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="submit">Agendar apresentação</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center img-logo-footer">
+                    <img src="images/logo-footer.png" alt="logo da empresa"/>
+                    <div class="social-icons d-flex">
+                        <a href="#"><img src="images/tiktok.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/instagram-icon.svg" alt="icone do instagram"/></a>
+                        <a href="#"><img src="images/facebook-icon.svg" alt="icone do facebook"/></a>
+                        <a href="#"><img src="images/twitter-icon.svg" alt="icone do twiiter"/></a>
+                        <a href="#"><img src="images/yt-icon.svg" alt="icone do youtube"/></a>
+                    </div><!--social-icons-->
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Seja ToUse</h3>
+                        <li style="margin-top: 24px;"><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+                        <li><a href="trabalhe-conosco.html">Seja um corretor</a></li>
+                        <li><a href="trabalhe-conosco.html">Seja um fotógrafo</a></li>
+                        <li><a href="trabalhe-conosco.html">Seja um vistoriador</a></li>
+                        <li><a href="trabalhe-conosco.html">Seja um Parceiro de Reparos</a></li>
+                        <li><a href="trabalhe-conosco.html">Você é um porteiro?</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="mt-4 col-md-3 d-md-flex flex-column justify-content-center align-items-center">
+                    <ul>
+                        <h3>Saiba mais</h3>
+                        <li style="margin-top: 24px;"><a href="sobre.html">Sobre a ToUse</a></li>
+                        <li><a href="#">Regiões atendidas</a></li>
+                        <li><a href="indicar.html">Indique um imóvel</a></li>
+                        <li><a href="#">Imobiliárias parceiras</a></li>
+                        <li><a href="#">Saiba sobre a Garantia ToUse</a></li>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Manual do Usuário</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <div class="col-md-3 mt-4">
+                    <ul>
+                        <h3>Fale com a gente</h3>
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/email-icon-blue.svg" alt="icone de email"/>
+                            <span>ola@touse.com</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/phone-blue-icon.svg" alt="icone de email"/>
+                            <span>+91 98765 43210</span>
+                        </div><!--icon-wrapper-->
+
+                        <div class="icon-wrapper d-flex align-items-center mt-4">
+                            <img src="images/endereco-blue-icon.svg" alt="icone de email"/>
+                            <span>Endereço</span>
+                        </div><!--icon-wrapper-->
+                    </ul>
+                </div><!--col-md-3-->
+            </div><!--row-->
+
+            <div class="direitos d-md-flex justify-content-around">
+                <a href="#">Termos e Privacidade | Política de Privacidade</a>
+                <a href="#">Termos e Condições de Uso | Política de Cookies</a>
+                <div class="order-md-1">
+                    <p>© 2021 ® TOUSE BRASIL LTDA. CRECI-SP J.10.436</p>
+                </div>
+            </div><!--direitos-->
+            
+        </div><!--container-->
+    </footer>
+
+
+    <script src="js/mask.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

@@ -245,7 +245,7 @@ div.sub-menu-login{
     box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 30px;
-    width: max-content;
+    width: 300%;
     max-width: 500px;
     opacity: 0;
     transition: 0.2s ease-in-out;
@@ -260,6 +260,7 @@ div.sub-menu-login{
     max-width:100%;
     display:block;
     width:100%;
+    max-width:300px;
     text-align:center;
     border-radius:8px;
 }
@@ -267,6 +268,25 @@ div.sub-menu-login{
     font-size:13px;
     margin-top:10px;
 }
+
+.login a{
+    color:#ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    background:#15beba;
+    padding:5px;
+    max-width:100%;
+    display:block;
+    width:100%;
+    max-width:300px;
+    text-align:center;
+    border-radius:8px;
+}
+.login p{
+    font-size:13px;
+    margin-top:10px;
+}
+
 
 .line{
     width: 100%;
