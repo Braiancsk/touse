@@ -192,7 +192,7 @@
                 </p>
 
                 <div class="d-flex justify-content-md-end">
-                    <a href="#" class="">Saiba mais</a>
+                    <a href="#form" class="">Saiba mais</a>
                 </div>
                 
             </div>
@@ -258,7 +258,7 @@
 
                 <div class="col-md-6 cta__content order-md-1 d-flex flex-column align-items-center">
                     <h3>Realizar desejos é a missão da ToUse</h3>
-                    <a href="#">Seja um parceiro</a>
+                    <a href="#form">Seja um parceiro</a>
                  </div>
 
                 <div class="col-md-6 cta__img order-md-0 d-flex flex-column align-items-center">
@@ -275,8 +275,9 @@
             <h2>Vantagens da parceria TOUSE
             </h2>
            
-              <!-- Swiper -->
-        <div class="swiper mySwiper">
+        
+        <!-- Swiper -->
+        <div class="swiper mySwiper desktop">
         <div class="swiper-wrapper">
           <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
             <img class="img-fluid" src="images/3d-key.png" alt="chave em 3D" />
@@ -365,8 +366,98 @@
         </div>
    
       </div>
-  
+
+      <div class="mobile">
+        <div class="d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/3d-key.png" alt="chave em 3D" />
+    
+            <h6>Multiplicar exponencialmente
+                os números de contrato
+            </h6>
+          </div>
+    
+          <div class="d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/3d-arrow.png" alt="chave em 3D" />
+    
+                <h6>Focar nos imóveis e negócios 
+                    que fazem sentido                
+                </h6>
+          </div>
+          
+      
+          <div class="d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/3d-phone.png" alt="chave em 3D" />
+    
+            <h6>Eliminar processos burocráticos e ultrapassados
+            </h6>
+          </div>
+    
+          <div class="d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/3d-megaphone.png" alt="chave em 3D" />
+    
+            <h6>Plataforma de Anúncios
+                e BigData               
+            </h6>
+    
+         </div>
+
+         <div class="d-none" data-show>
+            <div class="d-flex flex-column align-items-center">
+                <img class="img-fluid" src="images/3d-megaphone.png" alt="chave em 3D" />
+        
+                <h6>Plataforma de Anúncios
+                    e BigData               
+                </h6>
+        
+             </div>
+
+             <div class="d-flex flex-column align-items-center">
+                <img class="img-fluid" src="images/3d-light.png" alt="chave em 3D" />
+
+                <h6>Inovação, tecnologia, expertise de gestão de excelência
+                </h6>
+             </div>
+
+             <div class="d-flex flex-column align-items-center">
+                <img class="img-fluid" src="images/3d-bag.png" alt="chave em 3D" />
+
+                <h6>Apoio de Marketing, Retargeting, Remarketing e Pós venda
+                </h6>
+             </div>
+
+             <div class="d-flex flex-column align-items-center">
+                <img class="img-fluid" src="images/3d-cup.png" alt="chave em 3D" />
+
+                <h6>Suporte na geração e gestão de novos clientes
+                </h6>
+
+             </div>
+
+             <div class="d-flex flex-column align-items-center">
+                <img class="img-fluid" src="images/3d-balloon-2.png" alt="chave em 3D" />
+
+                <h6>Suporte ao cliente compartilhado em tempo integral
+                </h6>
+
+             </div>
+
+             <div class="d-flex flex-column align-items-center mb-5">
+                <img class="img-fluid" src="images/3d-certified.png" alt="chave em 3D" />
+
+                <h6>Trazer excelência na jornada do cliente
+                </h6>    
+             </div>
+
+         </div>
+        
+    
+        <div class="d-flex flex-column align-items-center">
+           <button class="ver-mais" data-see-more>Ver mais</button>
         </div>
+      </div>
+    
+
+
     </section>
 
     <section class="parcerias">
@@ -452,7 +543,7 @@
     </section>
 
 
-    <section class="form">
+    <section id="form" class="form">
         <div class="container">
             <form action="">
                 <h4>Preencha os dados para receber um atendimento dos nossos parceiros</h4>
@@ -598,7 +689,7 @@
     <script src="js/mask.js"></script>
     <script src="js/hamburger.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper2 = new Swiper(".mySwiper", {
           slidesPerView: 3,
           spaceBetween: 30,
           freeMode: true,
@@ -607,6 +698,15 @@
             clickable: true,
           },
         });
+
+        const button = document.querySelector('[data-see-more]')
+        const section_more = document.querySelector('[data-show]')
+        button.addEventListener('click',()=>{
+            section_more.classList.remove('d-none')
+            button.style.display = 'none'
+        })
       </script>
+
+    
 </body>
 </html>

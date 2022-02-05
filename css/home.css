@@ -251,7 +251,7 @@ div.sub-menu-login{
     transition: 0.2s ease-in-out;
 }
 
-.sub-menu-login a{
+.sub-menu-login button{
     color:#ffffff !important;
     text-decoration: none;
     font-size: 14px;
@@ -263,13 +263,14 @@ div.sub-menu-login{
     max-width:300px;
     text-align:center;
     border-radius:8px;
+    border: 0;
 }
 .sub-menu-login p{
     font-size:13px;
     margin-top:10px;
 }
 
-.login a{
+.login button{
     color:#ffffff !important;
     text-decoration: none;
     font-size: 14px;
@@ -281,6 +282,7 @@ div.sub-menu-login{
     max-width:300px;
     text-align:center;
     border-radius:8px;
+    border:0;
 }
 .login p{
     font-size:13px;
@@ -608,6 +610,7 @@ section.pra-alugar .box-cards .icone-wrapper > img{
     border-radius:12px 12px 0 0;
     height: 209px;
     width: 100%;
+    object-fit: cover;
 }
 
 section.pra-alugar .descricao{

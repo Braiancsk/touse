@@ -3,7 +3,21 @@ let burgerBox = document.querySelector('.hamburger-wrapper');
 let burger = document.querySelector('.hamburger');
 let menu = document.querySelector('.menu-mobile');
 let bg = document.querySelector('.bg');
+let cadastrar = document.querySelectorAll('[data-cadastrar]')
+let login = document.querySelectorAll('[data-login]')
 
+
+cadastrar.forEach(btn =>{
+  btn.addEventListener('click',()=>{
+    handleCloseMenu()
+  })
+})
+
+login.forEach(btn =>{
+  btn.addEventListener('click',()=>{
+    handleCloseMenu()
+  })
+})
 
 burgerBox.addEventListener('click', ()=>{
   burger.style.display = 'none';
@@ -18,12 +32,17 @@ burgerBox.addEventListener('click', ()=>{
   }
 });
 
-//fechar ao clicar no bg
+bg.addEventListener('click', ()=>{
+  handleCloseMenu()
+});
 
-  bg.addEventListener('click', ()=>{
-    menu.classList.remove('menu-active');
+//fechar ao clicar no bg
+const handleCloseMenu = () =>{
+  menu.classList.remove('menu-active');
     burger.classList.remove('is-active');
     document.body.style.overflow = 'auto';
     bg.style.display = 'none';
     burger.style.display = 'block';
-  });
+}
+
+

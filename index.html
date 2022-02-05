@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/modal-login.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <script src="js/jquery-3.3.1.min.js" defer></script>
@@ -33,7 +34,102 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/ico.png">
 </head>
 <body>
-    <!--menu mobile-->
+
+    <!---------------modal de cadastro---------------------------->
+    <div data-bg class="cadastrar__bg"></div>
+
+    <div class="cadastrar__modal" data-modal>
+
+        <div class="d-flex justify-content-end">
+            <img data-close-modal class="pointer" src="images/close-modal.png" alt="icon" />
+        </div>
+
+        <h4>Criar uma conta To Use</h4>
+        <p>Preencha os campos para criar uma conta</p>
+
+        <form class="cadastrar__form">
+            <label>E-mail</label>
+            <input class="cadastrar__input" type="text" name="email" id="email" placeholder="Digite aqui" />
+
+            <label>Nome</label>
+            <input class="cadastrar__input" type="text" name="nome" id="nome" placeholder="Digite aqui" />
+
+            <label>Sobrenome</label>
+            <input class="cadastrar__input" type="text" name="sobrenome" id="sobrenome" placeholder="Digite aqui" />
+
+            <label>Telefone</label>
+            <input class="cadastrar__input" type="text" name="telefone" id="telefone" placeholder="Digite aqui" />
+
+            <label>CPF</label>
+            <input class="cadastrar__input" type="text" name="cpf" id="cpf" placeholder="Digite aqui" />
+
+            <label>Senha</label>
+            <input data-senha class="cadastrar__input" type="text" name="cpf" id="cpf" placeholder="Digite aqui" />
+            <span data-aviso></span>
+
+            <label>Digite novamente sua senha</label>
+            <input data-repetir class="cadastrar__input" type="text" name="cpf" id="cpf" placeholder="Digite aqui" />
+            <span data-aviso></span>
+        
+            <div class="d-flex gap-2 justify-content-center justify-content-md-between flex-wrap my-3 align-items-center">
+                <span data-login class="cadastrar__login" data-login>
+                    Faça login em vez disso
+                </span>
+
+                <button class="cadastrar__button">
+                    Criar conta
+                </button>
+            </div>
+
+            <p>Ao continuar, você está de acordo com os 
+                Termos de Uso e ciente da Política de Privacidade.</p>
+        </form>
+    </div>
+
+    <!---------------fim da modal de cadastro---------------------------->
+
+
+    <!---------------modal de Login---------------------------->
+
+      <div class="cadastrar__modal" data-modal-login>
+  
+          <div class="d-flex justify-content-end">
+              <img data-close-modal class="pointer" src="images/close-modal.png" alt="icon" />
+          </div>
+  
+          <h4>Acesse ou crie sua conta</h4>
+          <p>Preencha os campos para acessar ou criar uma conta</p>
+  
+          <form class="cadastrar__form">
+              <label>E-mail</label>
+              <input class="cadastrar__input" type="text" name="email" id="email" placeholder="Digite aqui" />
+  
+              <label>Senha</label>
+              <input class="cadastrar__input" type="text" name="nome" id="nome" placeholder="Digite aqui" />
+
+              <a class="cadastrar__recuperar" href="#">Esqueci minha senha</a>
+  
+              <div class="d-flex gap-2 justify-content-center justify-content-md-between flex-wrap align-items-center">
+                  <span data-modal class="cadastrar__login" data-cadastrar>
+                      Criar uma conta
+                  </span>
+   
+                  <button class="cadastrar__button">
+                      Entrar
+                  </button>
+              </div>
+  
+              <p>Ao continuar, você está de acordo com os 
+                  Termos de Uso e ciente da Política de Privacidade.</p>
+          </form>
+      </div>
+  
+      <!---------------fim da modal de login---------------------------->
+
+
+
+
+    <!-------------------menu mobile------------------------------------->
     <div class="menu-mobile">
 
         
@@ -42,27 +138,27 @@
         </div><!--wrapper-->
 
         <div class="btn-wrapper">
-           <a href="buscar.html">Encontrar imóveis</a>
+           <a href="busca.html">Encontrar imóveis</a>
         </div><!--wrapper-->
 
       
 
         <div class="line mb-3"></div>
 
-          <!--Caso o usuário não esteja logado-->
+    <!----------------------Caso o usuário não esteja logado-------------------->
           <div class="login">
             <div class="wrapper">
                 <p>Já tem uma conta</a>
-                <a href="login.html">Login</a>
+                <button data-login>Login</button>
             </div>
 
             <div class="wrapper">
                 <p>Ou crie uma conta</p>
-                <a href="cadastrar.html"> Cadastra-se</a>
+                <button data-cadastrar>Cadastra-se</button>
             </div>
-        </div>
+         </div>
 
-        <!--caso o usuário esteja logado-->
+    <!---------------------caso o usuário esteja logado----------------------------->
        
 <!--        
             <img class="img-fluid" src="images/user-icon.svg" alt="icone de usuário"/>
@@ -116,12 +212,15 @@
             <a href="sobre.html" class="sub-nav">Sobre nós</a>
         </div><!--wrapper-->
 
-        <div class="line"></div>
+
+        <!-------------Se o usuário estiver logado------------------->
+        
+        <!-- <div class="line"></div>
 
         <div class="wrapper flex-column d-flex my-3">
             <a class="my-3" href="minhaconta.html">Minha conta</a>
             <a class="my-3" href="#">Sair da conta</a>
-        </div><!--wrapper-->
+        </div> -->
 
         <div class="line"></div>
 
@@ -143,7 +242,7 @@
             <div class="col-1 d-flex justify-content-between mobile">
                 <a href="index.html">
                     <div class="logo">
-                        <img class="img-fluid" src="images/logo.jpg" alt="logo da empresa"/>
+                        <img class="img-fluid" src="images/logo-footer.png" alt="logo da empresa"/>
                     </div>
                 </a>
 
@@ -234,12 +333,12 @@
                 <div class="sub-menu-login">
                     <div class="wrapper">
                         <p>Já tem uma conta</a>
-                        <a href="login.html">Login</a>
+                        <button data-login>Login</button>
                     </div><!--wrapper-->
 
                     <div class="wrapper">
                         <p>Ou crie uma conta</p>
-                        <a href="cadastrar.html"> Cadastra-se</a>
+                        <button data-cadastrar> Cadastra-se</button>
                     </div><!--wrapper-->
 
                  
@@ -379,7 +478,7 @@
                                         <img src="images/home-icon.svg" alt="icone de localização">
                                         <span class="mx-1">Hóspedes</span>
                                     </div><!--icon-input-->
-                                    <input type="text" name="bairro" id="bairro" placeholder="Busque por bairro">
+                                    <input type="text" name="bairro" id="bairro" placeholder="Digite aqui">
                                 </div><!--input-wrapper-->
                             </div><!--row-->
                             
@@ -1582,8 +1681,11 @@ if (document.getElementById('whats_telefone'))
     <script src="js/hamburger.js"></script>
     <script src="https://unpkg.com/js-datepicker"></script>
     <script src="js/date.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx0ufkROKT174x66dPYaGZPIhAodUwpuc&libraries=places"></script> 
- <script>
+    <script src="js/modal-login.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIe5ogFZ4XwJufHuPACTsufDn7IIxaXX8&libraries=places"></script> 
+   
+    //script para saber a distância do usuário pro imóvel
+    <script>
     const locationUser = []
     var latitudeUser = ''
     var longitudeUser = ''
@@ -1613,20 +1715,25 @@ if (document.getElementById('whats_telefone'))
     //setar a distancia
     const distance = []
     var km = []
-    let distancia = document.getElementById('section-cards')
+    // let distancia = document.getElementById('section-cards')
 
     function calculateDistance(){
-        //latitude do imovel 
-        const imovelLatitude = '-16.323379363789776'
-        const imovelLongitude = '-48.94898159959658'
-
+  
         const matrix = new google.maps.DistanceMatrixService();
  
         matrix.getDistanceMatrix({
         //origem do acesso/localização do usuário
         origins: [new google.maps.LatLng(latitudeUser, longitudeUser)],
-        //destinos do usuário
-        destinations: [new google.maps.LatLng(imovelLatitude, imovelLongitude), new google.maps.LatLng(-16.324120700582213, -48.95391686378314), new google.maps.LatLng(-16.339973377819437, -48.93766455325328), new google.maps.LatLng(-16.330213009541414, -48.938780352112886)],
+        //endereços dos imoveis
+        destinations:
+        [
+        'Feirão Reny Cury, R. Copa 23, 21 - Q 14 - Residencial Copacabana, Anápolis - GO, 75136-144'
+        , 
+        'Av. Goiás, 427 - Centro, Anápolis - GO, 75025-090',
+        'Av. Brasil Norte, 505 - Centro, Anápolis - GO, 75113-570',
+        'Praça Augusto Cesar Miranda de Alencar, Av. Jamel Cecílio, S/n - JK Nova Capital, Anápolis - GO, 75080-175'
+        ],
+
         travelMode: google.maps.TravelMode.DRIVING,
         }, function(response, status) {
         //do something
@@ -1644,7 +1751,7 @@ if (document.getElementById('whats_telefone'))
               
               
            
-
+            //esse código comentado abaixo eu fiz de teste pra renderizar os cards, pode apagar sem problemas
                
 
             //     noDuplicate.map(value => {

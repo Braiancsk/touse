@@ -8,6 +8,7 @@
 body{
     overflow-x: hidden;
     background: #E5E5E5;
+    scroll-behavior: smooth;
 }
 
 /*estilos para o menu-mobile*/
@@ -780,6 +781,10 @@ footer .direitos a{
     .info__content h2, .info__content p{
         text-align:center;
     }
+    .video__box{
+        height:400px;
+    }
+   
 }
 
 @media screen and (max-width: 411px){
